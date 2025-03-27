@@ -200,7 +200,7 @@ class PageContentProvider extends AbstractModificationProvider
             if ($base_class !== \ilImprintGUI::class && \ilImprint::isActive()) {
                 $imprint_title = $this->dic->language()->txt("imprint");
                 $imprint_url = \ilLink::_getStaticLink(0, "impr");
-                $links[] = $f->link()->standard($imprint_title, $imprint_url);
+                //$links[] = $f->link()->standard($imprint_title, $imprint_url);
             }
 
             // system support contacts

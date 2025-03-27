@@ -38,7 +38,7 @@ class Renderer extends AbstractComponentRenderer
 
         foreach ($component->getItems() as $crumb) {
             $tpl->setCurrentBlock("crumbs");
-            if (!\ilUtil::isOneOfThisUser(["anon"]))
+            if (!\ilUtil::isLimitedRoleMember()) // !\ilUtil::isOneOfThisUser(["anon"]))
                 $tpl->setVariable("CRUMB", $default_renderer->render($crumb));
             else
                 $tpl->setVariable("CRUMB", $crumb->getLabel());
