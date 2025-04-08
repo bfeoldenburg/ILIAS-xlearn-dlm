@@ -1,5 +1,8 @@
 <IfModule mod_rewrite.c>
 	RewriteEngine on
+#    RewriteCond %{REMOTE_ADDR} !^212.6.91.110
+#    RewriteCond %{REQUEST_URI} !^/maintenance/(.)*$ [NC]
+#    RewriteRule ^(.*)$ /maintenance/index.html [R=302,L]
 	RewriteRule ^go\/(.*)$ goto.php/$1 [L]
 	RewriteCond %{QUERY_STRING}  ^lang=([^=]*)$
 	RewriteRule ^goto_(.*)_(wiki_([0-9]+|wpage)(.*)).html$ goto.php?client_id=$1&target=$2&lang=%1 [L]
