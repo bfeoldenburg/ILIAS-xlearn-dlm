@@ -18,22 +18,22 @@
 
 declare(strict_types=1);
 
-/**
- * Class ilUserAvatarFile
- * @author Alexander Killing <killing@leifos.de>
- * @author Michael Jansen <mjansen@databay.de>
- */
-class ilUserAvatarFile extends ilUserAvatarBase
+class ilTrackingUpdateSteps9 implements ilDatabaseUpdateSteps
 {
-    protected string $size;
+    protected \ilDBInterface $db;
 
-    public function __construct(string $size)
+    public function prepare(\ilDBInterface $db): void
     {
-        $this->size = $size;
+        $this->db = $db;
     }
 
-    public function getUrl(): string
+    /**
+     * Remove the unused table 'catch_write_events'
+     */
+    public function step_1(): void
     {
-        return ilWACSignedPath::signFile(\ilUtil::getImagePath('placeholder/no_photo_' . $this->size . '.jpg'));
+        if ($this->db->tableExists('catch_write_events')) {
+            $this->db->dropTable('catch_write_events');
+        }
     }
 }

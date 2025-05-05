@@ -3208,7 +3208,7 @@ if (!\ilUtil::isLimitedRoleMember()) {
     ): ?RepositoryObject {
         $ui = $this->ui;
 
-        $title = htmlspecialchars(addslashes($title));
+        $title = htmlspecialchars($title);
         // even b tag produced bugs, see #32304
         $description = strip_tags($description);
 

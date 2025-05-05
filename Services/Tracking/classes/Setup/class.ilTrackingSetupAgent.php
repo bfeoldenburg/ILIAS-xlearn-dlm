@@ -18,22 +18,18 @@
 
 declare(strict_types=1);
 
-/**
- * Class ilUserAvatarFile
- * @author Alexander Killing <killing@leifos.de>
- * @author Michael Jansen <mjansen@databay.de>
- */
-class ilUserAvatarFile extends ilUserAvatarBase
-{
-    protected string $size;
+use ILIAS\Setup;
+use ILIAS\Setup\Config;
 
-    public function __construct(string $size)
+class ilTrackingSetupAgent extends Setup\Agent\NullAgent
+{
+    public function getUpdateObjective(Setup\Config $config = null): Setup\Objective
     {
-        $this->size = $size;
+        return new ilDatabaseUpdateStepsExecutedObjective(new ilTrackingUpdateSteps9());
     }
 
-    public function getUrl(): string
+    public function getStatusObjective(Setup\Metrics\Storage $storage): Setup\Objective
     {
-        return ilWACSignedPath::signFile(\ilUtil::getImagePath('placeholder/no_photo_' . $this->size . '.jpg'));
+        return new ilDatabaseUpdateStepsMetricsCollectedObjective($storage, new ilTrackingUpdateSteps9());
     }
 }

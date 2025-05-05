@@ -846,7 +846,7 @@ span.ilc_text_inline_Emph {
   font-style: italic;
 }
 figure.ilc_media_cont_MediaContainer {
-  margin: 0px;
+  margin: 10px;
 }
 figure.ilc_media_cont_MediaContainerFull100 {
   margin: 0px;

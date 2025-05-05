@@ -18,22 +18,23 @@
 
 declare(strict_types=1);
 
-/**
- * Class ilUserAvatarFile
- * @author Alexander Killing <killing@leifos.de>
- * @author Michael Jansen <mjansen@databay.de>
- */
-class ilUserAvatarFile extends ilUserAvatarBase
+class ilExerciseAppEventListener
 {
-    protected string $size;
+    public static function handleEvent(
+        string $a_component,
+        string $a_event,
+        array $a_parameter
+    ): void {
+        global $DIC;
 
-    public function __construct(string $size)
-    {
-        $this->size = $size;
-    }
-
-    public function getUrl(): string
-    {
-        return ilWACSignedPath::signFile(\ilUtil::getImagePath('placeholder/no_photo_' . $this->size . '.jpg'));
+        switch ($a_component) {
+            case "Services/User":
+                switch ($a_event) {
+                    case "deleteUser":
+                        $DIC->exercise()->internal()->domain()->userEvent()->handleDeletion((int) $a_parameter["usr_id"]);
+                        break;
+                }
+                break;
+        }
     }
 }
