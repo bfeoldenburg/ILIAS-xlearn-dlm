@@ -18,16 +18,19 @@
 
 declare(strict_types=1);
 
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-
-class ilDclTextSelectionRecordFieldModel extends ilDclSelectionRecordFieldModel
+class ilDashboardAppEventListener implements ilAppEventListener
 {
-    /**
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
-     */
-    public function fillExcelExport(ilExcel $worksheet, int &$row, int &$col): void
+    private static ?ilDBStatement $clean_up = null;
+
+    public static function handleEvent(string $component, string $event, array $parameter): void
     {
-        $worksheet->setCell($row, $col, $this->getExportValue(), DataType::TYPE_STRING);
-        $col++;
+        if ($event === 'deleteUser') {
+            global $DIC;
+            self::$clean_up ??= $DIC->database()->prepare(
+                'DELETE FROM desktop_item WHERE user_id = ?',
+                [ilDBConstants::T_INTEGER]
+            );
+            $DIC->database()->execute(self::$clean_up, [$parameter['usr_id']]);
+        }
     }
 }

@@ -1663,7 +1663,7 @@ assessment#:#tst_print#:#Test and Assessment - Print View
 assessment#:#tst_proceed#:#Proceed
 assessment#:#tst_processing_time#:#Limit Duration of Test
 assessment#:#tst_processing_time_desc#:#Participants can work through the test only for a specified period of time. Time is clocking away from the moment a user starts a test for the first time. Suspending the test does not stop the clock. If the number of possible test attempts is limited an additional feature for granting extra time to participants appears in the tab 'Participants'.
-assessment#:#tst_processing_time_duration#:#Maximum Duration of the Test im Minutes
+assessment#:#tst_processing_time_duration#:#Maximum Duration of the Test in Minutes
 assessment#:#tst_processing_time_duration_desc#:#Maximum of time granted to take the test.
 assessment#:#tst_qbt_filter_question_title#:#Title of Question
 assessment#:#tst_qst_added_to_pool_p#:#Successfully added the questions to the selected pool.
@@ -8567,10 +8567,10 @@ dcl#:#dcl_create_fields#:#Click a table in the tab "Tables" and create new field
 dcl#:#dcl_creation_date#:#Creation Date
 dcl#:#dcl_creation_date_description#:#The date on which the entry was created.
 dcl#:#dcl_datatype#:#Datatype
+dcl#:#dcl_date#:#Date Entry
+dcl#:#dcl_date_desc#:#Field for a date.
 dcl#:#dcl_date_selection#:#Date Selection
 dcl#:#dcl_date_selection_desc#:#Offer selection of date options.
-dcl#:#dcl_datetime#:#Date Entry
-dcl#:#dcl_datetime_desc#:#Field for a date.
 dcl#:#dcl_deactivate_view#:#Deactivate this view
 dcl#:#dcl_default_sort_field#:#Default sort field
 dcl#:#dcl_default_sort_field_desc#:#The table will be sorted by this field by default.
@@ -13748,7 +13748,7 @@ rbac#:#adn_edit_permission#:#User can change permissions of Administrative Notif
 rbac#:#adn_read#:#User has read access to administration of Administrative Notifications.
 rbac#:#adn_visible#:#Administration of Administrative Notifications is visible.
 rbac#:#adn_write#:#User can add and edit Administrative Notifications.
-rbac#:#adopt_perm_from_template#:#Copy Permission Settings
+rbac#:#adopt_perm_from_template#:#Copy Permission Settings from other Role
 rbac#:#adve_edit_permission#:#User can change permission settings of Editing administration
 rbac#:#adve_read#:#User has read access to Editing Administration
 rbac#:#adve_visible#:#Editing Administration is visible
@@ -14294,14 +14294,17 @@ rbac#:#rbac_cant_import_role_wrong_type#:#Can't import a role from item %s into 
 rbac#:#rbac_change_existing_confirm_tbl#:#Settings for ‘Change Existing Objects’
 rbac#:#rbac_change_existing_objects_desc_new_role#:#The permission settings of this role will be adopted to ALL existing objects.
 rbac#:#rbac_changes#:#Changes
-rbac#:#rbac_choose_copy_targets#:#Please select the roles which are to be the targets for the copied permissions.
+rbac#:#rbac_choose_copy_targets#:#Please select the roles which are to be the targets for the copied permissions from %s.
 rbac#:#rbac_condition_delete_sure#:#Are you sure you want to delete the following preconditions?
 rbac#:#rbac_context_global#:#Global
 rbac#:#rbac_copy_behaviour#:#Role Copy Settings
+rbac#:#rbac_copy_behaviour_info#:#Transfer Permissions from: %s to: %s
 rbac#:#rbac_copy_finished#:#Finished copying.
+rbac#:#rbac_copy_multi_targets#:#%s, %s and %s further Roles selected%s
+rbac#:#rbac_copy_no_targets#:#At least one Role must be selected as Target
 rbac#:#rbac_copy_role#:#Copy Role
 rbac#:#rbac_copy_role_add_perm#:#Add Permissions
-rbac#:#rbac_copy_role_copy#:#Copy Permissions
+rbac#:#rbac_copy_role_copy#:#Copy Permissions to other Role(s)
 rbac#:#rbac_copy_role_remove_perm#:#Remove Permissions
 rbac#:#rbac_create_bibl#:#Create Bibliography
 rbac#:#rbac_create_blog#:#Create Blog
@@ -14418,7 +14421,8 @@ rbac#:#rbac_role_rights_copy_change_existing#:#Change Existing Objects
 rbac#:#rbac_role_rights_copy_empty#:#None
 rbac#:#rbac_role_selection#:#Role Type
 rbac#:#rbac_role_title#:#Role Title
-rbac#:#rbac_select_copy_targets#:#Please select the roles which are to be the targets for the copied permissions.
+rbac#:#rbac_select_copy_targets#:#Please select the roles which are to be the targets for the copied permissions from <strong>%s</strong>.
+rbac#:#rbac_select_roles#:#Select Roles
 rbac#:#rbac_ud_global#:#User-defined global role
 rbac#:#rbac_ud_local#:#User-defined local role
 rbac#:#rbac_ud_rolt#:#User-defined role template
@@ -15731,6 +15735,7 @@ style#:#sty_ca_cntr_class#:#Carousel Container
 style#:#sty_ca_icntr_class#:#Carousel Item Container
 style#:#sty_ca_icont_class#:#Carousel Item Content
 style#:#sty_ca_ihead_class#:#Carousel Item Header
+style#:#sty_cannot_be_copied#:#The following style types cannot be copied
 style#:#sty_caption#:#Caption
 style#:#sty_caption_class#:#Caption
 style#:#sty_carousel_templates#:#Carousel Templates

@@ -176,6 +176,7 @@ administration#:#auth_auth_mode_determination#:#認証方式決定(ログイン�
 administration#:#auth_automatic#:#固定シーケンス
 administration#:#auth_by_user#:#ユーザの指定
 administration#:#auth_kind_determination#:#確定方式
+administration#:#auth_mode_default_change_info#:#Changing the default authentication method affects all user accounts configured to use the default authentication method. If the selected default method (e.g., Shibboleth, SAML, SOAP, ...) does not support or is not configured to allow fallback to local ILIAS authentication, affected users may no longer be able to log in. To avoid this, please ensure that local fallback authentication is activated in the configuration of the selected method, or that the authentication method stored for affected user accounts is manually changed.###27 05 2025 new variable
 administration#:#auth_mode_determination_info#:#ユーザがログイン画面で認証方式を選択するか、認証方式を固定化したシーケンスで管理するかいずれかを選びます。
 administration#:#clean#:#クリーンアップ
 administration#:#clean_desc#:#無効な参照やツリーエントリーを削除。ツリー構造のギャップを初期化する。
@@ -1258,7 +1259,7 @@ assessment#:#toplist_col_percentage#:#パーセント
 assessment#:#toplist_col_rank#:#順位
 assessment#:#toplist_col_score#:#点数
 assessment#:#toplist_col_wtime#:#処理時間
-assessment#:#total_max_points_cannot_be_negative#:#The maximum amount of reachable points cannot be negative.###01 04 2025 new variable
+assessment#:#total_max_points_cannot_be_negative#:#最大達成可能点数は負にはなりえません。
 assessment#:#true#:#True
 assessment#:#tst_access_code_created#:#テスト結果への恒久アクセスと、このテストを再開可能性を提供するためにユニークなテストのアクセス コードが作成されました。以降のアクションはこのコードを使って書いてください。
 assessment#:#tst_activate_skill_service#:#能力サービスを有効化
@@ -1270,8 +1271,8 @@ assessment#:#tst_add_quest_cont_edit_mode_IPE#:#問題、回答、フィード�
 assessment#:#tst_add_quest_cont_edit_mode_IPE_info#:#問題と回答に書式設定がありません。LaTexにもありません。ただし、ｄフィードバックとヒントはILIAS学習モジュールへ問題が埋め込まれ時に再利用できます。
 assessment#:#tst_add_quest_cont_edit_mode_RTE#:#問題、回答、フィードバック、ヒントにはRich-Text-Editor (TinyMCE)を使用します。
 assessment#:#tst_add_quest_cont_edit_mode_RTE_info#:#ヒント、フィードバック、回答、問題の書式設定を許可。ただし、フィードバックとヒントはILIAS学習モジュールへ問題が埋め込まれた時には再利用できません。
-assessment#:#tst_add_quest_cont_edit_mode_plain#:#Use plain text###10 12 2024 new variable
-assessment#:#tst_add_quest_cont_edit_mode_plain_info#:#No formatting of text in question, answers, feedback, and hints.###10 12 2024 new variable
+assessment#:#tst_add_quest_cont_edit_mode_plain#:#平文を使用
+assessment#:#tst_add_quest_cont_edit_mode_plain_info#:#問題、回答、フィードバック、ヒント内のテキストフォーマットがありません。
 assessment#:#tst_addit_passes_blocked_after_passed_msg#:#試験に合格です。試験は再開できません。
 assessment#:#tst_all_test_competences#:#全テスト能力
 assessment#:#tst_all_user_data_deleted#:#このテストの全ユーザデータは削除されました!
@@ -1307,8 +1308,8 @@ assessment#:#tst_back_to_question_list#:#問題リストへ戻る
 assessment#:#tst_back_to_top#:#トップへ戻る
 assessment#:#tst_back_to_virtual_pass#:#問題概要へ戻る
 assessment#:#tst_best_solution_is#:#最もふさわしい解答
-assessment#:#tst_block_passes_after_passed#:#テスト後の追加回数ブロックを通過する
-assessment#:#tst_block_passes_after_passed_info#:#受験者がテスト合格するとこのオプションでは受験者は以降のテストができなくなります。
+assessment#:#tst_block_passes_after_passed#:#テスト合格後の追加受験を防止する
+assessment#:#tst_block_passes_after_passed_info#:#受験者がテスト合格するとこのオプションでは受験者は以降の受験ができなくなります。
 assessment#:#tst_browse_for_qpl_questions#:#問題集から追加
 assessment#:#tst_browse_for_tst_questions#:#他のテストから追加
 assessment#:#tst_btn_hide_best_solutions#:#模範解答を非表示
@@ -1398,7 +1399,7 @@ assessment#:#tst_exam_use_previous_answers_label#:#有効にすると前のテ�
 assessment#:#tst_extratime_added#:#受験者の回答時間が%s分増えました。
 assessment#:#tst_extratime_info#:#解答時間を同じ受験者へ掛け算したい場合は追加したい合計時間を挿入してください。
 assessment#:#tst_extratime_notavailable#:#延長時間は1回のテストと最長所要時間のみに追加することができます。
-assessment#:#tst_failed#:#Failed
+assessment#:#tst_failed#:#不合格
 assessment#:#tst_failed_imp_qst_skl_assign#:#次のコンピーテンスへの問題の割当ては作成することができませんでした。習得のコンピーテンスはローカルシステム内で識別することができませんでした。
 assessment#:#tst_failed_imp_skl_thresholds#:#ローカルシステムに沿ったコンピーテンスはレベルの別リストと一緒に構成されるので、次のコンピーテンスのスレッショールドのインポートはスキップされました。
 assessment#:#tst_feedback#:#フィードバック
@@ -1763,7 +1764,7 @@ assessment#:#tst_res_jump_to_participant_hint_opt#:#--受験者へジャンプ--
 assessment#:#tst_res_lo_objectives_header#:#関連する学習目標
 assessment#:#tst_res_lo_try_header#:#試み
 assessment#:#tst_res_lo_try_n#:#試み %s
-assessment#:#tst_res_tab_msg_no_lp_access#:#You are currently not allowed to access your Learning Progress, as you are not allowed to see your test results.###01 04 2025 new variable
+assessment#:#tst_res_tab_msg_no_lp_access#:#テスト結果の閲覧できないので現在学習進捗へのアクセスはできません。
 assessment#:#tst_res_tab_msg_res_after_date#:#テスト結果は次の日付でここへ提示されます+F1961: %s
 assessment#:#tst_res_tab_msg_res_after_date_no_res#:#テストを受験するとテスト結果は次の日付でここへ提示されます: %s
 assessment#:#tst_res_tab_msg_res_after_finish_test#:#終了後にテスト結果はここへ提示されます。
@@ -2073,8 +2074,8 @@ auth#:#auth_oidc_update_field_info#:#自動的に更新します。
 auth#:#auth_oidc_update_role_info#:#初回ログイン時にのみ使用します（自動同期）
 auth#:#auth_oidconnect#:#OpenIdコンテンツ
 auth#:#auth_page_type_auth#:#ログインページ
-auth#:#auth_required_password#:#Please enter a password.###10 12 2024 new variable
-auth#:#auth_required_username#:#Please enter a username.###10 12 2024 new variable
+auth#:#auth_required_password#:#パスワードを入力してください。
+auth#:#auth_required_username#:#ユーザ名を入力してください。
 auth#:#auth_saml#:#SAML
 auth#:#auth_saml_add_idp_btn#:#新しいIDプロバイダを追加
 auth#:#auth_saml_add_idp_md_error#:#入力の値は有効なXMLドキュメントではありません。XMLには有効なIDプロバイダが含まれている事を確認してください。
@@ -2280,7 +2281,7 @@ bibl#:#bib_default_volume#:#Volume
 bibl#:#bib_default_year#:#年
 bibl#:#bibl_copy#:#文献目録をコピー
 bibl#:#bibl_edit#:#文献目録を編集
-bibl#:#bibl_filter#:#Filter
+bibl#:#bibl_filter#:#フィルタ
 bibl#:#bibl_import#:#目録をインポート
 bibl#:#bibl_library_img#:#Image-URL
 bibl#:#bibl_library_name#:#名前
@@ -2293,10 +2294,10 @@ bibl#:#bibl_new#:#新規文献目録
 bibl#:#bibl_settings_edit#:#ライブラリーを編集
 bibl#:#bibl_settings_libraries#:#ライブラリー
 bibl#:#bibl_settings_new#:#ライブラリーを追加
-bibl#:#bibl_translation_desc#:#Description
-bibl#:#bibl_translation_lang#:#Language
-bibl#:#bibl_translation_trans#:#Translation
-bibl#:#bibliography_file#:#Bibliography File
+bibl#:#bibl_translation_desc#:#説明
+bibl#:#bibl_translation_lang#:#言語
+bibl#:#bibl_translation_trans#:#翻訳
+bibl#:#bibliography_file#:#バイオグラフィーファイル
 bibl#:#bibtex#:#Bibtex
 bibl#:#changes_saved#:#変更が保存されました。
 bibl#:#custom#:#Custom
@@ -2862,7 +2863,7 @@ chatroom#:#chat_https_cert_info#:#SSL認定ファイルへの絶対サーバパ�
 chatroom#:#chat_https_dhparam_info#:#Diffie Hellmanパラメータの(例 生成経路: openssl dhparam -out /etc/ssl/private/dhparam.pem 2048 )のネゴシエーション用に使用されるファイル (例: /etc/ssl/private/dhparam.pem)への,絶対サーバパスを定義してください。
 chatroom#:#chat_https_key_info#:#プライベートキーへの絶対サーバパスを定義してください。(例: /etc/ssl/private/server.key).
 chatroom#:#chat_invitation#:#[INVITER_NAME] はチャットルーム[ROOM_NAME]"へ相対しています。
-chatroom#:#chat_invitation_long#:#[SALUTATION]\n\nチャットルーム\nChat Room Title: [ROOM_NAME]\nInvited by: [INVITER_NAME]へ招待されています。\nURL: [LINK]\n\nチャットルームへ参加するには次のURLをフォローしてください。
+chatroom#:#chat_invitation_long#:#[SALUTATION][BR][BR]チャットルーム[BR]Chat Room Title: [ROOM_NAME][BR]Invited by: [INVITER_NAME][BR]URL: [LINK][BR][BR]へ招待されました。[LINK][BR][BR]へ参加するには次のURLをフォローしてください。URL: [LINK]チャットルームへ参加するには次のURLをフォローしてください。
 chatroom#:#chat_invitation_nc_inv_x#:#%s チャット招待があります。
 chatroom#:#chat_invitation_nc_no_inv#:#チャット招待はありません。
 chatroom#:#chat_invitation_short#:#タイトルリンクをクリックしてチャットルームへ入室してください。
@@ -3628,8 +3629,8 @@ common#:#building_export_file#:#エクスポートファイルを生成中...
 common#:#bulletlist_action#:#行頭文字 -リストを挿入 - クリックして行頭文字 - リストを挿入
 common#:#by#:#By
 common#:#bytes#:#バイト
-common#:#cal_from#:#開始
-common#:#cal_until#:#終了
+common#:#cal_from#:#いつから:
+common#:#cal_until#:#いつまで:
 common#:#calendar#:#カレンダー
 common#:#cancel#:#キャンセル
 common#:#cancel_file_upload#:#本当に全ての保留中のアップロードをキャンセルしますか?
@@ -3768,7 +3769,7 @@ common#:#copy_all#:#全てコピー
 common#:#copy_n_of_suffix#:#- コピー (%1$s)
 common#:#copy_of#:#コピー
 common#:#copy_of_suffix#:#- Copy
-common#:#copy_perma_link#:#Copy link to clipboard###10 12 2024 new variable
+common#:#copy_perma_link#:#クリップボードへリンクをコピー
 common#:#copy_selected_items#:#コピー
 common#:#count#:#カウント
 common#:#counter_novelty#:#News
@@ -3911,12 +3912,12 @@ common#:#down#:#下
 common#:#download#:#ダウンロード
 common#:#download_all_returned_files#:#提出済の全ファイルをダウンロード
 common#:#download_link#:#ダウンロードリンク
-common#:#download_multiple_objects#:#複数オブジェクトをダウンロード
+common#:#download_multiple_objects#:#複数オブジェクトのダウンロード
 common#:#download_selected_items#:#ダウンロード
 common#:#downloading_settings#:#ダウンロード設定
 common#:#dpro_accept_usr_agreement#:#データ保護規約を承諾しますか?
 common#:#dpro_accept_usr_agreement_intro#:#新しいデータ保護規約があります。ILIAS利用前に承諾する必要があります。次のドキュメントを十分に読んだ上で 同意または同意しないをページ末へ回答します。
-common#:#dpro_agreed_on#:#DoDP agreed to on###01 04 2025 new variable
+common#:#dpro_agreed_on#:#DoDP承諾日付
 common#:#dpro_force_accept_usr_agreement#:#データ保護規約を承諾する必要があります。
 common#:#dpro_no_agreement_description#:#このシステム用のデータ保護規約文書がありません。 <a href="%1$s">システム管理者</a>へコンタクトしてください。
 common#:#dpro_refuse_acceptance#:#データ保護規約承諾を拒否
@@ -4527,6 +4528,7 @@ common#:#login_information_settings_saved#:#ログイン情報は正しく保存
 common#:#login_invalid#:#ログインが正しくありません! 次の文字のみ使用できます。　A-Z a-z 0-9 _.-+*@!$%~(最低3文字)
 common#:#login_to_ilias#:#ILIASへログイン
 common#:#login_to_ilias_via_cas#:#中央認証サービス経由でILIASへログイン
+common#:#login_to_ilias_via_login_form#:#Login to ILIAS###27 05 2025 new variable
 common#:#login_to_ilias_via_saml#:#SAML認証経由でILIASへログインする
 common#:#login_to_ilias_via_shibboleth#:#経由でILIASへログイン
 common#:#loginname_already_exists#:#このログイン名は既に使用されています。
@@ -4797,8 +4799,8 @@ common#:#newline#:#改行
 common#:#news#:#ニュース
 common#:#next#:#次へ
 common#:#no#:#No
-common#:#no_access_item#:#このアイテムへのアクセス権限がありません。
-common#:#no_access_item_public#:#このアイテムへアクセスするには適切なアクセス権限でログインする必要があります。
+common#:#no_access_item#:#この項目へのアクセス権限がありません。
+common#:#no_access_item_public#:#この項目へアクセスするには、ログインして適切なアクセス権限を持っている必要があります。
 common#:#no_accessibility_control_concept_description#:#このシステムには現在Accessibility Control Conceptを提供するものがありません。<a href="%1$s">Accessibility Pint</a>へ連絡してして下さい。
 common#:#no_checkbox#:#アイテムを最低一つ選択してください。
 common#:#no_condition_selected#:#一つ前提条件を選択してください。
@@ -5160,7 +5162,7 @@ common#:#objs_rglo#:#ECS索引
 common#:#objs_rgrp#:#ECSグループ
 common#:#objs_rlm#:#ECSラーニングモジュール
 common#:#objs_role#:#役割
-common#:#objs_rolf#:#Role Folders###08 10 2024 new variable
+common#:#objs_rolf#:#役割フォルダ
 common#:#objs_rtst#:#ECSテスト
 common#:#objs_rwik#:#ECS Wiki
 common#:#objs_sahs#:#SCORM/AICCラーニングモジュール
@@ -5252,7 +5254,7 @@ common#:#pd_items_news#:#パーソナルアイテムのニュースを含む
 common#:#pdf_export#:#PDFエクスポート
 common#:#perm_settings#:#アクセス権限
 common#:#perma_link#:#Permanent Link
-common#:#perma_link_copied#:#Link to this page has been copied to the clipboard.###10 12 2024 new variable
+common#:#perma_link_copied#:#このページへのリンクはクリップボードへコピーされました。
 common#:#permission#:#許諾
 common#:#permission_denied#:#拒否されました
 common#:#permission_settings#:#オブジェクトアクセス権限設定
@@ -5561,7 +5563,7 @@ common#:#session_max_idle_info#:#ユーザがセッション切断前にアイ�
 common#:#session_min_idle#:#最短セッションアイドル(分単位)
 common#:#session_min_idle_info#:#別セッションを他のユーザ用に開く必要があり既存セッションが最大数に達する場合は、少なくともこの時間にユーザがアイドルする時はセッションを破棄する事ができます。
 common#:#session_reminder#:#セッション警告
-common#:#session_reminder_alert#:#セッション%1$sは%2$sに終了します!\n\nセッションを継続するにはOKを選択します。\nキャンセルをクリックすると現在のブラウザセッション中に以降は催促されなくなります。\n\nインストールシステム: %3$s。
+common#:#session_reminder_alert#:#セッション%1$sは%2$sに終了します!セッションを継続するにはOKを選択します。キャンセルをクリックすると現在のブラウザセッション中に以降は催促されなくなります。インストールシステム: %3$s。
 common#:#session_reminder_info#:#オンにするとブラウザオンラインセッション時間が切れる前に通知を受領します。
 common#:#session_reminder_lead_time#:#リードタイム
 common#:#session_reminder_lead_time_info#:#セッション警告通知のリードタイムを秒数で指定してください。セッション終了前に時間が残っている場合にのみ警告通知を表示します。推奨値は300 (= 5 min.)です。<br / >現在のユーザセッションの長さは%sです。
@@ -5907,7 +5909,7 @@ common#:#usrimport_action_replaced#:#アクション %1$s by %2$sを入れ替え
 common#:#usrimport_cant_delete#:#削除アクションを実行できません。データベースにそのようなユーザはいません。
 common#:#usrimport_cant_insert#:#挿入アクションを実行できません。 データベースに既にユーザが存在します。
 common#:#usrimport_cant_update#:# "更新" アクションを実行できません。データベースにそのようなユーザはいません。
-common#:#usrimport_conflict_handling_info#:#競合を無視が選択されている時は、実行できないと(例　データベース内に同じログインユーザが存在すると"挿入"アクションは実行されない）ILIASはアクションを無視します。\n"競合を更新"が選択されている時は、アクションを実行できなくても(例　データベース内に同じログインユーザが存在すると"挿入"アクションは"更新"アクションに置き換えられる）、ILIASはデータベースを更新します。
+common#:#usrimport_conflict_handling_info#:#競合を無視が選択されている時は、実行できないと(例　データベース内に同じログインユーザが存在すると"挿入"アクションは実行されない）ILIASはアクションを無視します。"競合を更新"が選択されている時は、アクションを実行できなくても(例　データベース内に同じログインユーザが存在すると"挿入"アクションは"更新"アクションに置き換えられる）、ILIASはデータベースを更新します。
 common#:#usrimport_form_not_evaluabe#:#フォームデータを読込む事ができませんでした。
 common#:#usrimport_global_role_for_action_required#:#最低一つグローバル 役割が"%1$s"アクションとして指定されていなければなりません。
 common#:#usrimport_ignore_role#:#役割を無視
@@ -6096,7 +6098,7 @@ cont#:#cont_tile_size_3#:#extra large (1行当たり2タイルまで)
 cont#:#cont_tile_size_4#:#full (1行当たり1タイル)
 cont#:#cont_tile_view#:#タイル
 cont#:#cont_tile_view_info#:#サムネイルスタイルタイルでコンテンツオブジェクトを表示。このタイルのイメージは個別オブジェクト別の設定でuploadできます。
-cont#:#cont_trash_general_usage#:#If you want to remove a huge amount of old, deleted objects from the system it is highly advisable to start with non-container objects (i.e. Files, Glossaries, Tests,..) and thus removing all objects from the containers (Categories, Courses, Groups, Learning Sequences,...) . Using the filters "Type" and "Deleted on" helps this process. Then finally remove the containers.###08 10 2024 new variable
+cont#:#cont_trash_general_usage#:#システムから削除された大量の古いオブジェクトを削除したい時は、コンテナなしオブジェクト (例　ファイル、カテゴリ、用語集、テスト。。。) で開始する事を強く推奨し、その結果コンテナ(カテゴリ、コース、グループ、ラーニングシーケンス。。。)から全オブジェクトが全て削除されます。”タイプ"と"削除日"フィルタを使用するとこの処理に役立ちます。最終的にコンテナを削除します。
 contact#:#contact_awrn_ap_contacts#:#コンタクトを承認しました
 contact#:#contact_awrn_ap_contacts_info#:#ユーザの承認した全てのコンタクトが表示されます。
 contact#:#contact_awrn_req_contacts#:#コンタクト要求
@@ -6248,7 +6250,7 @@ content#:#cont_char_style_code#:#コード
 content#:#cont_char_style_com#:#コメント
 content#:#cont_char_style_quot#:#引用
 content#:#cont_characteristic#:#スタイルクラス
-content#:#cont_characteristic_table#:#Style Class###17 05 2024 new variable
+content#:#cont_characteristic_table#:#Style Class
 content#:#cont_check_values#:#SCOの送った値をチェック
 content#:#cont_check_values_info#:#テストツールはSCOからSCORMスタンダードへ準拠する値を送るかどうかをチェックします。SCORMスタンダードは値の保存に関して非常に多くの要求があります。すべての学習モジュールがスタンダード要件を満たしているものではありません。このオプションはモジュールがスタンダードに準拠するか否かをチェックさせます。ILIASがこのモジュールで動作するかどうかの単なるチェックにこのオプションは使用してはいけません。
 content#:#cont_choose_characteristic#:#特徴を選択
@@ -7324,7 +7326,7 @@ content#:#seq_error#:#シーケンサーの内部エラーが発生しました�
 content#:#seq_toc#:#左側の目次から開始するコースの項目を選択してください。
 content#:#set_public_mode#:#パブリックアクセスモード
 content#:#st#:#章
-content#:#start_lm#:#学習モジュールを展開
+content#:#start_lm#:#学習モジュールを表示
 content#:#text_repr#:#テキスト表現
 content#:#text_repr_info#:#イメージ "alt"属性用として使用されます。
 copa#:#copa_activation_online_info#:#コンテンツページをオンラインへ設定し他のユーザが見えるように表示する。そうしないと管理者のみしかアクセスできなくなります。
@@ -7481,7 +7483,7 @@ crs#:#crs_breadcrumb_full_path#:#Full Path
 crs#:#crs_cancel_subscr_request#:#メンバーシップリクエストを削除
 crs#:#crs_cancel_subscription#:#ユーザはコース "%s"を登録解除
 crs#:#crs_cancel_subscription_body#:#%s はコース "%s"のメンバーシップをキャンセルしました。
-crs#:#crs_cancel_subscription_body2#:#コースの待ちリスト上に他のメンバーがいる可能性があります。\nすぐに待ちリストをチェックしてください。\nコースのメンバーを見るには以下をクリック：
+crs#:#crs_cancel_subscription_body2#:#コースの待ちリスト上に他のメンバーがいる可能性があります。すぐに待ちリストをチェックしてください。コースのメンバーを見るには以下をクリック：
 crs#:#crs_cancellation_end#:#`コースから登録取り消し`を制限
 crs#:#crs_cancellation_end_info#:#選択した日付になるまでメンバーはコースから登録を取り消しできます。
 crs#:#crs_cancellation_end_rbac_info#:#キャンセル期限は%sでしたのでキャンセルはもうできません。
@@ -7863,7 +7865,7 @@ crs#:#crs_subject_course_group_notification#:#%sの日刊メール
 crs#:#crs_subscribe_member#:#コース "%s" の登録
 crs#:#crs_subscribe_member_body#:#コース "%s"への登録が確認された事をご案内します。
 crs#:#crs_subscribe_wl#:#コース "%s"の登録
-crs#:#crs_subscribe_wl_body#:#コース "%s"の待ちリストへ割当てられました。n\リストの%s番目です。\n\nリクエストが承認または拒否されるとコース管理者からのメッセージを受信します。
+crs#:#crs_subscribe_wl_body#:#コース "%s"の待ちリストへ割当てられました。n\リストの%s番目です。リクエストが承認または拒否されるとコース管理者からのメッセージを受信します。
 crs#:#crs_subscriber#:#購読者
 crs#:#crs_subscribers_deleted#:#購読者が削除されました
 crs#:#crs_subscription#:#購読
@@ -8555,9 +8557,9 @@ dcl#:#dcl_confirm_delete_table#:#内容や階層の含まれるこのテーブ�
 dcl#:#dcl_confirm_storing_records#:#有効にして入力を確認して下さい。
 dcl#:#dcl_confirm_storing_records_no_permission#:#以降は記録を変更する権利がありません。
 dcl#:#dcl_copy#:#データ収集を作成
-dcl#:#dcl_copy_field#:#Copy###10 12 2024 new variable
-dcl#:#dcl_copy_field_desc#:#Field to copy options stored in a different field of a table.###10 12 2024 new variable
-dcl#:#dcl_copy_title#:#Copy of table and field###10 12 2024 new variable
+dcl#:#dcl_copy_field#:#Copy
+dcl#:#dcl_copy_field_desc#:#表の別フィールドに保存されたコピーオプションへのフィールド
+dcl#:#dcl_copy_title#:#表とフィールドのコピー
 dcl#:#dcl_create_date#:#作成日
 dcl#:#dcl_create_entry_rules#:#作成のエントリー
 dcl#:#dcl_create_field#:#フィールドを作成
@@ -8565,10 +8567,10 @@ dcl#:#dcl_create_fields#:#”表”タブの表をクリックして”新規フ
 dcl#:#dcl_creation_date#:#作成日
 dcl#:#dcl_creation_date_description#:#エントリが作成された日付
 dcl#:#dcl_datatype#:#データタイプ
+dcl#:#dcl_date#:#Date Entry###27 05 2025 new variable
+dcl#:#dcl_date_desc#:#Field for a date.###27 05 2025 new variable
 dcl#:#dcl_date_selection#:#日付選択
 dcl#:#dcl_date_selection_desc#:#日付オプションの選択を提示
-dcl#:#dcl_datetime#:#日時
-dcl#:#dcl_datetime_desc#:#日付用のフィールド
 dcl#:#dcl_deactivate_view#:#このビューを解除
 dcl#:#dcl_default_sort_field#:#既定のソートフィールド
 dcl#:#dcl_default_sort_field_desc#:#この表は既定でフィールド別にソートされます。
@@ -8582,7 +8584,7 @@ dcl#:#dcl_delete_tables_no_selection#:#削除するテーブルを一つは選�
 dcl#:#dcl_delete_views#:#ビューを削除
 dcl#:#dcl_delete_views_no_selection#:#削除するビューを一つは選択して下さい。
 dcl#:#dcl_deleted_records#:#%sレコードが正しく削除されました
-dcl#:#dcl_deprecated_copy#:#(Deprecated)###10 12 2024 new variable
+dcl#:#dcl_deprecated_copy#:#(廃止)
 dcl#:#dcl_desc#:#降順 (DESC)
 dcl#:#dcl_description#:#フィールド説明
 dcl#:#dcl_detailed_view#:#詳細ビュー
@@ -8680,14 +8682,12 @@ dcl#:#dcl_new_table#:#新規テーブル
 dcl#:#dcl_next_record#:#次のレコード
 dcl#:#dcl_no_content_warning#:#注意、データ収集はオンラインですがまだ内容がありません!
 dcl#:#dcl_no_entry#:#エントリーなし
-dcl#:#dcl_no_export_content_available#:#エクスポート可能なデータがありません。
+dcl#:#dcl_no_export_async_config#:#No SOAP Configuration for asyncronous exports available.###27 05 2025 new variable
 dcl#:#dcl_no_export_data_available#:#エクスポート用のデータまたはフィールドがありません
-dcl#:#dcl_no_export_fields_available#:#エクスポート用の有効なフィールドがありません。<a href="%s">表設定</a>内にエクスポート可能なフィールドを一つはマークします。
 dcl#:#dcl_no_fields_yet#:#このテーブルに定義されるフィールドがないのでまだ何もエントリを作成できません。
 dcl#:#dcl_no_read_access_on_any_standard_view#:#表のどのスタンダードビューへも読込みアクセス権がありません。
 dcl#:#dcl_no_search_results_found_for#:#モジュールが見つかりません
 dcl#:#dcl_no_such_reference#:#レファレンステーブル中に次の値はありません:
-dcl#:#dcl_no_warnings#:#警告無しにインポートを完了しました。
 dcl#:#dcl_not_checked#:#未チェック
 dcl#:#dcl_not_supported_in_import#:#このタイプのフィールドはインポートではサポートされません。
 dcl#:#dcl_notification_activate_dcl#:#データ収集用の通知を有効にする
@@ -8701,7 +8701,7 @@ dcl#:#dcl_number#:#整数
 dcl#:#dcl_number_desc#:#整数値(最大9桁)用のフィールドです。小数や分数ではありません。
 dcl#:#dcl_online_info#:#データ収集がオンラインの場合に限りユーザはデータ収集を使用できます。
 dcl#:#dcl_order#:#順
-dcl#:#dcl_origin_not_found#:#Origin field was not found!###10 12 2024 new variable
+dcl#:#dcl_origin_not_found#:#オリジンフィールドが見つかりませんでした。
 dcl#:#dcl_own_entries#:#自己エントリーのみ
 dcl#:#dcl_owner#:#オーナ
 dcl#:#dcl_owner_description#:#エントリーのオーナ
@@ -8711,7 +8711,6 @@ dcl#:#dcl_permissions_form#:#ユーザアクション
 dcl#:#dcl_please_select#:#--- 選択してください ---
 dcl#:#dcl_plugin#:#Plugin
 dcl#:#dcl_plugin_desc#:#データ収集Field-Plugins
-dcl#:#dcl_plugin_hooks#:#利用可能なPlugin
 dcl#:#dcl_plugin_no_hooks_available#:#有効なフィールドタイププラグインが見つかりませんでした
 dcl#:#dcl_prev_record#:#前のエントリー
 dcl#:#dcl_prop_expression#:#式
@@ -8797,7 +8796,9 @@ dcl#:#dcl_title_standardview#:#標準ビュー
 dcl#:#dcl_unique#:#ユニーク
 dcl#:#dcl_unique_desc#:#このフィールドの値は全てのエントリー内でユニークにする必要があります。
 dcl#:#dcl_unique_exception#:#入力した値はすでに別のレコードで使用されています。
+dcl#:#dcl_unknown#:#Unkown###27 05 2025 new variable
 dcl#:#dcl_unknown_exception#:#入力した値は無効です。
+dcl#:#dcl_unknown_plugin#:#Unknown plugin type###27 05 2025 new variable
 dcl#:#dcl_update_field#:#フィールドを更新
 dcl#:#dcl_update_record#:#レコードを更新
 dcl#:#dcl_url#:#URL
@@ -8811,7 +8812,7 @@ dcl#:#dcl_width#:#幅
 dcl#:#dcl_wrong_input_type#:#入力したテキストはこのフィールドの定義(タイプ間違い)と一致しません。
 dcl#:#dcl_wrong_length#:#入力したテキストは長すぎます
 dcl#:#dcl_wrong_regex#:#入力したテキストはこのフィールドの定義(正規表現)と一致しません。
-dcl#:#dlc_xls_async_export#:#非同期XLSXエクスポート
+dcl#:#dcl_xls_async_export#:#as XLSX (asynchronous)###27 05 2025 new variable
 dcl#:#fieldtitle_allow_chars#:#使用できない文字: %s
 dcl#:#fileupload_not_migrated#:#ファイルの統合がまだ完了していないので表示できません。システム管理者へコンタクトしてください。
 didactic#:#activate_exclusive_template#:#グレイアウトの既定値
@@ -9021,9 +9022,9 @@ ecs#:#ecs_file_export#:#ファイルをリリース
 ecs#:#ecs_file_export_disabled#:#このファイルをリリースしない
 ecs#:#ecs_file_export_enabled#:#このファイルをリリース
 ecs#:#ecs_file_export_obj_settings#:#ファイルリリース設定
-ecs#:#ecs_firstname#:#First name
+ecs#:#ecs_firstname#:#氏名
 ecs#:#ecs_form_consent#:#同意
-ecs#:#ecs_form_consent_option_title#:#下記に交わしたターゲットシステムへ次のデータ転送することに同意します。ioned target system
+ecs#:#ecs_form_consent_option_title#:#下記に交わしたターゲットシステムへ次のデータ転送することに同意します。
 ecs#:#ecs_form_target_platform#:#ターゲットシステム
 ecs#:#ecs_general_info#:#全般情報
 ecs#:#ecs_glo_export#:#索引リリース
@@ -9096,7 +9097,7 @@ ecs#:#ecs_protocol#:#プロトコル
 ecs#:#ecs_publish_as#:#発行者:
 ecs#:#ecs_publish_for#:#リリース:
 ecs#:#ecs_published_for#:#発行用途:
-ecs#:#ecs_rcat_created_body_a#:#A new ECS Category has been created:###10 12 2024 new variable
+ecs#:#ecs_rcat_created_body_a#:#新しいECSカテゴリが作成されました。
 ecs#:#ecs_rcrs_created_body_a#:#新リモートコースが作成されました
 ecs#:#ecs_read_remote_links#:#リモートコースを更新
 ecs#:#ecs_refresh_participants#:#ECS-受験者をリフレッシュ
@@ -9286,7 +9287,7 @@ exc#:#exc_fixed_date_individual#:#個別期限のみ
 exc#:#exc_fixed_date_individual_info#:#共通の期限はありません。指導教員は各参加者別の個別期限を設定する必要があります。
 exc#:#exc_fixed_date_info#:#初期状態では、全ユーザは同じ固定の期限日です。
 exc#:#exc_fullscreen#:#Fullscreen
-exc#:#exc_future#:#Upcoming
+exc#:#exc_future#:#近日中
 exc#:#exc_given_feedback#:#フィードバック
 exc#:#exc_global_feedback_file#:#サンプル解答
 exc#:#exc_global_feedback_file_after_date#:#日付設定後
@@ -9300,7 +9301,7 @@ exc#:#exc_graded_mem_notified#:#全ての評価済受験者は通知されまし
 exc#:#exc_grades#:#評価概要
 exc#:#exc_grades_overview#:#評価ビュー
 exc#:#exc_hand_in#:#提出する
-exc#:#exc_hand_in_lead_text#:#%s を提出
+exc#:#exc_hand_in_lead_text#:#提出まで %s
 exc#:#exc_idl_request_and_tutor_needed#:#個別期限設定について指導教員へリクエストを送って下さい。
 exc#:#exc_idl_tutor_needed#:#既に期限を要求済です。リクセストはまだ保留中です。個別期限が一旦設定されると通知されます。
 exc#:#exc_import#:#演習問題をインポート
@@ -9404,7 +9405,7 @@ exc#:#exc_pass_mode#:#合格モード
 exc#:#exc_pass_mode_not_changeable_info#:#passモードはこれ以上変更できません。
 exc#:#exc_passed_status_determination#:#'合格'ステータスの確定
 exc#:#exc_passing_exc#:#演習問題の遂行
-exc#:#exc_past#:#過去
+exc#:#exc_past#:#過去分
 exc#:#exc_peer_deadline_mismatch#:#期限り後にフィードバックをする場合は、割当てる設定の期限よりフィードバック期限りを早くしてはいけません。
 exc#:#exc_peer_review#:#ピアフィードバック
 exc#:#exc_peer_review_ass_setting_info#:#期限後の猶予期間が経過したことを承認されるとユーザはピア回答を評価できます。ピアフィードバックの設定次第でそれぞれのタブが作られます。有効にした後でこのオプションは保存され'ピアーフィードバック'タブが表示されます。
@@ -9773,13 +9774,13 @@ file#:#msg_success_icon_deactivated#:#アイコンは正常にアクティブ解
 file#:#msg_success_icon_deletion#:#アイコンは正常に削除されました。
 file#:#msg_success_icon_updated#:#アイコンは正常に更新されました。
 file#:#msg_unzip_success#:#アーカイブは正常にunzipされました。
-file#:#on_click_action#:#タイトルがクリックされたら動作する
+file#:#on_click_action#:#タイトルがクリック時の動作
 file#:#preview_caption#:#プレビュー %sof %s
 file#:#preview_image_size_info#:#イメージのプレビューバージョンは、適切に縮小または拡大されるので、最長サイド長(px内)わここに入力します。
 file#:#preview_persisting#:#永続的なプレビューイメージ
 file#:#preview_persisting_info#:#生成されたプレビューイメージはILIASに保管されて、ファイルのクリック毎に都度プレビューアイコンとして使用されます。
-file#:#previews_for_tiles#:#Tiles###01 04 2025 new variable
-file#:#previews_for_tiles_info#:#Use Preview for Tiles where possible.###01 04 2025 new variable
+file#:#previews_for_tiles#:#タイル
+file#:#previews_for_tiles_info#:#利用可能な位置のタイル用のプレビューを使用
 file#:#publish_before_delete#:#非公開のドラフトがあるためバージョンは削除できません。
 file#:#replace_file_info#:#全ての旧バージョンファイルは削除されます。
 file#:#resource_id#:#リソースID
@@ -9823,12 +9824,12 @@ fils#:#policy_no_validity_limitation_set#:#無期限有効
 fils#:#policy_scope#:#範囲
 fils#:#policy_table_info_no_policies#:#アップロードされたポリシーがまだ作成されていません。
 fils#:#policy_title_desc#:#ポリシーの説明タイトル
-fils#:#policy_upload_limit#:#アップロード期限
-fils#:#policy_upload_limit_desc#:#MBのこのポリシーで設定されたアップロード期限
+fils#:#policy_upload_limit#:#アップロード制限
+fils#:#policy_upload_limit_desc#:#このポリシーで設定されたアップロード制限(MB表示)
 fils#:#policy_valid_until#:#有効期限
-fils#:#policy_valid_until_desc#:#ポリシーが切れた後のオプション'有効期限'を設定します。
+fils#:#policy_valid_until_desc#:#ポリシーが切れた後の'有効期限'オプション設定
 fils#:#policy_validity#:#有効性
-fils#:#upload_limits#:#アップロード期限
+fils#:#upload_limits#:#アップロード制限
 fils#:#upload_policies#:#アップロードポリシー
 fold#:#fold_copy#:#フォルダを表示コピー
 fold#:#fold_import#:#インポートフォルダ
@@ -9941,8 +9942,8 @@ forum#:#forums_download_attachment#:#ファイルをダウンロード
 forum#:#forums_edit_draft#:#ドラフトを編集
 forum#:#forums_edit_post#:#記事を編集
 forum#:#forums_enable_notification#:#このトピックの通知を有効
-forum#:#forums_forum_notification#:#Send Forum Notifications###08 10 2024 new variable
-forum#:#forums_forum_notification_desc#:#If enabled, all users, who want to be informed about new posts in specified forum threads, will get notifications by mail.###08 10 2024 new variable
+forum#:#forums_forum_notification#:#掲示板通知を送信
+forum#:#forums_forum_notification_desc#:#有効にすると特定の掲示板内の新しい投稿に関する情報を得たい全ユーザは、メールで通知されます。
 forum#:#forums_forum_notification_disabled#:#この掲示板の新規メッセージは今後通知されません。
 forum#:#forums_info_censor2_post#:#検閲を取り消しますか?
 forum#:#forums_info_censor_post#:#本当にこの記事を非表示にしますか?
@@ -10259,7 +10260,7 @@ grp#:#grp_mail_notification_reg_req_bod2#:#この登録の確認は次へ:
 grp#:#grp_mail_notification_reg_req_sub#:#グループ "%s"参加のリクエスト
 grp#:#grp_mail_notification_reg_sub#:#グループ "%s"へユーザが登録されました
 grp#:#grp_mail_notification_unsub_bod#:#%sはグループ "%s"用にそのメンバーシップをキャンセルしました。
-grp#:#grp_mail_notification_unsub_bod2#:#グループの待ちリスト上に他のメンバーがいる可能性があります。\nすぐに待ちリストをチェックする必要があります。\nグループのメンバーシップを見るには次をクリック
+grp#:#grp_mail_notification_unsub_bod2#:#グループの待ちリスト上に他のメンバーがいる可能性があります。すぐに待ちリストをチェックする必要があります。グループのメンバーシップを見るには次をクリック
 grp#:#grp_mail_notification_unsub_sub#:#ユーザはグループ "%s"から外れました。
 grp#:#grp_mail_permanent_link#:#グループに関する必要なすべての情報を得るには以下のリンクをクリック:
 grp#:#grp_mail_status_bod#:#グループ "%s"のステータスは更新されました。
@@ -10273,9 +10274,9 @@ grp#:#grp_mail_subscribe_member_sub#:#グループ "%s"の登録
 grp#:#grp_mail_tutors_only#:#管理者専用
 grp#:#grp_mail_tutors_only_info#:#管理者のみ"メンバ"タブ内の"メンバへメール"機能を使用できます。
 grp#:#grp_mail_type#:#メンバーへメール
-grp#:#grp_mail_unsubscribe_member_bod#:#グループ %sのメンバーシップのキャンセル確認です。\n別のコースでのご参加をお待ちしています。
+grp#:#grp_mail_unsubscribe_member_bod#:#グループ %sのメンバーシップのキャンセル確認です。別のコースでのご参加をお待ちしています。
 grp#:#grp_mail_unsubscribe_member_sub#:#グループ "%s"のメンバーシップのキャンセル
-grp#:#grp_mail_wl_bod#:#グループ "%s"の待ちリストへ割当てられました。\nリスト上の%sの位置です。\n\nリクエストが承認または却下されるとグループ管理者からメッセージを受信します。
+grp#:#grp_mail_wl_bod#:#グループ "%s"の待ちリストへ割当てられました。リスト上の%sの位置です。リクエストが承認または却下されるとグループ管理者からメッセージを受信します。
 grp#:#grp_mail_wl_sub#:#グループ "%s"の登録
 grp#:#grp_map_location#:#グループMapロケーション
 grp#:#grp_map_settings#:#Map設定
@@ -10484,7 +10485,7 @@ irss#:#action_download#:#Download
 irss#:#action_goto#:#リソースを開く
 irss#:#action_remove_resource#:#リソースを削除
 irss#:#action_remove_resource_msg#:#次のリソースを本当に削除しますか?
-irss#:#action_show_revisions#:#改版を表示
+irss#:#action_show_revisions#:#改訂表示
 irss#:#by_creation_date_asc#:#作成日順(昇順)
 irss#:#by_creation_date_desc#:#作成日順 (降順)
 irss#:#by_size_asc#:#ファイルサイズ順 (昇順)
@@ -10496,7 +10497,7 @@ irss#:#file_size#:#ファイルサイズ (このバージョン)
 irss#:#file_size_bigger_than#:#ファイルサイズ > MB
 irss#:#full_size#:#リソースサイズ(全バージョン)
 irss#:#max_revision#:#Max. Revision
-irss#:#msg_upload#:#アップロードにファイルを取り消し
+irss#:#msg_upload#:#アップロードするにはファイルをドロップ
 irss#:#resource_id#:#リソースID
 irss#:#resource_no_stakeholder_uri#:#このリソースに使用する有効なリンクを提供するステークホルダーがありません。
 irss#:#resource_overview#:#リソース概略
@@ -10544,8 +10545,8 @@ itgr#:#itgr_show_title_info#:#学習者用のプレゼンテーション内に�
 itgr#:#itgr_tile#:#Tiles
 itgr#:#itgr_tile_size#:#Tile Size
 jscalendar#:#about_calendar#:#カレンダーについて
-jscalendar#:#about_calendar_long#:#DHTML Date/Time Selector\n(c) dynarch.com 2002-2003\n。最新版のURL：http://dynarch.com/mishoo/calendar.epl\n GNU LGPLの下に配布。詳細はhttp://gnu.org/licenses/lgpl.html を参照の事。\n\n日付選択:\n-年を選択するには^A<と^A>ボタンを使用\n-月を選択するには<
-jscalendar#:#about_time#:#\n\nタイムセッション：\n- 増やすにはどこかをクリック\n- 減らすにはShiftをクリック\n- すばやく選択するにはクリックしてドラッグ
+jscalendar#:#about_calendar_long#:#DHTML Date/Time Selector(c) dynarch.com 2002-2003。最新版のURL：http://dynarch.com/mishoo/calendar.epl GNU LGPLの下に配布。詳細はhttp://gnu.org/licenses/lgpl.html を参照の事。日付選択:-年を選択するには^A<と^A>ボタンを使用-月を選択するには<
+jscalendar#:#about_time#:#タイムセッション：- 増やすにはどこかをクリック- 減らすにはShiftをクリック- すばやく選択するにはクリックしてドラッグ
 jscalendar#:#close#:#閉じる
 jscalendar#:#day_first#:#%sを先に表示
 jscalendar#:#def_date_format#:#%Y-%m-%d
@@ -10767,7 +10768,7 @@ ldoc#:#ldoc_form_edit_doc_head#:#ドキュメントを編集
 ldoc#:#ldoc_form_new_doc_head#:#ドキュメントを作成
 ldoc#:#ldoc_last_modified#:#最終変更
 ldoc#:#ldoc_ldoc_settings#:#設定
-ldoc#:#ldoc_order_invalid#:#Please enter a number for the order###14 01 2025 new variable
+ldoc#:#ldoc_order_invalid#:#オーダー番号を入力してください。
 ldoc#:#ldoc_period#:#期間
 ldoc#:#ldoc_period_from#:#From
 ldoc#:#ldoc_period_until#:#いつまで
@@ -10901,7 +10902,7 @@ lso#:#lso_mail_notification_reg_req_bod2#:#この登録を確認するにはこ�
 lso#:#lso_mail_notification_reg_req_sub#:#学習シーケンス"%s"のジョインを要求
 lso#:#lso_mail_notification_reg_sub#:#ユーザは学習シーケンス"%s"を登録しました。
 lso#:#lso_mail_notification_unsub_bod#:#%sは学習シーケンス"%s"のメンバーシップをキャンセルしました。
-lso#:#lso_mail_notification_unsub_bod2#:#学習シーケンスの待ちリストに他のメンバーがいる可能性があります。\nすぐに待ちリストを確認すべきです。\n学習シーケンスのメンバーを表示するにはここをクリック:
+lso#:#lso_mail_notification_unsub_bod2#:#学習シーケンスの待ちリストに他のメンバーがいる可能性があります。すぐに待ちリストを確認すべきです。学習シーケンスのメンバーを表示するにはここをクリック:
 lso#:#lso_mail_notification_unsub_sub#:#ユーザは学習シーケンス"%s"を離れました。
 lso#:#lso_mail_permanent_link#:#あなたの学習シーケンスに関する必要なすべての情報見つけるには次のリンクをクリック。
 lso#:#lso_mail_status_bod#:#学習シーケンス"%s"内のステータスは変更されました。
@@ -10912,9 +10913,9 @@ lso#:#lso_mail_sub_dec_bod#:#残念ながら学習シーケンス"%s"の登録�
 lso#:#lso_mail_sub_dec_sub#:#学習シーケンス"%s"の登録を拒否しました。
 lso#:#lso_mail_subscribe_member_bod#:#学習シーケンス"%s"の登録が確認されたことを案内します。
 lso#:#lso_mail_subscribe_member_sub#:#学習シーケンス"%s"の登録
-lso#:#lso_mail_unsubscribe_member_bod#:#学習シーケンス"%s"のメンバーシップキャンセルを確認します。\nもう一つの学習シーケンスへ参加する機会が見つかるように期待します。
+lso#:#lso_mail_unsubscribe_member_bod#:#学習シーケンス"%s"のメンバーシップキャンセルを確認します。もう一つの学習シーケンスへ参加する機会が見つかるように期待します。
 lso#:#lso_mail_unsubscribe_member_sub#:#学習シーケンス"%s"内のメンバーシップキャンセル
-lso#:#lso_mail_wl_bod#:#学習シーケンス"%s"の待ちリストへ割当てられました。\nリストの%sポジションへ割当てられました。\n\nリクエストが承認または拒否されると学習シーケンス管理者からメッセージを受信します。
+lso#:#lso_mail_wl_bod#:#学習シーケンス"%s"の待ちリストへ割当てられました。リストの%sポジションへ割当てられました。リクエストが承認または拒否されると学習シーケンス管理者からメッセージを受信します。
 lso#:#lso_mail_wl_sub#:#学習シーケンス"%s"の登録
 lso#:#lso_mainbar_button_label_curriculum#:#カリキュラム
 lso#:#lso_mainbar_button_label_toc#:#コンテンツ
@@ -11479,12 +11480,12 @@ mail#:#mail_smtp_user#:#ユーザ
 mail#:#mail_subject_prefix#:#メール件名
 mail#:#mail_subject_prefix_info#:#自動生成される発信メール件名の行の部分へ挿入するテキストを入力します。
 mail#:#mail_subject_too_long#:#件名が長すぎます。
-mail#:#mail_success_removed_user#:#User(s) successfully removed from mailing list.###08 10 2024 new variable
+mail#:#mail_success_removed_user#:#メーリングリストから正しくユーザが削除されました。
 mail#:#mail_sure_delete#:#本当にマークされたメールを削除しますか?
 mail#:#mail_sure_delete_entry#:#本当に次のエントリーを削除しますか?
 mail#:#mail_sure_delete_file#:#ファイルは完全に削除されます
 mail#:#mail_sure_delete_folder#:#フォルダとそのコンテンツは完全に削除されます
-mail#:#mail_sure_remove_user#:#Are you sure you want to remove the following user(s) from the members list?###08 10 2024 new variable
+mail#:#mail_sure_remove_user#:#メンバーから次のユーザを本当に削除しますか?
 mail#:#mail_system_sys_env_from_addr#:#テクニカル送信者
 mail#:#mail_system_sys_env_from_addr_info#:#このフィールドを空にしておくとSMTP転送が有効の場合に送信者のemailアドレスが使用されます。そうでなければ、管理者責任でこの値を構成することです。
 mail#:#mail_system_sys_from_addr#:#送信者email(From)
@@ -11508,9 +11509,9 @@ mail#:#mail_template_missing_id#:#TextテンプレートIDがないのでアク�
 mail#:#mail_template_no_context_available#:#コンテキストはILIASのサービスやモジュールから提供されません。よってテキストテンプレートの作成や編集はできません。
 mail#:#mail_template_no_valid_context#:#入力されたコンテキストは有効ではありません。
 mail#:#mail_template_orphaned_context#:#孤立したコンテキスト
-mail#:#mail_template_set_as_default#:#Set as Default
+mail#:#mail_template_set_as_default#:#Defaul設定
 mail#:#mail_template_title#:#名前
-mail#:#mail_template_unset_as_default#:#Unset as Default
+mail#:#mail_template_unset_as_default#:#デフォルトステータスを削除
 mail#:#mail_templates#:#Textテンプレート
 mail#:#mail_threshold#:#スレッショールド
 mail#:#mail_threshold_info#:#ここで定義されたスレッショールド値よりも古い内部メッセージは削除されます。(既存の添付の可能性を含みます) <br>このクローンjobの最初の実行中は警告待ちとして最初にメール送信ができないために大量のメッセージが削除されます。
@@ -11611,7 +11612,7 @@ mcst#:#mcst_converted_file#:#ファイルは変換されました。
 mcst#:#mcst_copy#:#メディアキャストをコピー
 mcst#:#mcst_current_value_info#:#この形式の現在の値を表示します。
 mcst#:#mcst_default_visibility#:#アクセス初期設定
-mcst#:#mcst_det_playtime#:#再生時間を決定します
+mcst#:#mcst_det_playtime#:#再生時間を決定
 mcst#:#mcst_download_all#:#全てをダウンロード
 mcst#:#mcst_download_audioportable#:#ポータブルオーディオをダウンロードします
 mcst#:#mcst_download_cnt#:#ダウンロードしました
@@ -11826,12 +11827,12 @@ meta#:#md_copyright_full_name#:#Full Name
 meta#:#md_copyright_image#:#Image
 meta#:#md_copyright_image_file#:#File
 meta#:#md_copyright_image_is_file#:#Upload File
-meta#:#md_copyright_image_is_link#:#URLwo
-meta#:#md_copyright_image_link#:#URLを入力
+meta#:#md_copyright_image_is_link#:#URLを入力
+meta#:#md_copyright_image_link#:#URL
 meta#:#md_copyright_link#:#URL
 meta#:#md_copyright_link_info#:#ライセンスへのリンク
-meta#:#md_copyright_preview#:#著作権(プレビュー)
-meta#:#md_copyright_selection#:#著作権初期値
+meta#:#md_copyright_preview#:#Copyright (Preview)
+meta#:#md_copyright_selection#:#利用可能な著作権
 meta#:#md_copyright_settings#:#著作権設定
 meta#:#md_copyright_value#:#著作権
 meta#:#md_copyrights_deleted#:#著作権が削除されました
@@ -11846,7 +11847,7 @@ meta#:#md_record_export_table#:#エクスポート ファイル
 meta#:#md_record_list_table#:#利用可能なメタデータセット
 meta#:#md_separated_by#:#%sで区切る
 meta#:#md_time#:#時間
-meta#:#md_used#:#利用
+meta#:#md_used#:#現在の利用状況
 meta#:#meta_1#:#1
 meta#:#meta_2#:#2
 meta#:#meta_3#:#3
@@ -12137,12 +12138,12 @@ meta#:#meta_copyright_and_other_restrictions#:#著作権およびその他の制
 meta#:#meta_copyright_change_info#:#このコンテンツに割当てられたライセンスを変更しようとしています。これはcopyrightオーナーのみに認められたものです。これまで使用していたものより制限の少ない新しいライセンスに限定して利用を継続してください。
 meta#:#meta_copyright_change_warning_title#:#Copyright設定の変更
 meta#:#meta_copyright_in_use#:#使用中
-meta#:#meta_copyright_outdated#:#旧
+meta#:#meta_copyright_outdated#:#旧 / 使用不可
 meta#:#meta_copyright_outdated_error#:#選択のCopyrightは期限が切れていて使用されていません。
-meta#:#meta_copyright_show_usages#:#利用を表示
+meta#:#meta_copyright_show_usages#:#使用中を表示
 meta#:#meta_copyright_status#:#Status
 meta#:#meta_copyright_sub_items#:#Sub Items
-meta#:#meta_copyright_usage#:#利用率
+meta#:#meta_copyright_usage#:#利用状況
 meta#:#meta_cost#:#原価
 meta#:#meta_coverage#:#適用範囲
 meta#:#meta_coverage_plural#:#範囲
@@ -12201,7 +12202,7 @@ meta#:#meta_higher_education#:#高度教育
 meta#:#meta_id#:#ID
 meta#:#meta_idea#:#アイデア
 meta#:#meta_identifier#:#識別子
-meta#:#meta_identifier_plural#:#識別し
+meta#:#meta_identifier_plural#:#識別子
 meta#:#meta_index#:#Index
 meta#:#meta_info_only_repository_objects#:#リポジトリオブジェクト(メディアオブジェクトもLMページもない)のみが以下へリストされます。
 meta#:#meta_initiator#:#創始者
@@ -12429,7 +12430,7 @@ meta#:#meta_resource#:#リソース
 meta#:#meta_revised#:#改訂
 meta#:#meta_rights#:#権利
 meta#:#meta_role#:#役割
-meta#:#meta_save_order#:#Save Order
+meta#:#meta_save_order#:#順番を保存
 meta#:#meta_school#:#スクール
 meta#:#meta_scriptwriter#:#脚本家
 meta#:#meta_second_author#:#第二著者
@@ -12790,7 +12791,7 @@ noti#:#noti_notification_deactivated#:#通知を解除しました
 notifications_adm#:#enable_osd#:#オンスクリーン通知を有効化
 notifications_adm#:#enable_osd_desc#:#有効にすると新しい通知についてユーザはポップアップ通知されます。
 notifications_adm#:#notification_settings#:#通知設定
-notifications_adm#:#osd_error_refresh_interval_too_small#:#リフレッシュ間隔は3000ミリ秒以上にする必要があります。
+notifications_adm#:#osd_error_refresh_interval_too_small#:#The Refresh Interval has to be at least than 3000 miliseconds.###27 05 2025 new variable
 notifications_adm#:#osd_interval#:#リフレッシュ間隔
 notifications_adm#:#osd_interval_desc#:#ミリ秒内の新規通知チエック用のポーリング間隔。低い数字がユーザへ素早く通知されますが、Webサーバが処理する要求数の増加につながります。
 notifications_adm#:#osd_play_sound#:#音を再生
@@ -12808,7 +12809,7 @@ obj#:#copy_container_page_yes_label#:#コンテンツページをコピー
 obj#:#custom_icon#:#カスタムアイコン
 obj#:#edit_availability_period#:#アベイラビリティ期間
 obj#:#edit_questions#:#問題編集
-obj#:#multiple_reference_deletion_info#:#Further references exist for the following objects.###01 04 2025 new variable
+obj#:#multiple_reference_deletion_info#:#次のオブエクトにはさらに参考資料が存在します。
 obj#:#no_objects_selected#:#オブジェクトを一つは選択する必要があります。
 obj#:#obj_activate_content_lang#:#ページ編集用の翻訳を有効化
 obj#:#obj_activate_multilang#:#多言語機能を有効化
@@ -12845,7 +12846,7 @@ obj#:#obj_show_header_actions#:#Header Actionsを表示
 obj#:#obj_show_title_and_icon#:#タイトルとアイコンを表示
 obj#:#obj_target_location#:#目標場所
 obj#:#obj_tile_image#:#タイルイメージ
-obj#:#obj_tile_image_info#:#コンテナ(コース、フォルダー、グループ….)がタイル形式表示を有効にした場合、タイルイメージが使用されます。
+obj#:#obj_tile_image_info#:#この画像はサムネイルスタイルイメージ(通称タイトル)として配置されているコンテナ内のこのオブジェクト表示(例:カテゴリ、フォルダーグループ等)のために使用されます。タイトルは現在のコンテナ設定が'コンテンツ表示オプション'を('リスト'ではなく）'タイル'にした場合のみ使用されます。
 obj#:#obj_tool_booking#:#リソース
 obj#:#obj_tool_booking_info#:#リソースを予約するには予約集を使用
 obj#:#obj_tool_ext_mail_subject_prefix#:#Mail Subject Prefix
@@ -12864,7 +12865,7 @@ obj#:#obj_tool_setting_skills_info#:#能力管理とメンバーへの能力割�
 obj#:#obj_tool_setting_tag_cloud#:#クラウドをタグ
 obj#:#obj_tool_setting_tag_cloud_info#:# "クラウドをタグ" ブロックは"コンテンツ"タブの内側へ表示されます。
 obj#:#obj_tool_setting_taxonomies#:#分類
-obj#:#obj_tool_setting_taxonomies_info#:#Taxonomies allow the filtering of objects. They are created in the "Taxonomy" sub-tab in the "Settings" tab.###10 12 2024 new variable
+obj#:#obj_tool_setting_taxonomies_info#:#分類はオブジェクトをフィルタします。”設定タブ"内の”分類”サブタブ内に作成されます。
 obj#:#obj_tool_setting_use_news#:#ニュース
 obj#:#obj_tool_setting_use_news_info#:#ニュースブロックそうでなければタイムライン表示を有効にする
 obj#:#obj_tool_setting_use_news_open_settings#:#設定を開く
@@ -13032,7 +13033,7 @@ pd#:#pd_ongoing#:#継続中
 pd#:#pd_personal_items_default_view#:#表示初期設定
 pd#:#pd_personal_items_default_view_info#:#パーソナルアイテムの好みの表示を選択します。
 pd#:#pd_presentation_mode_list#:#アイテムリスト形式表示
-pd#:#pd_presentation_mode_tile#:#タイトル形式表示
+pd#:#pd_presentation_mode_tile#:#タイル形式表示
 pd#:#pd_private_calendars#:#プライベートカレンダ
 pd#:#pd_profile_data#:#プロファイルデータ
 pd#:#pd_remove_multi_confirm#:#オブジェクトは削除されました。
@@ -13207,7 +13208,7 @@ prg#:#pc_prgstatus_unlimited_validation#:#期間無期限有効
 prg#:#percentage#:#%
 prg#:#prg_access_by_orgu#:#Organisation Unit Positionのアクセスコントロール
 prg#:#prg_access_by_orgu_byline#:#有効にすると、追加アクセスコントロールルールがorganisational unitにより定義されます。
-prg#:#prg_acknowledge_all_completed_courses#:#Acknowledge All Completed Courses###10 12 2024 new variable
+prg#:#prg_acknowledge_all_completed_courses#:#全て完了したコースを確認
 prg#:#prg_acknowledge_completed_courses#:#完了したコースの確認
 prg#:#prg_add#:#学習プログラムを追加
 prg#:#prg_added_course_ref_successful#:#新しいコースレファレンスが正しく削除されました。
@@ -13497,7 +13498,7 @@ prtf#:#prtf_exercise_submitted_info#:#最後の提出は%sです。エクスポ�
 prtf#:#prtf_existing_portfolio#:#既存のポートフォリオ
 prtf#:#prtf_finalize_portfolio#:#完了してポートフォリオを提出する
 prtf#:#prtf_finalized#:#ポートフォリオは提出されました。
-prtf#:#prtf_first_page_title#:#最初のページのタイトル
+prtf#:#prtf_first_page_title#:#最初のページのタイプ
 prtf#:#prtf_has_been_set_online#:#ポ－トフォリオはオンラインに設定されました。
 prtf#:#prtf_link#:#リンク
 prtf#:#prtf_manage_portfolios#:#ポートフォリオを管理
@@ -13584,7 +13585,7 @@ ps#:#crs_ps_cdf_info#:#今後のコース別データ
 ps#:#crs_ps_required_info#:#今後のコース別フィールドはコースコンテンツへのアスセスに必要です。
 ps#:#grp_ps_cdf_info#:#今後のグループ別データ
 ps#:#grp_ps_required_info#:#今後のグループ別フィールドはグループコンテンツへのアスセスに必要です。
-ps#:#ps_agreement_accepted#:#利用条件を許諾しました
+ps#:#ps_agreement_accepted#:#利用規約を許諾しました
 ps#:#ps_auto_https#:#HTTPSを自動検知
 ps#:#ps_auto_https_description#:#有効にすると、ILIASは下記に示すヘッダー値を分析してHTTPsステータスを検知しようとします。
 ps#:#ps_auto_https_header_name#:#ヘッダー名
@@ -13614,7 +13615,7 @@ ps#:#ps_error_message_invalid_password_min_length#:#最小パスワードサイ�
 ps#:#ps_error_message_password_max_less_min#:#最大パスワードサイズが最少パスワードサイズ未満のことがあります。
 ps#:#ps_error_message_password_min1_because_chars#:#最小パスワードサイズが%s以下でない可能性があります。
 ps#:#ps_error_message_password_min2_because_chars_numbers#:#パスワードが文字と数字の場合に最少パスワードサイズが %s 未満のことがあります。
-ps#:#ps_error_message_password_min3_because_chars_numbers_sc#:#パスワードが文字と数字と特殊文字の場合に最少パスワードサイズが %s 未満のことがあります。。
+ps#:#ps_error_message_password_min3_because_chars_numbers_sc#:#パスワードが文字と数字と特殊文字の場合に最少パスワードサイズが %s 未満のことがあります。
 ps#:#ps_export_admin#:#管理者
 ps#:#ps_export_confirm#:#コース参加時のユーザ確認
 ps#:#ps_export_confirm_group#:#グループ参加時のユーザ確認
@@ -13677,17 +13678,17 @@ ps#:#show_privacy#:#プライバシー
 ps#:#show_security#:#セキュリティ
 pwassist#:#password_assistance#:#パスワード支援
 pwassist#:#pwassist_disabled_no_access#:#パスワード支援が有効になっていません。以降の支援:についてはシステム管理者へコンタクトしてください。%s:
-pwassist#:#pwassist_enter_email#:#メールアドレスに入力してフォームを送信するとそのアドレスへメールを送ります。\nメールにはそのメールアドレスに登録されている全てのユーザ名が含まれます。\n適切なユーザ名を選択しパスワードサービスを利用して新しいパスワードを検索します。このサービスによる一切のメール検索をしないようにするにはコース管理者もしくは%1$sへ連絡してください。
-pwassist#:#pwassist_enter_username_and_email#:#以下の欄へユーザ名と関係するe-mailアドレスを入力します。\nILIASはそのe-mailアドレスへメッセージを送ります。メッセージにはユーザアカウント用の新しいパスワードを入力ができるwebページのアドレスが含まれています。\nlnこのフォームを使ってユーザアカウントのパスワード設定ができない場合はコース管理者へ連絡するかまたは%1$sへメール連絡してください。
+pwassist#:#pwassist_enter_email#:#メールアドレスに入力してフォームを送信するとそのアドレスへメールを送ります。メールにはそのメールアドレスに登録されている全てのユーザ名が含まれます。適切なユーザ名を選択しパスワードサービスを利用して新しいパスワードを検索します。このサービスによる一切のメール検索をしないようにするにはコース管理者もしくは%1$sへ連絡してください。
+pwassist#:#pwassist_enter_username_and_email#:#以下の欄へユーザ名と関係するe-mailアドレスを入力します。ILIASはそのe-mailアドレスへメッセージを送ります。メッセージにはユーザアカウント用の新しいパスワードを入力ができるwebページのアドレスが含まれています。lnこのフォームを使ってユーザアカウントのパスワード設定ができない場合はコース管理者へ連絡するかまたは%1$sへメール連絡してください。
 pwassist#:#pwassist_enter_username_and_new_password#:#以下の欄へユーザ名と新しいパスワードを入力します。
-pwassist#:#pwassist_login_not_match#:#別のユーザ名を入力してください。\n入力されたユーザ名はパスワード支援用の質問の設定と一致しません。
-pwassist#:#pwassist_mail_body#:#ユーザアカウントの新しいパスワード登録を行います:\n\t%1$s\n\nこのメッセージはILIASサーバ\n\t%2$s\n\nが自動生成したものです。\nあなた(もしくは%3$sのだれか）がユーザアカウント"%4$s"用の新しいパスワードを要求しました。\n\n以下に示された条件を十分確認の上で順次進んでください:\n\n- 誤ってILIASサーバのパスワード支援フォームを送った場合:\nこのメールを破棄してください。\n\n- このILIASサーバのパスワード支援利用に心当たりがない場合:\n %5$s\n\nへ連絡してください。 \n-パスワード支援を要求した場合は次の手順で進みます:\n\n1. ブラウザを開きます。\n\n2. ブラウザに次のアドレスを入力します:\n\t%6$s\n\n重要: アドレスは1行です。アドレスが複数行に分割される場合はご利用のメーラが分割行を自動挿入しています。\n\n3. ブラウザに表示されるWebページにユーザアカウントの新しいパスワードを入力します。\n\nセキュリティ上の理由により、上記の3ステップを同時に制限時間内にまとめて実行する必要があります。\n一定時間を過ぎるとアドレスは無効となるので、再度ILIASサーバのパスワード支援のページを使用する必要があります。
-pwassist#:#pwassist_mail_sent#:#メッセージが %1$sへ送信されました。\nメールボックスをチェックしてください。
-pwassist#:#pwassist_mail_sent_generic#:#メッセージはILIASに設定されているemailアドレスへ送信されました。\nメールボックスを確認してください。
+pwassist#:#pwassist_login_not_match#:#別のユーザ名を入力してください。入力されたユーザ名はパスワード支援用の質問の設定と一致しません。
+pwassist#:#pwassist_mail_body#:#ユーザアカウントの新しいパスワード登録を行います:\t%1$sこのメッセージはILIASサーバ\t%2$sが自動生成したものです。あなた(もしくは%3$sのだれか）がユーザアカウント"%4$s"用の新しいパスワードを要求しました。以下に示された条件を十分確認の上で順次進んでください:- 誤ってILIASサーバのパスワード支援フォームを送った場合:このメールを破棄してください。- このILIASサーバのパスワード支援利用に心当たりがない場合: %5$sへ連絡してください。 -パスワード支援を要求した場合は次の手順で進みます:1. ブラウザを開きます。2. ブラウザに次のアドレスを入力します:\t%6$s重要: アドレスは1行です。アドレスが複数行に分割される場合はご利用のメーラが分割行を自動挿入しています。3. ブラウザに表示されるWebページにユーザアカウントの新しいパスワードを入力します。セキュリティ上の理由により、上記の3ステップを同時に制限時間内にまとめて実行する必要があります。一定時間を過ぎるとアドレスは無効となるので、再度ILIASサーバのパスワード支援のページを使用する必要があります。
+pwassist#:#pwassist_mail_sent#:#入力されたユーザ名とメールアドレスのアカウントが見つかるとメッセージが %1$sへ送信されます。以降の情報はメールボックスをチェックしてください。
+pwassist#:#pwassist_mail_sent_generic#:#メッセージはILIASに設定されているemailアドレスへ送信されました。メールボックスを確認してください。
 pwassist#:#pwassist_mail_subject#:#ILIAS パスワード支援
 pwassist#:#pwassist_password_assigned#:#パスワードは、正しくユーザ "%1$s"へ割当てられました。
-pwassist#:#pwassist_session_expired#:#再度フォームへ入力してください.\nパスワード支援のセッションは切れました。メール送信されたリンクを1回でも使用した場合やリンクが送信されてから一定時間過ぎたような場合に発生します。
-pwassist#:#pwassist_username_mail_body#:#これらはe-mailアドレス用に見つかったアクティブなユーザ名です。:\n%s\n\nこのメッセージは自動的に次のILIAS作成したものです:\n\t%s\n\nあなた(もしくはIP %sのだれか)はe-mailアドレス'%s'用のユーザ名忘れのサポートを要求しました。\n\n次をチェックして候補として実行してください。::\n\n-誤ってこのe-mailを要求しました。:\nこのe-mailを削除.\n\n-このe-mailを要求したことがないのは間違いありません:\n%sへ連絡してください。\n\n-このe-maiを要求するには、次のように進めてください。::\n\n1. ブラウザを開始。\n\n2。次のURLを入力:\n\t%s\n\n重要: アドレスは1行です。アドレスが数行へ分かれる場合はe-mailアプリケーションが改行を挿入しています。\n\n3ブラウザは現在パスワードサービスを表示しています。新しいパスワードを受領するにはユーザ名かe-mailアドレスのどちらか一つとこのページと合わせて使用します。
+pwassist#:#pwassist_session_expired#:#再度フォームへ入力してください.パスワード支援のセッションは切れました。メール送信されたリンクを1回でも使用した場合やリンクが送信されてから一定時間過ぎたような場合に発生します。
+pwassist#:#pwassist_username_mail_body#:#これらは登録されたe-mailアドレス :%s に見つかったアクティブなユーザ名です。<br><br>このメッセージは自動的に次のILIAS :%s が自動作成したものです。<br><br>あなた(もしくはIP %sのだれか)がe-mailアドレス'%s'のユーザ名忘れのサポートを要求しました。次をチェックして対応を実行してください:<br><br> •間違ってメールを送信した:このメールを削除<br><br>• メールを要求したことはない:%sへ連絡してください。<br><br>• メールを要求した場合は次を実行してください:<br>1. インターネットブラウザを開始。<br>2.次のURL:%<br>を入力<br>Important: アドレスは1行にする事。アドレスが複数行に分離していると、メールプログラムは改行を挿入します。<br>3. ブラウザにはパスワードサービスが表示されます。このページは新しいパスワードに関係するユーザ名と相当するメールアドレスと合わせて使用する事。
 pwassist#:#unassist_disabled_no_access#:#ユーザ名支援が有効になっていません。以降の支援:についてはシステム管理者へコンタクトしてください。%s:
 pwsp#:#pwsp_enable_personal_resources#:#パーソナルリソースを有効化
 pwsp#:#pwsp_enable_wsp_blogs#:#ブログを有効化
@@ -13841,7 +13842,7 @@ rbac#:#chtr_moderate#:#ユーザはチャットルームの討議議長ができ
 rbac#:#chtr_read#:#ユーザはチャットルームへの参加と入室ができます
 rbac#:#chtr_visible#:#チャットルームを表示
 rbac#:#chtr_write#:#ユーザはチャットルーム設定と禁止ユーザの編集ができます
-rbac#:#cmis_edit_permission#:#User can change permission settings of xAPI/cmi5 administration.###01 04 2025 new variable
+rbac#:#cmis_edit_permission#:#User can change permission settings of xAPI/cmi5 administration.###27 05 2025 new variable
 rbac#:#cmis_read#:#ユーザはxAPI/cmi5管理の読込みアクセス権があります。
 rbac#:#cmis_visible#:#xAPI/cmi5が表示されます。
 rbac#:#cmis_write#:#ユーザはxAPI/cmi5管理の設定を編集できます。
@@ -13913,15 +13914,19 @@ rbac#:#dcl_write#:#ユーザは設定とデータ収集内容の編集ができ�
 rbac#:#delete_files#:#ファイルを削除
 rbac#:#delete_folders#:#フォルダを削除
 rbac#:#delete_wiki_pages#:#ページを削除
-rbac#:#dpro_edit_permission#:#User can change permission settings in the Declaration of Data Protected administration###01 04 2025 new variable
-rbac#:#dpro_read#:#User has read access to the Declaration of Data Protection administration###01 04 2025 new variable
-rbac#:#dpro_visible#:#Declaration of Data Protection administration is visible###01 04 2025 new variable
-rbac#:#dpro_write#:#Edit settings in the Declaration of Data Protection###01 04 2025 new variable
-rbac#:#dshs_change_presentation#:#ダッシュボードビューのプレゼンテーションを変更
+rbac#:#dpro_edit_permission#:#User can change permission settings in the Declaration of Data Protected administration###27 05 2025 new variable
+rbac#:#dpro_read#:#User has read access to the Declaration of Data Protection administration###27 05 2025 new variable
+rbac#:#dpro_visible#:#Declaration of Data Protection administration is visible###27 05 2025 new variable
+rbac#:#dpro_write#:#Edit settings in the Declaration of Data Protection###27 05 2025 new variable
+rbac#:#dshs_change_presentation#:#ダッシュボード表示のアクセス権を変更
+rbac#:#dshs_edit_permission#:#ユーザはダッシュボード管理のアクセス権設定変更ができます。
 rbac#:#dshs_edit_permission#:#ユーザはダッシュボード管理設定のアクセス権を変更できます
+rbac#:#dshs_read#:#ユーザはダッシュボード管理の読み取りアクセス権があります。
 rbac#:#dshs_read#:#ユーザはダッシュボード管理の読込アクセス権があります
 rbac#:#dshs_visible#:#Dashboard管理を表示します
+rbac#:#dshs_visible#:#ダッシュボード管理を表示
 rbac#:#dshs_write#:#Dashboard 管理の編集設定
+rbac#:#dshs_write#:#ダッシュボード管理設定を編集
 rbac#:#ecss_edit_permission#:#ユーザはECS管理のアクセス権設定を編集できます
 rbac#:#ecss_read#:#ユーザはECS設定全般を読込む事ができます
 rbac#:#ecss_visible#:#ECS設定を表示
@@ -13998,11 +14003,11 @@ rbac#:#frm_add_reply#:#ユーザは投稿へ返信する事ができます
 rbac#:#frm_add_thread#:#ユーザは新しいトピックを追加できます
 rbac#:#frm_copy#:#ユーザは掲示板をコピーできます
 rbac#:#frm_delete#:#ユーザは掲示板を移動または削除できます
-rbac#:#frm_edit_learning_progress#:#User can edit learning progress settings###14 01 2025 new variable
+rbac#:#frm_edit_learning_progress#:#ユーザは学習進捗設定を編集できます。
 rbac#:#frm_edit_permission#:#ユーザはアクセス権設定を変更できます
 rbac#:#frm_moderate_frm#:#ユーザは投稿を編集、検閲または削除できます
 rbac#:#frm_read#:#ユーザは掲示板内容を読込む事ができます
-rbac#:#frm_read_learning_progress#:#User can view learning progress of other users###14 01 2025 new variable
+rbac#:#frm_read_learning_progress#:#ユーザは他のユーザの学習進捗を表示できます。
 rbac#:#frm_visible#:#掲示板を表示
 rbac#:#frm_write#:#ユーザは掲示板設定とモデレータを編集できます
 rbac#:#frma_edit_permission#:#ユーザは掲示板管理のアクセス権設定を変更できます
@@ -14065,10 +14070,10 @@ rbac#:#il_lti_global_role#:#LTI User
 rbac#:#il_sess_participant#:#セッション参加者
 rbac#:#il_sess_status_closed#:#非参加者限定セッション
 rbac#:#ilias_id#:#ILIAS-ID
-rbac#:#impr_edit_permission#:#User can change permission settings of Legal Notice administration###01 04 2025 new variable
-rbac#:#impr_read#:#User can read in Legal Notice administration###01 04 2025 new variable
-rbac#:#impr_visible#:#Administration of Legal Notice is visible###01 04 2025 new variable
-rbac#:#impr_write#:#User can edit content and settings of Legal Notice###01 04 2025 new variable
+rbac#:#impr_edit_permission#:#User can change permission settings of Legal Notice administration###27 05 2025 new variable
+rbac#:#impr_read#:#User can read in Legal Notice administration###27 05 2025 new variable
+rbac#:#impr_visible#:#Administration of Legal Notice is visible###27 05 2025 new variable
+rbac#:#impr_write#:#User can edit content and settings of Legal Notice###27 05 2025 new variable
 rbac#:#info_user_view_changed#:#ユーザ表示の変更
 rbac#:#internal_mail#:#内部メール
 rbac#:#invite#:#サーベイへ招待
@@ -14116,7 +14121,7 @@ rbac#:#lso_read_learning_progress#:#ユーザは他のユーザの学習進捗�
 rbac#:#lso_unparticipate#:#ユーザは学習シーケンスを購読解除できます
 rbac#:#lso_visible#:#学習シーケンスを表示します。
 rbac#:#lso_write#:#ユーザは学習シーケンスの設定を変更できます
-rbac#:#lsos_edit_permission#:#User can change permission settings of Learning Sequences administration.###01 04 2025 new variable
+rbac#:#lsos_edit_permission#:#User can change permission settings of Learning Sequences administration.###27 05 2025 new variable
 rbac#:#lsos_read#:#ユーザはLearning Sequenceの読込みアクセス権があります。
 rbac#:#lsos_visible#:#Learning Sequence管理が表示されます。
 rbac#:#lsos_write#:#ユーザはLearning Sequence管理の設定を編集できます。
@@ -14172,17 +14177,21 @@ rbac#:#mme_edit_permission#:#ユーザはメインメニュ管理のアクセス
 rbac#:#mme_read#:#ユーザはメインメニュの管理へ読み込みアクセス権があります
 rbac#:#mme_visible#:#メインメニュー管理を表示します
 rbac#:#mme_write#:#ユーザはメインメニュー管理の設定を変更できます。
+rbac#:#mobs_edit_permission#:#ユーザはメディアオブジェクト/メディア集管理のアクセス権設定変更ができます。
 rbac#:#mobs_edit_permission#:#ユーザはメディアオブジェクト・集管理のアクセス権設定を変更できます
+rbac#:#mobs_read#:#ユーザはメディアオブジェクト/メディア集管理の読込アクセス権があります。
 rbac#:#mobs_read#:#ユーザはメディアオブジェクト・集管理への読込アクセス権があります
+rbac#:#mobs_visible#:#メディアオブジェクト/メディア集管理を表示
 rbac#:#mobs_visible#:#メディアオブジェクト・集管理を表示
+rbac#:#mobs_write#:#ユーザはメディアオブジェクト/メディア集管理の設定変更ができます。
 rbac#:#mobs_write#:#ユーザはメディアオブジェクト・集管理の設定を編集できます
 rbac#:#moderate#:#モデレート
 rbac#:#moderate_frm#:#モデレータ役
 rbac#:#msg_anonymous_cannot_be_assigned#:#匿名は役割を割り当てることができません。
 rbac#:#msg_no_roles_of_type#:#選択したフィルタ設定には利用可能な役割がありません
 rbac#:#news_add_news#:#ニュースを追加
-rbac#:#no_corresponding_roles#:#No corresponding roles could be found.###01 04 2025 new variable
-rbac#:#nots_edit_permission#:#User can change permission settings of Notes administration.###01 04 2025 new variable
+rbac#:#no_corresponding_roles#:#該当する役割が見つかりませんでした。
+rbac#:#nots_edit_permission#:#User can change permission settings of Notes administration.###27 05 2025 new variable
 rbac#:#nots_read#:#ユーザは通知管理の読込みアクセス権があります。
 rbac#:#nots_visible#:#通知管理が表示されます。
 rbac#:#nots_write#:#ユーザは通知管理の設定を編集できます。
@@ -14259,7 +14268,7 @@ rbac#:#prgs_edit_permission#:#学習プログラム管理のアクセス権設�
 rbac#:#prgs_read#:#ユーザは学習プログラム管理へ読み込みアクセス権があります。
 rbac#:#prgs_visible#:#学習プログラム管理が表示されます。
 rbac#:#prgs_write#:#学習；プログラム管理の設定を編集
-rbac#:#prss_edit_permission#:#User can change permission settings of Personal Resources administration.###01 04 2025 new variable
+rbac#:#prss_edit_permission#:#User can change permission settings of Personal Resources administration.###27 05 2025 new variable
 rbac#:#prss_read#:#ユーザはパーソナルリソース管理の読込みアクセス権があります。
 rbac#:#prss_visible#:#パーソナルリソースが表示されます。
 rbac#:#prss_write#:#ユーザはパーソナルリソース管理の設定を編集できます。
@@ -14297,7 +14306,10 @@ rbac#:#rbac_choose_copy_targets#:#選択しているターゲット役割名を�
 rbac#:#rbac_condition_delete_sure#:#次の前提条件を本当に削除しますか?
 rbac#:#rbac_context_global#:#グローバル
 rbac#:#rbac_copy_behaviour#:#コピー設定の役割
+rbac#:#rbac_copy_behaviour_info#:#Transfer Permissions from: %s to: %s###27 05 2025 new variable
 rbac#:#rbac_copy_finished#:#コピーを終了しました。
+rbac#:#rbac_copy_multi_targets#:#%s, %s and %s further Roles selected%s###27 05 2025 new variable
+rbac#:#rbac_copy_no_targets#:#At least one Role must be selected as Target###27 05 2025 new variable
 rbac#:#rbac_copy_role#:#役割をコピー
 rbac#:#rbac_copy_role_add_perm#:#アクセス権を追加
 rbac#:#rbac_copy_role_copy#:#アクセス権をコピー
@@ -14418,6 +14430,7 @@ rbac#:#rbac_role_rights_copy_empty#:#None
 rbac#:#rbac_role_selection#:#役割のタイプ
 rbac#:#rbac_role_title#:#役割タイトル
 rbac#:#rbac_select_copy_targets#:#ターゲットの役割を選択してください
+rbac#:#rbac_select_roles#:#Select Roles###27 05 2025 new variable
 rbac#:#rbac_ud_global#:#ユーザ定義のグローバル役割
 rbac#:#rbac_ud_local#:#ユーザ定義のローカル役割
 rbac#:#rbac_ud_rolt#:#ユーザ定義の役割テンプレート
@@ -14608,7 +14621,7 @@ rbac#:#usrf_read#:#ユーザはユーザ管理の読込アクセス権があり�
 rbac#:#usrf_read_users#:#ユーザはローカルユーザアカウント(ローカル管理)の読込アクセス権があります
 rbac#:#usrf_visible#:#ユーザ管理を表示
 rbac#:#usrf_write#:#ユーザ管理の設定を編集
-rbac#:#wbdv_edit_permission#:#User can change permission settings of WebDAV administration.###01 04 2025 new variable
+rbac#:#wbdv_edit_permission#:#User can change permission settings of WebDAV administration.###27 05 2025 new variable
 rbac#:#wbdv_read#:#ユーザはWebDAV管理の読込みアクセス権があります。
 rbac#:#wbdv_visible#:#WebDAVが表示されます。
 rbac#:#wbdv_write#:#ユーザはWebDAV管理の設定を編集できます。
@@ -14792,7 +14805,7 @@ rep#:#rep_fav_intro2#:#'%s' をクリックして利用可能なもの(例:学�
 rep#:#rep_fav_intro3#:#興味のあるものを見つけた時は簡単にお気に入りへ追加できます。<i>アクション</i> メニュー内から希望のアイテムを選択して "<i>お気に入りへ追加</i>"します。
 rep#:#rep_favourites#:#お気に入り
 rep#:#rep_favourites_info#:#好みによりシングルリポジトリアイテムをユーザはマークできます。好みのリストはアクティブ化できてダッシュボード内とメニュー設定にて構成可能です。
-rep#:#rep_input_not_empty#:#This field must not be empty, please provide a value.###01 04 2025 new variable
+rep#:#rep_input_not_empty#:#このフィールドは空にできないので値を設定してください。
 rep#:#rep_intro#:#リポジトリへようこそ!
 rep#:#rep_intro1#:#このエリアでは全てのユーザ用の学習とワーク用のリソースを作成できます。全てのリソースはカテゴリの中に配置されています。カテゴリにはユーザの組織 （例：部門）、学部構成や学校のクラス編成などを反映する事ができます。
 rep#:#rep_intro2#:#初期構成の構築には3ステップが必要です。
@@ -15620,7 +15633,7 @@ style#:#color_changed_from#:#変更前のカラー:
 style#:#color_changed_to#:#to:
 style#:#color_reset#:#アイコンの色はリセットされました。キャッシング表示されてから変更になるかもしれない事に要注意。ブラウザーキャッシュをクリアする必要があるかもしれません
 style#:#color_update#:#アイコンの色は更新されました。キャッシング表示されてから変更になるかもしれない事に要注意。ブラウザーキャッシュをクリアする必要があるかもしれません。
-style#:#default_style_set_to#:#Defaultのシステムスタイルを設定先:
+style#:#default_style_set_to#:#Defaultのシステムスタイルが設定されました:
 style#:#dir_changed_to#:#デイレクトリは移動されました:
 style#:#dir_copied_from#:#ディレクトリのコピー元:
 style#:#dir_created#:#次のディレクトリが作成されました:
@@ -15730,6 +15743,7 @@ style#:#sty_ca_cntr_class#:#カルーセルコンテナ
 style#:#sty_ca_icntr_class#:#カルーセルアイテムコンテナ
 style#:#sty_ca_icont_class#:#カルーセルアイテムコンテンツ
 style#:#sty_ca_ihead_class#:#カルーセルアイテムヘッダー
+style#:#sty_cannot_be_copied#:#The following style types cannot be copied###27 05 2025 new variable
 style#:#sty_caption#:#見出し
 style#:#sty_caption_class#:#見出し
 style#:#sty_carousel_templates#:#カルーセルテンプレート
@@ -16840,7 +16854,7 @@ tagging#:#tagging_enable_all_users_info#:#リソースへ添付される全ユ�
 tagging#:#tagging_enable_tagging#:#タグ化を有効
 tagging#:#tagging_forbidden_tags#:#隠しタグ
 tagging#:#tagging_no_obj_for_tag#:# %s にはリソースタグがありません。
-tagging#:#tagging_no_perm_write#:#You have no permission to change this data.###10 12 2024 new variable
+tagging#:#tagging_no_perm_write#:#このデータを変更する権限はありません。
 tagging#:#tagging_other_users#:#その他ユーザのタグ
 tagging#:#tagging_resources_for_tag#:#%s でタグ化されたリソース
 tagging#:#tagging_search_users#:#ユーザを検索
@@ -16892,7 +16906,7 @@ tbl#:#tbl_templates#:#表示
 tos#:#tos_accept_usr_agreement_anonymous#:#利用規約
 tos#:#tos_accept_usr_agreement_anonymous_intro#:#ILIASを利用する前に次の利用規約を承諾します。
 tos#:#tos_account_reg_not_possible#:#ユーザ許諾が無いので自己登録はできません。詳細に関しては<a href="%1$s">システム管理者</a>へコンタクトしてください。
-tos#:#tos_agree_date#:#ToS 承諾日
+tos#:#tos_agree_date#:#使用許諾 承諾日
 tos#:#tos_agreement#:#サービス使用許諾
 tos#:#tos_disabled_no_docs_left#:#全てのドキュメントが削除されたのでユーザ許諾書は現在無効です。ユーザ許諾書を再度有効にする前に一つはドキュメントを作成してください。
 tos#:#tos_last_reset_date#:#サービス使用許諾は%sにリセットされました。
@@ -17172,10 +17186,10 @@ tstv#:#tstv_create#:#テスト証明の作成
 tstv#:#tstv_create_info#:#完了したテストを選択して証明書を作成します
 ui#:#datatable_multiaction_label#:#Bulk Actions
 ui#:#datatable_multiactionmodal_actionlabel#:#操作
-ui#:#datatable_multiactionmodal_apply#:#Apply###08 10 2024 new variable
+ui#:#datatable_multiactionmodal_apply#:#適用
 ui#:#datatable_multiactionmodal_listentry#:#全てのオブジェクトへ適用
 ui#:#datatable_multiactionmodal_msg#:#<b>警告!</b> 複数オブジェクトが影響
-ui#:#datatable_multiactionmodal_title#:#複数オブジェクト上の操作
+ui#:#datatable_multiactionmodal_title#:#全テーブル操作
 ui#:#duration_default_label_end#:#終了
 ui#:#duration_default_label_start#:#開始
 ui#:#duration_end_must_not_be_earlier_than_start#:#開始は終了よりも遅くできません。
@@ -17193,9 +17207,9 @@ ui#:#order_option_generic_ascending#:#昇順
 ui#:#order_option_generic_descending#:#降順
 ui#:#order_option_numerical_ascending#:#0 to 9
 ui#:#order_option_numerical_descending#:#9 to 0
-ui#:#presentation_table_collapse#:#全てを崩壊
-ui#:#presentation_table_expand#:#全てを展開
-ui#:#table_posinput_col_title#:#Position###01 04 2025 new variable
+ui#:#presentation_table_collapse#:#全てたたむ
+ui#:#presentation_table_expand#:#全て展開
+ui#:#table_posinput_col_title#:#位置
 ui#:#ui_chars_max#:#Maximum:
 ui#:#ui_chars_min#:#Minimum:
 ui#:#ui_chars_remaining#:#残り文字数:
@@ -17204,7 +17218,7 @@ ui#:#ui_error_switchable_group_required#:#オプションを選択してくだ�
 ui#:#ui_file_input_general_error#:#エラーが発生しました! 詳細情報についてはブラウザーコンソールのJavaScriptのチエックを行い、このインシデントに関してILIASシステム管理者へコンタクトする事ができます。
 ui#:#ui_file_input_invalid_amount#:#この量のファイルをuploadする事はできませんので継続するには一定数を削除して下さい。
 ui#:#ui_file_input_invalid_mime#:#ファイルタイプ '%s' は許可されていません。
-ui#:#ui_file_input_invalid_size#:#ファイルが %s MiB　の最大サイズを超えています。
+ui#:#ui_file_input_invalid_size#:#ファイルサイズが %s の最大値を超えています。
 ui#:#ui_invalid_url#:#無効な URL-format
 ui#:#ui_link_label#:#Label
 ui#:#ui_link_url#:#URL
@@ -17320,7 +17334,7 @@ user#:#user_privacy_checklist#:#プライバシーチェックリスト
 user#:#user_profile_data#:#プロファイルデータ
 user#:#user_profile_data_checked#:#プロファイルデータを確認しました
 user#:#user_profile_info#:#ユーザプロファイルInfo
-user#:#user_profile_info_std#:#Default User Profile Info
+user#:#user_profile_info_std#:#ユーザープロファイル初期値
 user#:#user_profile_info_text_info#:#このテキストはパーソナルデータ入力用のフォームのトップへ表示されます。
 user#:#user_profile_portfolio#:#ポートフォリオをプロファイルに使用したい場合は、プロファイルセクションへ行きそのポートフォリオの'マイプロファイル'を設定します。
 user#:#user_profile_portfolio_selected#:#自分のポートフォリオをポートフォリオとして現在使用しています。'共有'タブを使ってアクティベーションを設定できます。
@@ -17399,7 +17413,7 @@ webr#:#webr_new_list#:#新しいWeblink Listを追加
 webr#:#webr_new_list_info#:#リポジトリ内のこのWeblink Listのプレゼンテーション用にタイトルとオプションの説明を入力してください。
 webr#:#webr_set_to_list#:#Weblink Listを設定
 webr#:#webr_sort_manual#:#手動で並び替え
-webr#:#webr_sort_title#:#タイトルで並び替え
+webr#:#webr_sort_title#:#アルファベット順のタイトルで並び替え
 webr#:#webr_sorting#:#Webリンクで並び替え
 wfld#:#wfld_add#:#フォルダ作成
 wfld#:#wfld_alphabetically_asc#:#アルファベット, asc.
