@@ -34,6 +34,7 @@ class ilObjFolderGUI extends ilContainerGUI
     protected ilHelpGUI $help;
     public ilTree $folder_tree;
     protected StandardGUIRequest $folder_request;
+    protected ilNavigationHistory $navigation_history;
 
     public function __construct(
         $a_data,
@@ -57,6 +58,7 @@ class ilObjFolderGUI extends ilContainerGUI
         $this->type = "fold";
         parent::__construct($a_data, $a_id, $a_call_by_reference, $a_prepare_output);
         $this->lng->loadLanguageModule("obj");
+        $this->navigation_history = $DIC['ilNavigationHistory'];
         $this->folder_request = $DIC
             ->folder()
             ->internal()
@@ -99,15 +101,10 @@ class ilObjFolderGUI extends ilContainerGUI
     {
         global $DIC;
         $ilUser = $this->user;
-        $ilCtrl = $this->ctrl;
-        $access =  $this->access;
-        $nav_history = $DIC["ilNavigationHistory"];
 
         // add entry to navigation history
-        if(!$this->getCreationMode() && $access->checkAccess('read', '', intval($_GET['ref_id'])))
-        {
-            $link = $ilCtrl->getLinkTargetByClass("ilrepositorygui", "frameset");
-            $nav_history->addItem(intval($_GET['ref_id']), $link, 'fold');
+        if (!$this->getCreationMode() && $this->access->checkAccess('read', '', $this->ref_id)) {
+            $this->navigation_history->addItem($this->ref_id, ilLink::_getLink($this->ref_id, "fold"), "fold" );
         }
 
         $next_class = $this->ctrl->getNextClass($this);
