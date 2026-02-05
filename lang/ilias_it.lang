@@ -509,6 +509,7 @@ assessment#:#ass_create_export_file_with_results#:#Crea file di esportazione dei
 assessment#:#ass_create_export_test_archive#:#Crea file archivio dei test
 assessment#:#ass_create_export_test_results#:#Esporta i risultati del test
 assessment#:#ass_create_question#:#Crea domanda
+assessment#:#ass_file_upload_reuse_btn#:#Reuse Selected Files###16 12 2025 new variable
 assessment#:#ass_imap_hint#:#Il suggerimento deve essere mostrato come Descrizione comando
 assessment#:#ass_imap_map_file_not_readable#:#L’immagine caricata della mappa non può essere letta.
 assessment#:#ass_imap_no_map_found#:#Non è possibile trovare alcun modello nell’immagine della mappa caricata.
@@ -648,7 +649,6 @@ assessment#:#errFormulaQuestion#:#Una formula di domanda contiene informazioni e
 assessment#:#errRecursionInResult#:#La formula contiene una ricorsione infinita.
 assessment#:#err_category_in_use#:#Non è possibile eliminare alcuna categoria. Una o più unità di categoria sono ancora in uso.
 assessment#:#err_divider_too_big#:#The divider of one of the variables in this question is too big.###09 03 2022 new variable
-assessment#:#err_divider_too_big_specific#:#The divider of this variable is too big.###04 11 2025 new variable
 assessment#:#err_division#:#This value has to be smaller than the maximum range.###09 03 2022 new variable
 assessment#:#err_duplicate_results#:#È stata utilizzata una variabile di risultato più di una volta. Questo non è consentito nel testo della domanda.
 assessment#:#err_no_formula#:#Devi digitare una formula
@@ -1661,7 +1661,6 @@ assessment#:#tst_postpone_on_desc#:#Le domande senza risposta verranno posticipa
 assessment#:#tst_presentation_properties#:#Impostazioni della presentazione
 assessment#:#tst_presentation_settings_section#:#Presentazione
 assessment#:#tst_previous_access_code_not_available#:#No previous code available!###30 04 2024 new variable
-assessment#:#tst_print#:#Test e valutazione - Anteprima di stampa
 assessment#:#tst_proceed#:#Procedere
 assessment#:#tst_processing_time#:#Tempo massimo di esecuzione
 assessment#:#tst_processing_time_desc#:#Il conteggio del tempo massimo di elaborazione inizia nel momento in cui un utente avvia un test per la prima volta e termina dopo la scadenza del periodo di tempo immesso. Se si utilizza questa opzione, la possibilità di sospendere il test deve essere disattivato (vedere "Impostazioni di sequenza"), in quanto la sospensione della prova non ferma il conto alla rovescia del tempo di elaborazione massimo.
@@ -1989,6 +1988,7 @@ assessment#:#unlock#:#Sbloccato
 assessment#:#uploaded_material#:#Materiale salvato
 assessment#:#use_previous_solution#:#Usa soluzione precedente
 assessment#:#use_previous_solution_advice#:#La soluzione mostrata per la domanda è quella che avete dato precedentemente. Bisogna confermare la soluzione adottata se si desidera utilizzarla senza modifiche.
+assessment#:#use_previous_solution_advice_file_upload#:#The shown files for the question are your previously uploaded ones. Select the files you want to reuse and click the button to confirm.###16 12 2025 new variable
 assessment#:#user_has_finished_a_test#:#Un partecipante ha terminato il test.
 assessment#:#user_not_invited#:#Non sei ammesso ad eseguire questo test.
 assessment#:#user_wrong_clientip#:#Non hai l'indirizzo IP giusto per accedere a questo test.
@@ -2474,6 +2474,7 @@ blog#:#blog_whole_blog#:#Whole Blog###31 03 2023 new variable
 book#:#X_reservations_of#:#%s prenotazioni di
 book#:#book_add#:#Aggiungi da gruppo di prenotazione
 book#:#book_add_object#:#Aggiungi oggetto
+book#:#book_add_participant#:#Add Participant###16 12 2025 new variable
 book#:#book_add_schedule#:#Aggiungi programma
 book#:#book_additional_info_file#:#Descrizione aggiuntiva
 book#:#book_all#:#Mostra tutto
@@ -2492,7 +2493,6 @@ book#:#book_booking#:#Booking###30 04 2024 new variable
 book#:#book_booking_information#:#Informazione
 book#:#book_booking_objects#:#Booking Objects###31 03 2023 new variable
 book#:#book_booking_reminders#:#Prossime prenotazioni
-book#:#book_bookings_per_user#:#Bookings per User###31 03 2023 new variable
 book#:#book_bulk_confirmation#:#Please check that all values are listed correctly.###30 04 2024 new variable
 book#:#book_bulk_creation#:#Bulk Creation###30 04 2024 new variable
 book#:#book_bulk_data#:#Item Data###30 04 2024 new variable
@@ -2621,6 +2621,7 @@ book#:#book_show_message#:#Show Message###30 04 2024 new variable
 book#:#book_title_description_nr#:#Title; Description; Number of Units###30 04 2024 new variable
 book#:#book_title_description_nr_info#:#Enter title, description and number of units separated by semicolon or TAB character (if importing from spreadsheet software). Use one line per item.###30 04 2024 new variable
 book#:#book_too_many_preferences#:#Sono state selezionate troppe preferenze. Le preferenze non sono state salvate.
+book#:#book_total_individual_bookings_limit#:#Limit the number of bookings that can be carried out by/for individual participants in total, across all available items. Each bookable item can still only be booked once per participant.###16 12 2025 new variable
 book#:#book_type_warning#:#Attualmente non ci sono oggetti di prenotazione disponibili. Per utilizzare il gruppo di prenotazione è necessario creare oggetti di prenotazione.
 book#:#book_week#:#Week###30 04 2024 new variable
 book#:#book_your_bookings#:#Le Sue prenotazioni
@@ -4832,6 +4833,7 @@ common#:#not_available#:#Non è disponibile
 common#:#not_implemented_yet#:#Non ancora implementato
 common#:#not_installed#:#Non installata
 common#:#not_logged_in#:#Non sei entrato in ILIAS
+common#:#not_ok#:#Not OK###16 12 2025 new variable
 common#:#note#:#Nota
 common#:#notes#:#Note
 common#:#notes_and_comments#:#Note e commenti
@@ -5529,6 +5531,7 @@ common#:#select#:#Seleziona
 common#:#select_all#:#Seleziona tutto
 common#:#select_at_least_one_object#:#Si prega di scegliere almeno un oggetto.
 common#:#select_file#:#Scegli il file
+common#:#select_file_from_computer#:#Select File###16 12 2025 new variable
 common#:#select_files_from_computer#:#Seleziona i file dal tuo computer
 common#:#select_max_one_item#:#Scegli un elemento solamente
 common#:#select_object_to_link#:#Seleziona l'oggetto che desideri collegare
@@ -5833,6 +5836,7 @@ common#:#upload_settings#:#Caricamento delle impostazioni
 common#:#upload_svg_rejection_message#:#An uploaded SVG file contains possibily malicious code and cannot be processed.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_base64#:#The file contains base64 encoded content.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_elements#:#The file contains elements or attributes which are not allowed or known.###30 04 2024 new variable
+common#:#upload_svg_rejection_message_foreign_object#:#The file contains foreign objects.###20 01 2026 new variable
 common#:#upload_svg_rejection_message_script#:#The file contains script-Elements.###30 04 2024 new variable
 common#:#uploaded_and_checked#:#Il file è stato caricato e verificato, ora puoi iniziare a importarlo.
 common#:#uploading#:#Caricamento...
@@ -6053,6 +6057,7 @@ cont#:#cont_news_timeline_landing_page#:#Pagina di destinazione
 cont#:#cont_news_timeline_landing_page_info#:#La pagina del calendario sarà la pagina di destinazione.
 cont#:#cont_news_timeline_tab#:#Calendario
 cont#:#cont_no_title#:#Empty Title###30 07 2024 new variable
+cont#:#cont_only_crs_grp_fold_download#:#Only courses, groups, folders or files can be downloaded.###20 01 2026 new variable
 cont#:#cont_page_type_cont#:#Pagina Archivio (Corsi, Gruppi, ...)
 cont#:#cont_page_type_cstr#:#Pagina iniziale del corso (visualizzazione degli obiettivi di apprendimento)
 cont#:#cont_path#:#Percorso
@@ -6135,10 +6140,8 @@ content#:#cont_Headline2#:#Intestazione 2
 content#:#cont_Headline3#:#Intestazione 3
 content#:#cont_Information#:#Information
 content#:#cont_Interaction#:#Interazione
-content#:#cont_Link#:#Collegamento
 content#:#cont_List#:#Lista
 content#:#cont_Literature#:#Literature
-content#:#cont_Media#:#Supporti (Standard)
 content#:#cont_Mnemonic#:#Mnemonico
 content#:#cont_Numbers#:#Numbers
 content#:#cont_Poly#:#Poligono
@@ -6250,6 +6253,8 @@ content#:#cont_chapters_after_pages#:#Ricordatevi che le pagine devono precedere
 content#:#cont_chapters_and_pages#:#Capitoli e pagine
 content#:#cont_chapters_only#:#Capitoli solamente
 content#:#cont_char_format#:#Carattere
+content#:#cont_char_link#:#Link###20 01 2026 new variable
+content#:#cont_char_media#:#Media (Standard)###20 01 2026 new variable
 content#:#cont_char_style_acc#:#Marcato
 content#:#cont_char_style_code#:#Codice
 content#:#cont_char_style_com#:#Commento
@@ -8691,6 +8696,7 @@ dcl#:#dcl_no_fields_yet#:#Non sono presenti campi definiti per questa tabella, p
 dcl#:#dcl_no_read_access_on_any_standard_view#:#Non si dispone di accesso in lettura in una qualsiasi visualizzazione standard sulla tabella.
 dcl#:#dcl_no_search_results_found_for#:#Non sono stati trovati moduli per:
 dcl#:#dcl_no_such_reference#:#Il seguente valore non è disponibile nella tabella di riferimento:
+dcl#:#dcl_no_table_found#:#No visible table found!###16 12 2025 new variable
 dcl#:#dcl_no_tableview_found#:#No visible tableview found!###08 07 2025 new variable
 dcl#:#dcl_not_checked#:#Non controllato.
 dcl#:#dcl_not_supported_in_import#:#Questo tipo di campo non è supportato nell’importazione
@@ -8699,7 +8705,6 @@ dcl#:#dcl_notification_activated#:#Notifica attivata
 dcl#:#dcl_notification_deactivate_dcl#:#Disattiva notifica per raccolta dati
 dcl#:#dcl_notification_deactivated#:#Notifica disattivata
 dcl#:#dcl_notification_info#:#Ogni utente può decidere sulla notifica
-dcl#:#dcl_notimage_exception#:#Il file deve essere un’immagine.
 dcl#:#dcl_noturl_exception#:#Devi inserire un collegamento (a partire da http:// o www.)
 dcl#:#dcl_number#:#Numero intero
 dcl#:#dcl_number_desc#:#Campo per valori interni (massimo 9 cifre). Nessun decimale o frazioni.
@@ -8757,8 +8762,6 @@ dcl#:#dcl_std_field_not_importable#:# - I campi standard non possono essere impo
 dcl#:#dcl_std_filter#:#Filtro standard
 dcl#:#dcl_supported_filetypes#:#Consenti estensione file
 dcl#:#dcl_supported_filetypes_desc#:#È possibile impostare le estensioni consentite separate dalla virgola. Per esempio: pdf, docx
-dcl#:#dcl_switch_table#:#Switch Table###30 04 2024 new variable
-dcl#:#dcl_switch_view#:#Change View###30 04 2024 new variable
 dcl#:#dcl_table#:#Tabella
 dcl#:#dcl_table_id#:#ID tabella
 dcl#:#dcl_table_info#:#Gli utenti con l'autorizzazione "modifica impostazioni" (vedere la scheda "Autorizzazione") hanno sempre l'autorizzazione per aggiungere/modificare/eliminare voci. Gli utenti con autorizzazione "modifica voce" (vedere la scheda "Autorizzazioni") hanno autorizzazioni solo in base alle impostazioni specificate nel modulo seguente.
@@ -8796,7 +8799,7 @@ dcl#:#dcl_text_email_title#:#Titolo
 dcl#:#dcl_text_email_title_info#:#Un titolo per l’URL o l’indirizzo email in alto (opzionale).
 dcl#:#dcl_text_selection#:#Selezione del testo
 dcl#:#dcl_text_selection_desc#:#Offerta selezione di opzioni di testo.
-dcl#:#dcl_title_standardview#:#Visione predefinita
+dcl#:#dcl_title_standard#:#Standard###20 01 2026 new variable
 dcl#:#dcl_unique#:#Unico
 dcl#:#dcl_unique_desc#:#Il valore in questo campo deve essere unico tra tutte le voci.
 dcl#:#dcl_unique_exception#:#Il valore inserito è già preso da un'altra registrazione.
@@ -8819,6 +8822,8 @@ dcl#:#dcl_wrong_regex#:#Il testo che hai digitato non corrisponde alla specifica
 dcl#:#dcl_xls_async_export#:#as XLSX (asynchronous)###20 05 2025 new variable
 dcl#:#fieldtitle_allow_chars#:#Caratteri consentiti: %s
 dcl#:#fileupload_not_migrated#:#File has not yet been migration and cannot be displayed. Please contact your System-Administrator.###30 04 2024 new variable
+dcl#:#table_not_found#:#Table not found!###16 12 2025 new variable
+dcl#:#tableview_not_found#:#Tableview not found!###16 12 2025 new variable
 didactic#:#activate_exclusive_template#:#Grigio predefinito
 didactic#:#activate_exclusive_template_info#:#Questo modello standard non sarà disponibile dove è attivo questo modello.
 didactic#:#activate_local_didactic_template#:#Ambito di applicazione
@@ -9414,6 +9419,7 @@ exc#:#exc_passed_status_determination#:#Determinazione dello Staus "superato"
 exc#:#exc_passing_exc#:#Superamento dell’esercizio
 exc#:#exc_past#:#Past###30 04 2024 new variable
 exc#:#exc_peer_deadline_mismatch#:#Poiché il feedback è dato dopo che la scadenza ha superato il termine di feedback non deve essere precedente al termine di assegnazione.
+exc#:#exc_peer_feedback_status#:#Feedback Status###20 01 2026 new variable
 exc#:#exc_peer_review#:#Feedback tra pari
 exc#:#exc_peer_review_ass_setting_info#:#Se abilitato, gli utenti possono valutare i propri colleghi dopo la scadenza.
 exc#:#exc_peer_review_chars_invalid#:#Almeno uno dei tuoi feedback non ha la lunghezza minima richiesta di %s caratteri.
@@ -11049,6 +11055,7 @@ lti#:#highscore_top_table#:#Classifica dei migliori risultati
 lti#:#highscore_top_table_description#:#Ai partecipanti sarà mostrata una tabella contenente la classifica dei migliori risultati.
 lti#:#highscore_wtime#:#Durata
 lti#:#highscore_wtime_description#:#Una colonna contenente la durata sarà inclusa nella classifica.
+lti#:#launch_custom_params#:#Custom launch parameters###27 11 2025 new variable
 lti#:#launch_method#:#Opzioni di avvio
 lti#:#launch_method_embedded#:#Contenuto integrato
 lti#:#launch_method_embedded_info#:#Il contenuto viene aperto nel contesto ILIAS. Viene presentato come contenuto integrato nella tab "Contenuti"
@@ -11711,6 +11718,7 @@ mep#:#mep_all_mobs#:#Tutti gli oggetti Media
 mep#:#mep_bulk_upload#:#Caricamento collettivo
 mep#:#mep_choose_from_folder#:#Scegli dalla cartella
 mep#:#mep_choose_from_mep#:#Scegli dal pool
+mep#:#mep_clipboard_info#:#Here you can upload media files that you can then access from any page on which you have access to the page editor. The clipboard is also accessible in media pools. This storage is only for you and cannot be viewed by other users.###20 01 2026 new variable
 mep#:#mep_content#:#Contenuto
 mep#:#mep_content_snippet_in_use#:#Frammento di contenuto '%s' è in uso e non può essere eliminato.
 mep#:#mep_content_snippet_used_in_older_versions#:#Si prega di notare: Questo frammento di codice viene utilizzato nelle versioni precedenti di alcune pagine. Se queste pagine sono ripristinate ad una versione che include questo frammento, il frammento di codice mancherà nella pagina.
@@ -12696,6 +12704,7 @@ news#:#news_news_item_visibility_info#:#Le News pubbliche sono accessibili senza
 news#:#news_news_items#:#News
 news#:#news_no_js_click_here#:#Se le news non sono visualizzate, cliccare quì.
 news#:#news_no_news_items#:#Non ci sono news disponibili.
+news#:#news_not_available#:#Unavailable News###20 01 2026 new variable
 news#:#news_notifications#:#Notifiche
 news#:#news_notifications_public#:#Notifiche pubbliche
 news#:#news_notifications_public_info#:#Se questa opzione è abilitata, le notifiche possono essere ottenute via feed RSS personale, fuori da ILIAS. Nota bene che questa opzione rende le notifiche accessibili senza autenticazione.
@@ -15611,7 +15620,6 @@ skmg#:#skmg_usage_type_info_prof#:#Utilizzato nei profili di competenze
 skmg#:#skmg_usage_type_info_res#:#Oggetti repository assegnati come risorsa suggerita
 skmg#:#skmg_usage_type_info_user#:#Assegnato agli utenti
 skmg#:#skmg_your_self_evaluation#:#La tua auto valutazione.
-style#:#Style#:#
 style#:#adapt_icon#:#Adatta icona
 style#:#adapt_icon_description#:#Adatta colori icona o cambia l’icona.
 style#:#adapt_icons#:#Adatta colori icona
@@ -17184,6 +17192,7 @@ trac#:#trac_view_mode_all#:#Tutti gli oggetti
 trac#:#trac_view_mode_collection#:#Solo gli oggetti che determinano lo stato generale
 trac#:#trac_visits#:#Numero minimo di chiamate
 trac#:#trac_visits_info#:#Una chiamata viene conteggiata come una nuova chiamata solo dopo %s secondi.
+trac#:#trac_visits_nr#:#Number of Visits###20 01 2026 new variable
 trac#:#user_total#:#Totale utenti
 trac#:#view_mode#:#Visualizza modalità
 tstv#:#tstv_create#:#Crea certificato del test

@@ -510,6 +510,7 @@ assessment#:#ass_create_export_file_with_results#:#Erstelle Exportdatei (inkl. T
 assessment#:#ass_create_export_test_archive#:#Erstelle Archivdatei für Test
 assessment#:#ass_create_export_test_results#:#Erstelle Ergebnisdatei
 assessment#:#ass_create_question#:#Frage erstellen
+assessment#:#ass_file_upload_reuse_btn#:#Ausgewählte Dateien wiederverwenden
 assessment#:#ass_imap_hint#:#Hinweis (angezeigt als Tooltip)
 assessment#:#ass_imap_map_file_not_readable#:#Die hochgeladene Imagemap kann nicht gelesen werden.
 assessment#:#ass_imap_no_map_found#:#In der hochgeladenen Imagemap konnte keine unterstützte Form gefunden werden.
@@ -649,7 +650,6 @@ assessment#:#errFormulaQuestion#:#Eine Formelfrage enthält fehlerhafte Angaben
 assessment#:#errRecursionInResult#:#Die Formel enthält eine nicht auflösbare Rekursion.
 assessment#:#err_category_in_use#:#Die Kategorie kann nicht gelöscht werden. Eine oder mehrere Einheiten der Kategorie sind bereits in Benutzung.
 assessment#:#err_divider_too_big#:#Der Teiler einer der Variablen in dieser Frage ist zu gross.
-assessment#:#err_divider_too_big_specific#:#Der Teiler dieser Variable ist zu gross.
 assessment#:#err_division#:#Der von Ihnen gesetzte Wert macht es unmöglich einen gültigen Wert für die Variable zu generieren.
 assessment#:#err_duplicate_results#:#Sie haben eine Ergebnisvariable mehrfach verwendet. Das ist innerhalb des Aufgabentextes nicht erlaubt!
 assessment#:#err_no_formula#:#Bitte geben Sie eine Formel zur Berechnung des Ergebnisses an.
@@ -1662,7 +1662,6 @@ assessment#:#tst_postpone_on_desc#:#Fragen, deren Antworten die Teilnehmer verwe
 assessment#:#tst_presentation_properties#:#Durchführung: Verhalten der Frage
 assessment#:#tst_presentation_settings_section#:#Darstellung
 assessment#:#tst_previous_access_code_not_available#:#Kein vorheriger Code verfügbar!
-assessment#:#tst_print#:#Test und Assessment – Druckansicht
 assessment#:#tst_proceed#:#Fortfahren
 assessment#:#tst_processing_time#:#Bearbeitungsdauer begrenzen
 assessment#:#tst_processing_time_desc#:#Teilnehmer dürfen den Test nur während eines vorgegebenen Zeitraums bearbeiten. Die Zeit läuft für jede Person ab dem Moment, an dem der erste Testdurchlauf gestartet wurde. „Test unterbrechen“ stoppt den Ablauf der Bearbeitungsdauer nicht. Wurde die Anzahl möglicher Testdurchläufe eingeschränkt, erscheint im Reiter „Teilnehmer“ eine Funktion, um einzelnen Teilnehmern zusätzliche Bearbeitungszeit zu gewähren.
@@ -1990,6 +1989,7 @@ assessment#:#unlock#:#Entsperren
 assessment#:#uploaded_material#:#Hochgeladene Materialien
 assessment#:#use_previous_solution#:#Verwende vorherige Lösung
 assessment#:#use_previous_solution_advice#:#Die angezeigte Lösung wurde vormals von Ihnen abgegeben. Sie müssen die Übernahme dieser Lösung unterhalb der Frage bestätigen, falls Sie die Lösung ohne Änderungen übernehmen wollen.
+assessment#:#use_previous_solution_advice_file_upload#:#Die angezeigten Dateien für die Frage sind Ihre zuvor hochgeladenen. Wählen Sie die Dateien aus, die Sie wiederverwenden möchten, und klicken Sie auf die Schaltfläche zur Bestätigung.
 assessment#:#user_has_finished_a_test#:#Ein Teilnehmer hat einen Test beendet.
 assessment#:#user_not_invited#:#Sie sind kein Teilnehmer der Prüfung.
 assessment#:#user_wrong_clientip#:#Falsche Client IP
@@ -2475,6 +2475,7 @@ blog#:#blog_whole_blog#:#Gesamtes Blog
 book#:#X_reservations_of#:#%s Buchungen von
 book#:#book_add#:#Buchungspool anlegen
 book#:#book_add_object#:#Angebot hinzufügen
+book#:#book_add_participant#:#Teilnehmer hinzufügen
 book#:#book_add_schedule#:#Zeitplan hinzufügen
 book#:#book_additional_info_file#:#Zusätzliche Beschreibung
 book#:#book_all#:#Alle anzeigen
@@ -2493,7 +2494,6 @@ book#:#book_booking#:#Buchung
 book#:#book_booking_information#:#Information
 book#:#book_booking_objects#:#Angebote
 book#:#book_booking_reminders#:#Anstehende Buchungen
-book#:#book_bookings_per_user#:#Buchungen je Benutzer
 book#:#book_bulk_confirmation#:#Bitte überprüfen Sie die angegebenen Werte.
 book#:#book_bulk_creation#:#Massenerstellung
 book#:#book_bulk_data#:#Daten zu Angeboten
@@ -2555,7 +2555,7 @@ book#:#book_object_selection#:#Angebotsauswahl
 book#:#book_object_updated#:#Das Angebot wurde geändert.
 book#:#book_objects_available#:#Verfügbare Angebote: %s
 book#:#book_open#:#Buchungspool öffnen
-book#:#book_overall_limit#:#Begrenzung
+book#:#book_overall_limit#:#Gesamtzahl der Buchungen pro Benutzer begrenzen
 book#:#book_overall_limit_warning#:#Sie haben die maximale Anzahl Buchungen erreicht.
 book#:#book_participant_already_assigned#:#Ein oder mehrere Teilnehmer waren bereits zugewiesen.
 book#:#book_participant_assigned#:#Teilnehmer wurde/n hinzugefügt.
@@ -2608,7 +2608,7 @@ book#:#book_schedule_type_fixed#:#Buchung nach festem Zeitplan
 book#:#book_schedule_type_fixed_info#:#Geeignet für Buchungen von Dingen für einen bestimmten Zeitraum, wie Räume, Dienstleistungen oder Geräte.
 book#:#book_schedule_type_none#:#No Schedule###12 12 2023 new variable
 book#:#book_schedule_type_none_direct#:#Buchung ohne Termine
-book#:#book_schedule_type_none_direct_info#:#Teilnehmer können direkt buchen. Der Modus ist geeignet für Referatsthemen oder Seminarplätze, die ohne Termin vergeben werden.
+book#:#book_schedule_type_none_direct_info#:#Dieser Buchungsmodus ist ideal für Präsentationsthemen oder Plätze in Seminaren, die keine festen Zeiten erfordern. Teilnehmende können Elemente direkt nach dem Prinzip „wer zuerst kommt, mahlt zuerst“ buchen. Jedes Element kann nur einmal pro Teilnehmendem gebucht werden.
 book#:#book_schedule_type_none_info#:#Dieser Buchungsmodus ist geeignet für die Vergabe von Referatsthemen, Seminarplätzen oder vergleichbaren Angeboten.
 book#:#book_schedule_type_none_preference#:#Automatisch nach Präferenzen verteilen
 book#:#book_schedule_type_none_preference_info#:#Teilnehmer benennen zunächst Präferenzen. Zu einem gewählten Enddatum werden dann die Buchungen automatisch vorgenommen. Der Buchungsmodus ist geeignet für Referatsthemen oder Seminarplätze, die ohne Termin vergeben werden.
@@ -2622,6 +2622,7 @@ book#:#book_show_message#:#Mitteilung anzeigen
 book#:#book_title_description_nr#:#Titel; Beschreibung; Anzahl
 book#:#book_title_description_nr_info#:#Geben Sie bitte Titel, Beschreibung und Anzahl getrennt durch ein Semikolon oder TAB ein. Nutzen Sie einen Zeile je Buchungsobjekt.
 book#:#book_too_many_preferences#:#Sie haben zu viele Präferenzen ausgewählt. Die Präferenzen wurden nicht gespeichert.
+book#:#book_total_individual_bookings_limit#:#Begrenze die Gesamtanzahl an Buchungen, die von/für einzelne Teilnehmende durchgeführt werden können – über alle verfügbaren Objekte hinweg. Jedes buchbare Objekt kann dabei weiterhin nur einmal pro Teilnehmendem gebucht werden.
 book#:#book_type_warning#:#Es sind momentan keine Angebote vorhanden. Um den Pool nutzen zu können, müssen zuerst Angebote angelegt werden.
 book#:#book_week#:#Wochenansicht
 book#:#book_your_bookings#:#Ihre Buchungen
@@ -4833,6 +4834,7 @@ common#:#not_available#:#Nicht vorhanden
 common#:#not_implemented_yet#:#In Entwicklung
 common#:#not_installed#:#Nicht installiert
 common#:#not_logged_in#:#Sie sind nicht angemeldet
+common#:#not_ok#:#Nicht OK
 common#:#note#:#Notiz
 common#:#notes#:#Notizen
 common#:#notes_and_comments#:#Notizen und Kommentare
@@ -5835,6 +5837,7 @@ common#:#upload_settings#:#Upload-Einstellungen
 common#:#upload_svg_rejection_message#:#Eine hochgeladene SVG-Datei enthält möglicherweise bösartigen Code und kann nicht verarbeitet werden.
 common#:#upload_svg_rejection_message_base64#:#Die Datei enthält base64 kodierten Inhalt.
 common#:#upload_svg_rejection_message_elements#:#Die Datei enthält Elemente oder Attribute, die nicht erlaubt oder bekannt sind.
+common#:#upload_svg_rejection_message_foreign_object#:#Die Datei bindet externe Objekte ein.
 common#:#upload_svg_rejection_message_script#:#Die Datei enthält Skript-Elemente.
 common#:#uploaded_and_checked#:#Die Datei wurde hochgeladen und überprüft, Sie können sie nun importieren.
 common#:#uploading#:#Hochladen...
@@ -6055,6 +6058,7 @@ cont#:#cont_news_timeline_landing_page#:#Startseite
 cont#:#cont_news_timeline_landing_page_info#:#Timeline als Startseite
 cont#:#cont_news_timeline_tab#:#Timeline
 cont#:#cont_no_title#:#Leerer Titel
+cont#:#cont_only_crs_grp_fold_download#:#Es können nur Dateien, Kurse, Gruppen oder Ordner heruntergeladen werden.
 cont#:#cont_page_type_cont#:#Magazinseite (Kurs, Gruppe, Kategorie, ...)
 cont#:#cont_page_type_cstr#:#Startseite lernzielorientierter Kurs
 cont#:#cont_path#:#Pfad
@@ -6137,10 +6141,8 @@ content#:#cont_Headline2#:#Überschrift 2
 content#:#cont_Headline3#:#Überschrift 3
 content#:#cont_Information#:#Information
 content#:#cont_Interaction#:#Interaktion
-content#:#cont_Link#:#Link
 content#:#cont_List#:#Liste
 content#:#cont_Literature#:#Literatur
-content#:#cont_Media#:#Medien (Standard)
 content#:#cont_Mnemonic#:#Merksatz
 content#:#cont_Numbers#:#Zahlen
 content#:#cont_Poly#:#Polygon
@@ -6252,6 +6254,8 @@ content#:#cont_chapters_after_pages#:#Beachten Sie, dass innerhalb einer Ebene z
 content#:#cont_chapters_and_pages#:#Kapitel und Seiten
 content#:#cont_chapters_only#:#Nur Kapitel
 content#:#cont_char_format#:#Zeichenformat
+content#:#cont_char_link#:#Link
+content#:#cont_char_media#:#Medien (Standard)
 content#:#cont_char_style_acc#:#Akzentuiert
 content#:#cont_char_style_code#:#Code
 content#:#cont_char_style_com#:#Kommentar
@@ -8693,8 +8697,8 @@ dcl#:#dcl_no_fields_yet#:#Es wurden noch keine Felder für diese Tabelle erstell
 dcl#:#dcl_no_read_access_on_any_standard_view#:#Sie haben auf keine Standard-Tabellenansicht Lesezugriff.
 dcl#:#dcl_no_search_results_found_for#:#Es wurden keine Module gefunden mit:
 dcl#:#dcl_no_such_reference#:#Der folgende Wert ist in der Referenztabelle nicht vorhanden:
-dcl#:#dcl_no_table_found#:#Keine sichbare Tabelle verfügbar!
-dcl#:#dcl_no_tableview_found#:#Keine sichbare Tabellenansicht verfügbar!
+dcl#:#dcl_no_table_found#:#Keine sichtbare Tabelle verfügbar!
+dcl#:#dcl_no_tableview_found#:#Keine sichtbare Tabellenansicht verfügbar!
 dcl#:#dcl_not_checked#:#Nicht ausgewählt
 dcl#:#dcl_not_supported_in_import#:#Dieser Feldtyp wird beim Import nicht unterstützt.
 dcl#:#dcl_notification_activate_dcl#:#Benachrichtigung aktivieren
@@ -8702,7 +8706,6 @@ dcl#:#dcl_notification_activated#:#Benachrichtigung aktiv
 dcl#:#dcl_notification_deactivate_dcl#:#Benachrichtigung deaktivieren
 dcl#:#dcl_notification_deactivated#:#Benachrichtigung inaktiv
 dcl#:#dcl_notification_info#:#Aktiviert die individuelle Benachrichtigungsfunktion für Benutzer.
-dcl#:#dcl_notimage_exception#:#Die Datei muss ein Bild sein.
 dcl#:#dcl_noturl_exception#:#Bitte geben Sie einen Link (beginnend mit http:// oder www.) oder eine E-Mail-Adresse ein.
 dcl#:#dcl_number#:#Ganze Zahlen
 dcl#:#dcl_number_desc#:#Eingabefeld für ganze Zahlen (maximal 9 Ziffern). Nicht erlaubt sind Brüche und Dezimalzahlen.
@@ -8760,8 +8763,6 @@ dcl#:#dcl_std_field_not_importable#:# - Standardfelder sind nicht importierbar.
 dcl#:#dcl_std_filter#:#Filtervorbelegung
 dcl#:#dcl_supported_filetypes#:#Erlaubte Dateiendungen
 dcl#:#dcl_supported_filetypes_desc#:#Sie können hier kommagetrennt Dateiendungen angeben. Zum Beispiel: pdf, docx
-dcl#:#dcl_switch_table#:#Tabelle wechseln
-dcl#:#dcl_switch_view#:#Ansicht ändern
 dcl#:#dcl_table#:#Tabelle
 dcl#:#dcl_table_id#:#Tabellen ID
 dcl#:#dcl_table_info#:#Nachfolgend legen Sie fest, was Benutzer in dieser Tabelle tun dürfen, die für die Datensammlung das Recht „Eintragen“ besitzen.
@@ -8799,7 +8800,7 @@ dcl#:#dcl_text_email_title#:#Titel
 dcl#:#dcl_text_email_title_info#:#Titel für die URL oder E-Mail-Adresse (optional).
 dcl#:#dcl_text_selection#:#Auswahlmenü Text
 dcl#:#dcl_text_selection_desc#:#Bereitstellen von Auswahloptionen (Text)
-dcl#:#dcl_title_standardview#:#Standard-Ansicht
+dcl#:#dcl_title_standard#:#Standard
 dcl#:#dcl_unique#:#Gleiche Einträge verhindern
 dcl#:#dcl_unique_desc#:#In dieses Feld kann ein gleichlautender Eintrag nur einmal vorgenommen werden.
 dcl#:#dcl_unique_exception#:#Der eingegebene Wert wird schon von einem anderen Eintrag verwendet.
@@ -9419,6 +9420,7 @@ exc#:#exc_passed_status_determination#:#Bewertung als „Bestanden“
 exc#:#exc_passing_exc#:#Bestehen der Übung
 exc#:#exc_past#:#Vergangene
 exc#:#exc_peer_deadline_mismatch#:#Da das Feedback erst nach dem Abgabetermin der Übungseinheit gegeben werden kann, darf die Deadline für das Feedback nicht vor dem Abgabedatum liegen.
+exc#:#exc_peer_feedback_status#:#Status
 exc#:#exc_peer_review#:#Peer-Feedback
 exc#:#exc_peer_review_ass_setting_info#:#Nachdem der Abgabetermin und ggfs. die Nachfrist verstrichen sind, können Teilnehmer ihre Arbeitsergebnisse gegenseitig bewerten. Genaue Einstellungen zum Peer-Feedback werden im gleichnamigen Reiter vorgenommen. Der Reiter wird eingeblendet, wenn diese Option aktiviert und gespeichert wurde.
 exc#:#exc_peer_review_chars_invalid#:#Sie haben noch nicht die erforderliche Länge des Textes von %s Zeichen erreicht.
@@ -9886,7 +9888,7 @@ form#:#form_msg_max_upload#:#Maximale Anzahl von gleichzeitig hochladbaren Datei
 form#:#form_msg_numeric_value_required#:#Bitte geben Sie einen numerischen Wert ein.
 form#:#form_msg_value_too_high#:#Wert ist zu hoch. Bitte geben Sie einen niedrigeren Wert ein.
 form#:#form_msg_value_too_low#:#Wert ist zu niedrig. Bitte geben Sie einen höheren Wert ein.
-form#:#form_msg_wrong_date#:#Falsches Datum. Bitte geben Sie ein gültiges Datum an.
+form#:#form_msg_wrong_date#:#Bitte überprüfen Sie Ihre Datumseingabe. Sowohl ein Startdatum als auch ein Enddatum sind erforderlich und das Startdatum darf nicht später liegen als das Enddatum.
 form#:#form_no_link#:#Kein Link
 form#:#form_open_answer#:#Freitext
 form#:#form_password_not_allowed_for_auth#:#Für die gewählte Authentifizierungmethode können Sie das Passwort nicht ändern
@@ -11054,6 +11056,7 @@ lti#:#highscore_top_table#:#Bestenliste
 lti#:#highscore_top_table_description#:#Teilnehmern wird eine Tabelle mit den besten Platzierungen angezeigt.
 lti#:#highscore_wtime#:#Dauer
 lti#:#highscore_wtime_description#:#Eine Spalte mit der Dauer wird in die Platzierungen aufgenommen.
+lti#:#launch_custom_params#:#Benutzerdefinierte Startparameter###27 11 2025 new variable
 lti#:#launch_method#:#Optionen für den Start
 lti#:#launch_method_embedded#:#Eingebettete Inhalte
 lti#:#launch_method_embedded_info#:#Der Inhalt wird innerhalb des ILIAS-Kontextes geöffnet. Es wird als eingebetteter Inhalt in der Registerkarte Inhalt angezeigt.
@@ -11716,6 +11719,7 @@ mep#:#mep_all_mobs#:#Alle Medienobjekte
 mep#:#mep_bulk_upload#:#Massen-Upload
 mep#:#mep_choose_from_folder#:#Aus Ordner auswählen
 mep#:#mep_choose_from_mep#:#Aus Pool auswählen
+mep#:#mep_clipboard_info#:#Hier können Sie Mediendateien hochladen, auf die Sie anschließend von jeder Seite, auf der Sie Zugriff auf den Seiteneditor haben, zugreifen können. Ebenfalls können Sie das Clipboard in Medienpools nutzen. Dieser Speicher ist nur für Sie und kann nicht von anderen Benutzern eingesehen werden.
 mep#:#mep_content#:#Medienobjekte
 mep#:#mep_content_snippet_in_use#:#Inhaltsbaustein „%s“ wird verwendet und kann daher nicht gelöscht werden.
 mep#:#mep_content_snippet_used_in_older_versions#:#Achtung: Der Inhaltsbaustein wurde in älteren Versionen von einigen Seiten genutzt. Wenn so eine Version einer Seite wiederhergestellt wird, wird der Inhaltsbaustein in ihr fehlen.
@@ -12701,6 +12705,7 @@ news#:#news_news_item_visibility_info#:#Öffentliche Neuigkeiten können von au�
 news#:#news_news_items#:#Neuigkeit(en)
 news#:#news_no_js_click_here#:#Werden die Neuigkeiten nicht angezeigt, klicken Sie bitte hier.
 news#:#news_no_news_items#:#Es sind keine Neuigkeiten für Sie vorhanden.
+news#:#news_not_available#:#Neuigkeit nicht verfügbar
 news#:#news_notifications#:#Benachrichtigungen
 news#:#news_notifications_public#:#Öffentliche Benachrichtigungen
 news#:#news_notifications_public_info#:#Wenn diese Option gewählt wird, können Benachrichtigungen auch außerhalb von ILIAS über den persönlichen Newsfeed empfangen werden. Beachten Sie bitte, dass diese Benachrichtigungen ohne Authentifizierung zugänglich sind.
@@ -15616,7 +15621,6 @@ skmg#:#skmg_usage_type_info_prof#:#Nutzung in Kompetenzprofilen
 skmg#:#skmg_usage_type_info_res#:#Zuordnung zu Magazinobjekten
 skmg#:#skmg_usage_type_info_user#:#Zuordnung zu Benutzern
 skmg#:#skmg_your_self_evaluation#:#Ihre Selbsteinschätzung
-style#:#Style#:#Style
 style#:#adapt_icon#:#Anpassung der Icons
 style#:#adapt_icon_description#:#Passe die Iconfarbe oder das Icon an.
 style#:#adapt_icons#:#Anpassung der Iconfarben
@@ -16859,7 +16863,7 @@ tagging#:#tag_tags_deleted#:#Tag wurde für Objekte ohne Zugriff entfernt.
 tagging#:#tagging_all_users#:#Alle Benutzer
 tagging#:#tagging_edit_settings#:#Einstellungen
 tagging#:#tagging_enable_all_users#:#Zeige Tags aller Benutzer
-tagging#:#tagging_enable_all_users_info#:#Fügt auf dem Reiter „Info“ einen Bereich "Alle Benutzer" hinzu, im dem die Tags aller Besucher zu einer Ressource angezeigt werden.
+tagging#:#tagging_enable_all_users_info#:#Fügt auf dem Reiter „Info“ einen Bereich "Alle Benutzer" hinzu, in dem die Tags aller Besucher zu einer Ressource angezeigt werden.
 tagging#:#tagging_enable_tagging#:#Tagging aktivieren
 tagging#:#tagging_forbidden_tags#:#Verbotene Tags
 tagging#:#tagging_no_obj_for_tag#:#Es sind keine Inhalte mit „%s“ verschlagwortet.
@@ -17189,6 +17193,7 @@ trac#:#trac_view_mode_all#:#Alle Objekte
 trac#:#trac_view_mode_collection#:#Nur Objekte, die Gesamtstatus bestimmen
 trac#:#trac_visits#:#Mindestanzahl Aufrufe
 trac#:#trac_visits_info#:#Ein Aufruf wird erst nach %s Sekunden als neuer Aufruf gezählt.
+trac#:#trac_visits_nr#:#Anzahl Aufrufe
 trac#:#user_total#:#Anzahl Benutzer
 trac#:#view_mode#:#Anzeigemodus
 tstv#:#tstv_create#:#Testzertifikat erstellen

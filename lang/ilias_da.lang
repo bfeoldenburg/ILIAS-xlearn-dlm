@@ -510,6 +510,7 @@ assessment#:#ass_create_export_file_with_results#:#Create Test Export File (incl
 assessment#:#ass_create_export_test_archive#:#Create Test Archive File###16 09 2013 new variable
 assessment#:#ass_create_export_test_results#:#Eksport testresultater
 assessment#:#ass_create_question#:#Create Question###16 09 2013 new variable
+assessment#:#ass_file_upload_reuse_btn#:#Reuse Selected Files###16 12 2025 new variable
 assessment#:#ass_imap_hint#:#Hint to be shown as Tooltip###25 10 2016 new variable
 assessment#:#ass_imap_map_file_not_readable#:#The uploaded image map could not be read.###25 10 2016 new variable
 assessment#:#ass_imap_no_map_found#:#Could not find any form in the uploaded image map.###25 10 2016 new variable
@@ -649,7 +650,6 @@ assessment#:#errFormulaQuestion#:#A Formula Question contains incorrect informat
 assessment#:#errRecursionInResult#:#The formula contains an infinite recursion.###16 09 2013 new variable
 assessment#:#err_category_in_use#:#At least one category cannot be deleted. One or more units of the category are already in use.###16 09 2013 new variable
 assessment#:#err_divider_too_big#:#The divider of one of the variables in this question is too big.###09 03 2022 new variable
-assessment#:#err_divider_too_big_specific#:#The divider of this variable is too big.###04 11 2025 new variable
 assessment#:#err_division#:#This value has to be smaller than the maximum range.###09 03 2022 new variable
 assessment#:#err_duplicate_results#:#You used a result variable more than once. This is not allowed in the question text.###16 09 2013 new variable
 assessment#:#err_no_formula#:#You must enter a formula###16 09 2013 new variable
@@ -1662,7 +1662,6 @@ assessment#:#tst_postpone_on_desc#:#Not answered questions will be postponed to 
 assessment#:#tst_presentation_properties#:#Præsentationsindstillinger
 assessment#:#tst_presentation_settings_section#:#Presentation###10 11 2018 new variable
 assessment#:#tst_previous_access_code_not_available#:#No previous code available!###30 04 2024 new variable
-assessment#:#tst_print#:#Test & evaluering Udskriftsvisning
 assessment#:#tst_proceed#:#Proceed###10 11 2018 new variable
 assessment#:#tst_processing_time#:#Max. svar tid
 assessment#:#tst_processing_time_desc#:#The maximum processing time starts from the time when a user starts a test and ends after the expiration of the entered hours, minutes and seconds.###09 06 2007 new variable
@@ -1990,6 +1989,7 @@ assessment#:#unlock#:#Ulås
 assessment#:#uploaded_material#:#Uploadet Materialle
 assessment#:#use_previous_solution#:#Use Previous Solution###31 08 2017 new variable
 assessment#:#use_previous_solution_advice#:#The shown solution for the question is your previously given one. You have to confirm the adoption of the solution, if you like to use it without any change. ###31 08 2017 new variable
+assessment#:#use_previous_solution_advice_file_upload#:#The shown files for the question are your previously uploaded ones. Select the files you want to reuse and click the button to confirm.###16 12 2025 new variable
 assessment#:#user_has_finished_a_test#:#A participant has finished a test.###27 01 2015 new variable
 assessment#:#user_not_invited#:#You are not supposed to take this exam.###17 Aug 2005 new variable
 assessment#:#user_wrong_clientip#:#You don't have the right ip using this test.###17 Aug 2005 new variable
@@ -2475,6 +2475,7 @@ blog#:#blog_whole_blog#:#Whole Blog###31 03 2023 new variable
 book#:#X_reservations_of#:#%s reservations of###30 04 2021 new variable
 book#:#book_add#:#Add Booking Pool###01 04 2011 new variable
 book#:#book_add_object#:#Add Object###16 07 2010 new variable
+book#:#book_add_participant#:#Add Participant###16 12 2025 new variable
 book#:#book_add_schedule#:#Add Schedule###16 07 2010 new variable
 book#:#book_additional_info_file#:#Additional Description###02 09 2012 new variable
 book#:#book_all#:#Vis alle
@@ -2493,7 +2494,6 @@ book#:#book_booking#:#Booking###30 04 2024 new variable
 book#:#book_booking_information#:#Information###31 08 2017 new variable
 book#:#book_booking_objects#:#Booking Objects###31 03 2023 new variable
 book#:#book_booking_reminders#:#Upcoming reservations###10 11 2018 new variable
-book#:#book_bookings_per_user#:#Bookings per User###31 03 2023 new variable
 book#:#book_bulk_confirmation#:#Please check that all values are listed correctly.###30 04 2024 new variable
 book#:#book_bulk_creation#:#Bulk Creation###30 04 2024 new variable
 book#:#book_bulk_data#:#Item Data###30 04 2024 new variable
@@ -2622,6 +2622,7 @@ book#:#book_show_message#:#Show Message###30 04 2024 new variable
 book#:#book_title_description_nr#:#Title; Description; Number of Units###30 04 2024 new variable
 book#:#book_title_description_nr_info#:#Enter title, description and number of units separated by semicolon or TAB character (if importing from spreadsheet software). Use one line per item.###30 04 2024 new variable
 book#:#book_too_many_preferences#:#You selected too many preferences. The preferences have not been saved.###07 02 2020 new variable
+book#:#book_total_individual_bookings_limit#:#Limit the number of bookings that can be carried out by/for individual participants in total, across all available items. Each bookable item can still only be booked once per participant.###16 12 2025 new variable
 book#:#book_type_warning#:#Currently, there are no booking objects available. To use the booking pool you need to create booking objects.###12 06 2011 new variable
 book#:#book_week#:#Week###30 04 2024 new variable
 book#:#book_your_bookings#:#Your Reservations###07 02 2020 new variable
@@ -4833,6 +4834,7 @@ common#:#not_available#:#Ikke tilgængelig
 common#:#not_implemented_yet#:#Ikke implementeret endnu
 common#:#not_installed#:#Ikke installeret
 common#:#not_logged_in#:#Du er ikke logget ind
+common#:#not_ok#:#Not OK###16 12 2025 new variable
 common#:#note#:#Note
 common#:#notes#:#Noter
 common#:#notes_and_comments#:#Noter og kommentarer
@@ -5530,6 +5532,7 @@ common#:#select#:#vælg
 common#:#select_all#:#Vælg alle
 common#:#select_at_least_one_object#:#Please choose at least one object.###24 02 2009 new variable
 common#:#select_file#:#Vælg fil
+common#:#select_file_from_computer#:#Select File###16 12 2025 new variable
 common#:#select_files_from_computer#:#Select the files from your computer###16 09 2013 new variable
 common#:#select_max_one_item#:#Vælg venligst kun en
 common#:#select_object_to_link#:#vælg venligst det objekt du vil linke til
@@ -5834,6 +5837,7 @@ common#:#upload_settings#:#Uploading Settings###16 09 2013 new variable
 common#:#upload_svg_rejection_message#:#An uploaded SVG file contains possibily malicious code and cannot be processed.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_base64#:#The file contains base64 encoded content.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_elements#:#The file contains elements or attributes which are not allowed or known.###30 04 2024 new variable
+common#:#upload_svg_rejection_message_foreign_object#:#The file contains foreign objects.###20 01 2026 new variable
 common#:#upload_svg_rejection_message_script#:#The file contains script-Elements.###30 04 2024 new variable
 common#:#uploaded_and_checked#:#Filen er blevet uploadet og checket, Du kan nu importere filen.
 common#:#uploading#:#Uploading...###16 09 2013 new variable
@@ -6054,6 +6058,7 @@ cont#:#cont_news_timeline_landing_page#:#Landing Page###25 10 2016 new variable
 cont#:#cont_news_timeline_landing_page_info#:#Timeline page will be the landing page.###25 10 2016 new variable
 cont#:#cont_news_timeline_tab#:#Timeline###25 10 2016 new variable
 cont#:#cont_no_title#:#Empty Title###30 07 2024 new variable
+cont#:#cont_only_crs_grp_fold_download#:#Only courses, groups, folders or files can be downloaded.###20 01 2026 new variable
 cont#:#cont_page_type_cont#:#Repository Page (Cours, Group, ...)###30 04 2021 new variable
 cont#:#cont_page_type_cstr#:#Course Start Page (Learning Objectives View)###30 04 2021 new variable
 cont#:#cont_path#:#Path###31 08 2017 new variable
@@ -6136,10 +6141,8 @@ content#:#cont_Headline2#:#Overskrift 2
 content#:#cont_Headline3#:#Overskrift 3
 content#:#cont_Information#:#Information###07 02 2020 new variable
 content#:#cont_Interaction#:#Interaction###07 02 2020 new variable
-content#:#cont_Link#:#Link###07 02 2020 new variable
 content#:#cont_List#:#Liste
 content#:#cont_Literature#:#Literature###07 02 2020 new variable
-content#:#cont_Media#:#Media (Standard)###24 02 2009 new variable
 content#:#cont_Mnemonic#:#Mnemonic###21 Apr 2005 new variable
 content#:#cont_Numbers#:#Numbers###30 04 2021 new variable
 content#:#cont_Poly#:#Polygon###21 Apr 2005 new variable
@@ -6251,6 +6254,8 @@ content#:#cont_chapters_after_pages#:#Bemærk at sider skal efterfølge underkap
 content#:#cont_chapters_and_pages#:#Kapitler og Sider
 content#:#cont_chapters_only#:#Kun Kapitler
 content#:#cont_char_format#:#Character###12 06 2011 new variable
+content#:#cont_char_link#:#Link###20 01 2026 new variable
+content#:#cont_char_media#:#Media (Standard)###20 01 2026 new variable
 content#:#cont_char_style_acc#:#Accentuated###12 06 2011 new variable
 content#:#cont_char_style_code#:#Code###12 06 2011 new variable
 content#:#cont_char_style_com#:#Comment###12 06 2011 new variable
@@ -8692,6 +8697,7 @@ dcl#:#dcl_no_fields_yet#:#Der er endnu ikke lavet kolonner i tabellen, så du ka
 dcl#:#dcl_no_read_access_on_any_standard_view#:#You don't have read access on any standard view of a table.###10 11 2018 new variable
 dcl#:#dcl_no_search_results_found_for#:#Der kunne ikke findes moduler til
 dcl#:#dcl_no_such_reference#:#The following value is not available in the reference table:###16 09 2013 new variable
+dcl#:#dcl_no_table_found#:#No visible table found!###16 12 2025 new variable
 dcl#:#dcl_no_tableview_found#:#No visible tableview found!###08 07 2025 new variable
 dcl#:#dcl_not_checked#:#Fravalgt.
 dcl#:#dcl_not_supported_in_import#:#This type of field is not supported in the import###16 09 2013 new variable
@@ -8700,7 +8706,6 @@ dcl#:#dcl_notification_activated#:#Advisering slået til
 dcl#:#dcl_notification_deactivate_dcl#:#Deactivate Notification for Data Collection###28 08 2012 new variable
 dcl#:#dcl_notification_deactivated#:#Advisering slået fra
 dcl#:#dcl_notification_info#:#Each user decides about notification###06 02 2015 new variable
-dcl#:#dcl_notimage_exception#:#Filen skal være en billedfil
 dcl#:#dcl_noturl_exception#:#Du skal indtaste et link (begyndende med http://)
 dcl#:#dcl_number#:#Integer###25 10 2016 new variable
 dcl#:#dcl_number_desc#:#Field for integer values (max. 9 digits). No decimals or fractions.###25 10 2016 new variable
@@ -8758,8 +8763,6 @@ dcl#:#dcl_std_field_not_importable#:# - Standard fields are not importable.###25
 dcl#:#dcl_std_filter#:#Standardfilter###25 10 2016 new variable
 dcl#:#dcl_supported_filetypes#:#Allowed file-extensions###25 10 2016 new variable
 dcl#:#dcl_supported_filetypes_desc#:#You can set the allowed extensions comma seperated. For example: pdf, docx###25 10 2016 new variable
-dcl#:#dcl_switch_table#:#Switch Table###30 04 2024 new variable
-dcl#:#dcl_switch_view#:#Change View###30 04 2024 new variable
 dcl#:#dcl_table#:#Tabel
 dcl#:#dcl_table_id#:#Tabel ID
 dcl#:#dcl_table_info#:#Brugere med rettigheden "ret indstillinger" (se faneblad "rettigheder") har altid tilladelse til at oprette/ændre/slette poster. Brugere med rettigheden "ret indhold" har kun de rettigheder der vælges herunder.
@@ -8797,7 +8800,7 @@ dcl#:#dcl_text_email_title#:#Title###30 08 2015 new variable
 dcl#:#dcl_text_email_title_info#:#A Title for the above URL or E-Mail address (optional).###30 08 2015 new variable
 dcl#:#dcl_text_selection#:#Text Selection###31 08 2017 new variable
 dcl#:#dcl_text_selection_desc#:#Offer selection of text options.###31 08 2017 new variable
-dcl#:#dcl_title_standardview#:#Standard Views###10 11 2018 new variable
+dcl#:#dcl_title_standard#:#Standard###20 01 2026 new variable
 dcl#:#dcl_unique#:#Unik
 dcl#:#dcl_unique_desc#:#In dieses Feld kann ein gleichlautender Eintrag nur einmal vorgenommen werden.###30 08 2015 new variable
 dcl#:#dcl_unique_exception#:#Den indtastede værdi er allerede anvendt i anden post.
@@ -8820,6 +8823,8 @@ dcl#:#dcl_wrong_regex#:#Den indtastede tekst passer ikke til specifikationen for
 dcl#:#dcl_xls_async_export#:#as XLSX (asynchronous)###20 05 2025 new variable
 dcl#:#fieldtitle_allow_chars#:#Allowed chars: %s###16 09 2013 new variable
 dcl#:#fileupload_not_migrated#:#File has not yet been migration and cannot be displayed. Please contact your System-Administrator.###30 04 2024 new variable
+dcl#:#table_not_found#:#Table not found!###16 12 2025 new variable
+dcl#:#tableview_not_found#:#Tableview not found!###16 12 2025 new variable
 didactic#:#activate_exclusive_template#:#Grey Out Default###25 10 2016 new variable
 didactic#:#activate_exclusive_template_info#:#The standard template won't be available wherever this template is active.###25 10 2016 new variable
 didactic#:#activate_local_didactic_template#:#Scope of Application###25 10 2016 new variable
@@ -9415,6 +9420,7 @@ exc#:#exc_passed_status_determination#:#Determination of Staus "Passed"###11 03 
 exc#:#exc_passing_exc#:#Passing the Exercise###11 03 2014 new variable
 exc#:#exc_past#:#Past###30 04 2024 new variable
 exc#:#exc_peer_deadline_mismatch#:#As feedback is given after the deadline has passed the feedback deadline must not be earlier than the assignment deadline.###08 09 2014 new variable
+exc#:#exc_peer_feedback_status#:#Feedback Status###20 01 2026 new variable
 exc#:#exc_peer_review#:#Peer-Feedback###16 09 2013 new variable
 exc#:#exc_peer_review_ass_setting_info#:#If enabled, users can rate their peers after the deadline.###16 09 2013 new variable
 exc#:#exc_peer_review_chars_invalid#:#At least one of your feedbacks does not have the required minimum length of %s characters.###30 08 2015 new variable
@@ -11050,6 +11056,7 @@ lti#:#highscore_top_table#:#Top Ranking###07 02 2020 new variable
 lti#:#highscore_top_table_description#:#Participants are presented with a table containing the top rankings.###07 02 2020 new variable
 lti#:#highscore_wtime#:#Duration###07 02 2020 new variable
 lti#:#highscore_wtime_description#:#A column containing the duration will be included in the ranking.###07 02 2020 new variable
+lti#:#launch_custom_params#:#Custom launch parameters###27 11 2025 new variable
 lti#:#launch_method#:#Options for Launch###07 02 2020 new variable
 lti#:#launch_method_embedded#:#Embedded Content###07 02 2020 new variable
 lti#:#launch_method_embedded_info#:#The content is opened within the ILIAS context. It is presented as embedded content within the content tab.###07 02 2020 new variable
@@ -11712,6 +11719,7 @@ mep#:#mep_all_mobs#:#Alle medieobjekter
 mep#:#mep_bulk_upload#:#Bulk Upload###10 11 2018 new variable
 mep#:#mep_choose_from_folder#:#Vælg fra mappe
 mep#:#mep_choose_from_mep#:#Vælg fra samling
+mep#:#mep_clipboard_info#:#Here you can upload media files that you can then access from any page on which you have access to the page editor. The clipboard is also accessible in media pools. This storage is only for you and cannot be viewed by other users.###20 01 2026 new variable
 mep#:#mep_content#:#Content###31 08 2017 new variable
 mep#:#mep_content_snippet_in_use#:#Content snippet '%s' is in use and cannot be deleted.###16 09 2009 new variable
 mep#:#mep_content_snippet_used_in_older_versions#:#Please note: This snippet is used in older versions of some pages. If these pages are rolled back to a version that includes this snippet, the snippet will be missing in the page.###12 06 2011 new variable
@@ -12697,6 +12705,7 @@ news#:#news_news_item_visibility_info#:#Offentlige nyheder kan via RSS tilgås u
 news#:#news_news_items#:#Nyhed(er)
 news#:#news_no_js_click_here#:#Klik her hvis ingen nyheder vises.
 news#:#news_no_news_items#:#Ingen nyheder
+news#:#news_not_available#:#Unavailable News###20 01 2026 new variable
 news#:#news_notifications#:#Adviseringer
 news#:#news_notifications_public#:#Offentlige adviseringer
 news#:#news_notifications_public_info#:#Hvis dette er aktiveret kan offentlige og private nyheder tilgås via personlige RSS feeds udefra ILIAS. Autentificering gøres via kodeord.
@@ -15612,7 +15621,6 @@ skmg#:#skmg_usage_type_info_prof#:#Used in Skill Profiles###30 12 2013 new varia
 skmg#:#skmg_usage_type_info_res#:#Repository Objects Assigned as Suggested Resource###30 12 2013 new variable
 skmg#:#skmg_usage_type_info_user#:#Assigned to Users###30 12 2013 new variable
 skmg#:#skmg_your_self_evaluation#:#Your Self-Evaluation###18 07 2011 new variable
-style#:#Style#:#Style###25 10 2016 new variable
 style#:#adapt_icon#:#Adapt Icon###25 10 2016 new variable
 style#:#adapt_icon_description#:#Adapt icon colors or change the icon itself.###25 10 2016 new variable
 style#:#adapt_icons#:#Adapt Icon Colors###25 10 2016 new variable
@@ -17185,6 +17193,7 @@ trac#:#trac_view_mode_all#:#All Objects###20 10 2010 new variable
 trac#:#trac_view_mode_collection#:#Only objects that determine the overall status###20 10 2010 new variable
 trac#:#trac_visits#:#Antal besøg
 trac#:#trac_visits_info#:#Hver side der besøges tæller som et besøg.
+trac#:#trac_visits_nr#:#Number of Visits###20 01 2026 new variable
 trac#:#user_total#:#User Total###06 08 2010 new variable
 trac#:#view_mode#:#View mode
 tstv#:#tstv_create#:#Create Test Verification###12 06 2011 new variable

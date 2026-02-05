@@ -202,7 +202,7 @@ class ilTrQuery
 
             $items[$sco_id] = array(
                 "title" => $status_info["scos_title"][$sco_id],
-                "status" => (int) $status,
+                "status" => $status,
                 "type" => "sahs",
                 "score" => (int) ($scores[$sco_id] ?? 0)
             );

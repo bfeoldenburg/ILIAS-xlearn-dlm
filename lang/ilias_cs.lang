@@ -510,6 +510,7 @@ assessment#:#ass_create_export_file_with_results#:#Vytvořit exportní soubor te
 assessment#:#ass_create_export_test_archive#:#Vytvořit archivní soubor testu
 assessment#:#ass_create_export_test_results#:#Vytvořit exportní soubor výsledků testu
 assessment#:#ass_create_question#:#Vytvořit otázku
+assessment#:#ass_file_upload_reuse_btn#:#Reuse Selected Files###16 12 2025 new variable
 assessment#:#ass_imap_hint#:#Nápověda zobrazena jako nápovědná bublina
 assessment#:#ass_imap_map_file_not_readable#:#Nahranou obrazovou mapu nelze načíst.
 assessment#:#ass_imap_no_map_found#:#V nahrané obrazové mapě nelze najít žádný formulář.
@@ -649,7 +650,6 @@ assessment#:#errFormulaQuestion#:#Otázka se vzorcem obsahuje nekorektní inform
 assessment#:#errRecursionInResult#:#Vzorec obsahuje neurčitou rekurzi.
 assessment#:#err_category_in_use#:#Nejméně jedna kategorie nemůže být smazána. Jedna nebo více jednotek je již v použití.
 assessment#:#err_divider_too_big#:#The divider of one of the variables in this question is too big.###09 03 2022 new variable
-assessment#:#err_divider_too_big_specific#:#The divider of this variable is too big.###04 11 2025 new variable
 assessment#:#err_division#:#This value has to be smaller than the maximum range.###09 03 2022 new variable
 assessment#:#err_duplicate_results#:#Použil(a) jste více než jednu proměnnou výsledku. To textu otázky není povoleno.
 assessment#:#err_no_formula#:#Musíte vložit vzorec
@@ -1662,7 +1662,6 @@ assessment#:#tst_postpone_on_desc#:#Nezodpovězené otázky budou odloženy na k
 assessment#:#tst_presentation_properties#:#Nastavení prezentace
 assessment#:#tst_presentation_settings_section#:#Prezentace
 assessment#:#tst_previous_access_code_not_available#:#No previous code available!###30 04 2024 new variable
-assessment#:#tst_print#:#Zobrazit přehled testu a hodnocení
 assessment#:#tst_proceed#:#Pokračovat
 assessment#:#tst_processing_time#:#Max. čas zpracování
 assessment#:#tst_processing_time_desc#:#Maximum času na zpracování testu začíná okamžikem prvního startu uživatele a končí po vypršení vložené periody času. Je-li použita tato volba, možnost přerušit test by měla být deaktivována (viz "Nastavení sekvence") protože přerušení testu nezastavuje počitadlo maximální doby zpracování.
@@ -1990,6 +1989,7 @@ assessment#:#unlock#:#Odemknout
 assessment#:#uploaded_material#:#Odeslaný materiál
 assessment#:#use_previous_solution#:#Použít předchozí řešení
 assessment#:#use_previous_solution_advice#:#Zobrazené řešení pro tuto otázku je vaše dříve uvedené řešení. Musíte potvrdit přijetí řešení, pokud ho chcete použít bez jakýchkoliv změn.
+assessment#:#use_previous_solution_advice_file_upload#:#The shown files for the question are your previously uploaded ones. Select the files you want to reuse and click the button to confirm.###16 12 2025 new variable
 assessment#:#user_has_finished_a_test#:#Účastník dokončil test.
 assessment#:#user_not_invited#:#K této zkoušce nejste připuštěn.
 assessment#:#user_wrong_clientip#:#Nemáte oprávněnou IP adresu k použití tohoto testu.
@@ -2475,6 +2475,7 @@ blog#:#blog_whole_blog#:#Whole Blog###31 03 2023 new variable
 book#:#X_reservations_of#:#%s reservations of###30 04 2021 new variable
 book#:#book_add#:#Přidat zásobník objednávek
 book#:#book_add_object#:#Přidat objekt
+book#:#book_add_participant#:#Add Participant###16 12 2025 new variable
 book#:#book_add_schedule#:#Přidat harmonogram
 book#:#book_additional_info_file#:#Doplňkový popis
 book#:#book_all#:#Zobrazit vše
@@ -2493,7 +2494,6 @@ book#:#book_booking#:#Booking###30 04 2024 new variable
 book#:#book_booking_information#:#Informace
 book#:#book_booking_objects#:#Booking Objects###31 03 2023 new variable
 book#:#book_booking_reminders#:#Nadcházející rezervace
-book#:#book_bookings_per_user#:#Bookings per User###31 03 2023 new variable
 book#:#book_bulk_confirmation#:#Please check that all values are listed correctly.###30 04 2024 new variable
 book#:#book_bulk_creation#:#Bulk Creation###30 04 2024 new variable
 book#:#book_bulk_data#:#Item Data###30 04 2024 new variable
@@ -2622,6 +2622,7 @@ book#:#book_show_message#:#Show Message###30 04 2024 new variable
 book#:#book_title_description_nr#:#Title; Description; Number of Units###30 04 2024 new variable
 book#:#book_title_description_nr_info#:#Enter title, description and number of units separated by semicolon or TAB character (if importing from spreadsheet software). Use one line per item.###30 04 2024 new variable
 book#:#book_too_many_preferences#:#You selected too many preferences. The preferences have not been saved.###07 02 2020 new variable
+book#:#book_total_individual_bookings_limit#:#Limit the number of bookings that can be carried out by/for individual participants in total, across all available items. Each bookable item can still only be booked once per participant.###16 12 2025 new variable
 book#:#book_type_warning#:#Žádné objekty k objednání nejsou aktuálně dostupné. K použití zásobníku objednávek musíte vytvořit objekty pro objednání.
 book#:#book_week#:#Week###30 04 2024 new variable
 book#:#book_your_bookings#:#Your Reservations###07 02 2020 new variable
@@ -4833,6 +4834,7 @@ common#:#not_available#:#Není dostupný
 common#:#not_implemented_yet#:#Není dosud implementováno
 common#:#not_installed#:#Není nainstalován
 common#:#not_logged_in#:#Nejste přihlášen(a)
+common#:#not_ok#:#Not OK###16 12 2025 new variable
 common#:#note#:#Poznámka
 common#:#notes#:#Poznámky
 common#:#notes_and_comments#:#Poznámky a komentáře
@@ -5530,6 +5532,7 @@ common#:#select#:#Vybrat
 common#:#select_all#:#Vybrat vše
 common#:#select_at_least_one_object#:#Vyberte prosím alespoň jeden objekt.
 common#:#select_file#:#Vybrat soubor
+common#:#select_file_from_computer#:#Select File###16 12 2025 new variable
 common#:#select_files_from_computer#:#Vyberte soubory z Vyšeho počítače
 common#:#select_max_one_item#:#Vyberte prosím pouze jednu položku
 common#:#select_object_to_link#:#Vyberte prosím objekt, který chcete připojit
@@ -5834,6 +5837,7 @@ common#:#upload_settings#:#Nastavení ukládání
 common#:#upload_svg_rejection_message#:#An uploaded SVG file contains possibily malicious code and cannot be processed.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_base64#:#The file contains base64 encoded content.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_elements#:#The file contains elements or attributes which are not allowed or known.###30 04 2024 new variable
+common#:#upload_svg_rejection_message_foreign_object#:#The file contains foreign objects.###20 01 2026 new variable
 common#:#upload_svg_rejection_message_script#:#The file contains script-Elements.###30 04 2024 new variable
 common#:#uploaded_and_checked#:#Soubor byl odeslán a zkontrolován, můžete nyní můžete spustit jeho import.
 common#:#uploading#:#Ukládání...
@@ -6054,6 +6058,7 @@ cont#:#cont_news_timeline_landing_page#:#Vstupní stránka
 cont#:#cont_news_timeline_landing_page_info#:#Stránka časové osy bude vstupní stránkou.
 cont#:#cont_news_timeline_tab#:#Časová osa
 cont#:#cont_no_title#:#Empty Title###30 07 2024 new variable
+cont#:#cont_only_crs_grp_fold_download#:#Only courses, groups, folders or files can be downloaded.###20 01 2026 new variable
 cont#:#cont_page_type_cont#:#Repository Page (Cours, Group, ...)###30 04 2021 new variable
 cont#:#cont_page_type_cstr#:#Course Start Page (Learning Objectives View)###30 04 2021 new variable
 cont#:#cont_path#:#Cesta
@@ -6136,10 +6141,8 @@ content#:#cont_Headline2#:#Nadpis 2
 content#:#cont_Headline3#:#Nadpis 3
 content#:#cont_Information#:#Information###07 02 2020 new variable
 content#:#cont_Interaction#:#Interaction###07 02 2020 new variable
-content#:#cont_Link#:#Link###07 02 2020 new variable
 content#:#cont_List#:#Seznam
 content#:#cont_Literature#:#Literature###07 02 2020 new variable
-content#:#cont_Media#:#Média (Standardní)
 content#:#cont_Mnemonic#:#K zapamatování
 content#:#cont_Numbers#:#Numbers###30 04 2021 new variable
 content#:#cont_Poly#:#Mnohoúhelník
@@ -6251,6 +6254,8 @@ content#:#cont_chapters_after_pages#:#Povšimněte si prosím, že těmto strán
 content#:#cont_chapters_and_pages#:#Kapitoly a stránky
 content#:#cont_chapters_only#:#Pouze kapitoly
 content#:#cont_char_format#:#Písmo
+content#:#cont_char_link#:#Link###20 01 2026 new variable
+content#:#cont_char_media#:#Media (Standard)###20 01 2026 new variable
 content#:#cont_char_style_acc#:#Zvýrazněný
 content#:#cont_char_style_code#:#Kód
 content#:#cont_char_style_com#:#Komentář
@@ -8692,6 +8697,7 @@ dcl#:#dcl_no_fields_yet#:#Zde není žádné pole definované pro tuto tabulku, 
 dcl#:#dcl_no_read_access_on_any_standard_view#:#Nemáte přístup pro čtení v žádném standardním zobrazení tabulky.
 dcl#:#dcl_no_search_results_found_for#:#Žádné moduly nenalezeny pro
 dcl#:#dcl_no_such_reference#:#Následující hodnoty nejsou dostupné tabulce odkazů:
+dcl#:#dcl_no_table_found#:#No visible table found!###16 12 2025 new variable
 dcl#:#dcl_no_tableview_found#:#No visible tableview found!###08 07 2025 new variable
 dcl#:#dcl_not_checked#:#Nevybráno
 dcl#:#dcl_not_supported_in_import#:#Tento typ pole není v importu podporováno
@@ -8700,7 +8706,6 @@ dcl#:#dcl_notification_activated#:#Upozorňování aktivní
 dcl#:#dcl_notification_deactivate_dcl#:#Deaktivovat upozornění pro sběr dat
 dcl#:#dcl_notification_deactivated#:#Upozorňování deaktiváno
 dcl#:#dcl_notification_info#:#O upozornění rozhoduje každý uživatel
-dcl#:#dcl_notimage_exception#:#Tento soubor musí být obrázek.
 dcl#:#dcl_noturl_exception#:#Musíte vložit odkaz (začínající s http://)
 dcl#:#dcl_number#:#Celé číslo
 dcl#:#dcl_number_desc#:#Pole pro celočíselné hodnoty (max. 9 číslic). Žádná desetinná místa nebo zlomky.
@@ -8758,8 +8763,6 @@ dcl#:#dcl_std_field_not_importable#:# - Standardní pole nejsou importovatelná.
 dcl#:#dcl_std_filter#:#Standardní filtr
 dcl#:#dcl_supported_filetypes#:#Povolené přípony souborů
 dcl#:#dcl_supported_filetypes_desc#:#Můžete nastavit povolené přípony s oddělovači. Například: pdf, docx
-dcl#:#dcl_switch_table#:#Switch Table###30 04 2024 new variable
-dcl#:#dcl_switch_view#:#Change View###30 04 2024 new variable
 dcl#:#dcl_table#:#Tabulka
 dcl#:#dcl_table_id#:#ID tabulky
 dcl#:#dcl_table_info#:#Uživatelé s oprávněním "upravit nastavení" (viz tab "Oprávnění") vždy mají oprávnění přidat/upravit/smazat položky. Uživatelé s oprávněním "upravit položky" (viz tab "Oprávnění") mají jen oprávnění podle nastavení odpovídající ve formuláři níže.
@@ -8797,7 +8800,7 @@ dcl#:#dcl_text_email_title#:#Název
 dcl#:#dcl_text_email_title_info#:#Název výše uvedené URL adresy nebo e-mailové adresy (volitelné).
 dcl#:#dcl_text_selection#:#Výběr textu
 dcl#:#dcl_text_selection_desc#:#Nabídka výběru možností textu.
-dcl#:#dcl_title_standardview#:#Standardní zobrazení
+dcl#:#dcl_title_standard#:#Standard###20 01 2026 new variable
 dcl#:#dcl_unique#:#Unikátní
 dcl#:#dcl_unique_desc#:#V tomto poli může být stejný záznam vytvořen jen jednou.
 dcl#:#dcl_unique_exception#:#Hodnota Vámi vložená je již použita jiným záznamem.
@@ -8820,6 +8823,8 @@ dcl#:#dcl_wrong_regex#:#Vámi vložený text neodpovídá specifikaci pro toto p
 dcl#:#dcl_xls_async_export#:#as XLSX (asynchronous)###20 05 2025 new variable
 dcl#:#fieldtitle_allow_chars#:#Povolené znaky: %s
 dcl#:#fileupload_not_migrated#:#File has not yet been migration and cannot be displayed. Please contact your System-Administrator.###30 04 2024 new variable
+dcl#:#table_not_found#:#Table not found!###16 12 2025 new variable
+dcl#:#tableview_not_found#:#Tableview not found!###16 12 2025 new variable
 didactic#:#activate_exclusive_template#:#Výchozí šedá
 didactic#:#activate_exclusive_template_info#:#Standardní šablona nebude k dispozici, pokud je tato šablona aktivní.
 didactic#:#activate_local_didactic_template#:#Rozsah použití
@@ -9415,6 +9420,7 @@ exc#:#exc_passed_status_determination#:#Stanovení stavu „splněno“
 exc#:#exc_passing_exc#:#Splnění cvičení
 exc#:#exc_past#:#Past###30 04 2024 new variable
 exc#:#exc_peer_deadline_mismatch#:#Vzhledem k tomu, že zpětná vazba je dána po uplynutí konečného termínu, nesmí být konečný termín pro zpětnou vazbu kratší než konečný termín úlohy.
+exc#:#exc_peer_feedback_status#:#Feedback Status###20 01 2026 new variable
 exc#:#exc_peer_review#:#Vzájemná zpětná vazba
 exc#:#exc_peer_review_ass_setting_info#:#Pokud je povolena, uživatelé mohou partnery hodnotit po uplynutí lhůty.
 exc#:#exc_peer_review_chars_invalid#:#Nejméně jedna z vašich zpětných vazeb nemá požadovanou minimální délku %s znaků.
@@ -11050,6 +11056,7 @@ lti#:#highscore_top_table#:#Top Ranking###07 02 2020 new variable
 lti#:#highscore_top_table_description#:#Participants are presented with a table containing the top rankings.###07 02 2020 new variable
 lti#:#highscore_wtime#:#Duration###07 02 2020 new variable
 lti#:#highscore_wtime_description#:#A column containing the duration will be included in the ranking.###07 02 2020 new variable
+lti#:#launch_custom_params#:#Custom launch parameters###27 11 2025 new variable
 lti#:#launch_method#:#Options for Launch###07 02 2020 new variable
 lti#:#launch_method_embedded#:#Embedded Content###07 02 2020 new variable
 lti#:#launch_method_embedded_info#:#The content is opened within the ILIAS context. It is presented as embedded content within the content tab.###07 02 2020 new variable
@@ -11712,6 +11719,7 @@ mep#:#mep_all_mobs#:#Všechny mediální objekty
 mep#:#mep_bulk_upload#:#Hromadné nahrání
 mep#:#mep_choose_from_folder#:#Vyberte ze složky
 mep#:#mep_choose_from_mep#:#Vyberte ze zásobníku
+mep#:#mep_clipboard_info#:#Here you can upload media files that you can then access from any page on which you have access to the page editor. The clipboard is also accessible in media pools. This storage is only for you and cannot be viewed by other users.###20 01 2026 new variable
 mep#:#mep_content#:#Obsah
 mep#:#mep_content_snippet_in_use#:#Obsah úryvků '%s' je v použití a nemůže být smazán.
 mep#:#mep_content_snippet_used_in_older_versions#:#Povšimněte si prosím: Tento úryvek je použit ve starších verzích některých stránek. Pokud budete tyto stránky procházet zpět před verzi, která obsahuje tento úryvek, úryven bude na stránce chybět.
@@ -12697,6 +12705,7 @@ news#:#news_news_item_visibility_info#:#Veřejné zprávy mohou být přístupn�
 news#:#news_news_items#:#Položky zpráv
 news#:#news_no_js_click_here#:#Pokud zprávy nejsou zobrazeny, klepněte zde.
 news#:#news_no_news_items#:#Žádné dostupné zprávy.
+news#:#news_not_available#:#Unavailable News###20 01 2026 new variable
 news#:#news_notifications#:#Oznámení
 news#:#news_notifications_public#:#Veřejné oznámení
 news#:#news_notifications_public_info#:#Je-li tato volba zapnuta, oznamování může být získáváno přes osobní feeds RSS mimo ILIAS. Povšimněte si prosím, že tento způsob zajišťuje oznamování  přístupné bez autentizace.
@@ -15612,7 +15621,6 @@ skmg#:#skmg_usage_type_info_prof#:#Používá se v profilech dovedností
 skmg#:#skmg_usage_type_info_res#:#Objekty úložiště přiřazené jako doporučený zdroj
 skmg#:#skmg_usage_type_info_user#:#Přidělené uživatelům
 skmg#:#skmg_your_self_evaluation#:#Vaše sebehodnocení
-style#:#Style#:#Style###07 02 2020 new variable
 style#:#adapt_icon#:#Upravte ikonu
 style#:#adapt_icon_description#:#Upravte barvy ikony nebo změňte samotnou ikonu.
 style#:#adapt_icons#:#Upravte barvy ikon
@@ -17185,6 +17193,7 @@ trac#:#trac_view_mode_all#:#Všechny objekty
 trac#:#trac_view_mode_collection#:#Jen objekty, kteé určují celkový status
 trac#:#trac_visits#:#Počet návštěv
 trac#:#trac_visits_info#:#Každá návštěva stránky je počítána jako jedna návštěva.
+trac#:#trac_visits_nr#:#Number of Visits###20 01 2026 new variable
 trac#:#user_total#:#Celkem uživatelů
 trac#:#view_mode#:#Mód zobrazení
 tstv#:#tstv_create#:#Vytvořit verifikaci testu

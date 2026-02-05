@@ -508,6 +508,7 @@ assessment#:#ass_create_export_file_with_results#:#Ustvari datoteko za izvoz (vk
 assessment#:#ass_create_export_test_archive#:#Ustvari arhivsko datoteko za test
 assessment#:#ass_create_export_test_results#:#Ustvari datoteko z rezultati
 assessment#:#ass_create_question#:#Ustvari vprašanje
+assessment#:#ass_file_upload_reuse_btn#:#Reuse Selected Files###16 12 2025 new variable
 assessment#:#ass_imap_hint#:#Opomba (prikaže se kot opis orodja)
 assessment#:#ass_imap_map_file_not_readable#:#Naloženega slikovnega zemljevida ni mogoče prebrati.
 assessment#:#ass_imap_no_map_found#:#V naloženem Imapemap ni bila najdena nobena podprta oblika.
@@ -647,7 +648,6 @@ assessment#:#errFormulaQuestion#:#Vprašanje v obliki formule vsebuje napačne p
 assessment#:#errRecursionInResult#:#Formula vsebuje nerešljivo rekurzijo.
 assessment#:#err_category_in_use#:#Kategorije ni mogoče izbrisati. Ena ali več enot te kategorije je že v uporabi.
 assessment#:#err_divider_too_big#:#The divider of one of the variables in this question is too big.
-assessment#:#err_divider_too_big_specific#:#The divider of this variable is too big.###04 11 2025 new variable
 assessment#:#err_division#:#This value has to be smaller than the maximum range.
 assessment#:#err_duplicate_results#:#Večkrat ste uporabili eno spremenljivko rezultata. To v besedilu naloge ni dovoljeno!
 assessment#:#err_no_formula#:#Vnesite formulo za izračun rezultata.
@@ -1660,7 +1660,6 @@ assessment#:#tst_postpone_on_desc#:#Vprašanja, pri katerih udeleženci odgovore
 assessment#:#tst_presentation_properties#:#Izvedba: Lastnosti vprašanj
 assessment#:#tst_presentation_settings_section#:#Prikaz
 assessment#:#tst_previous_access_code_not_available#:#No previous code available!###30 04 2024 new variable
-assessment#:#tst_print#:#Test in ocena - prikaz za tiskanje
 assessment#:#tst_proceed#:#Nadaljuj
 assessment#:#tst_processing_time#:#Omeji trajanje obdelave
 assessment#:#tst_processing_time_desc#:#Udeleženci imajo omejen čas opravljanja testa. Čas teče od trenutka, ko udeleženec prvič začne s testom. "Prekini test" ne ustavi časa obdelave. Če je število možnih opravljanj testa omejeno, se na zavihku »Nadzorna plošča« prikaže dodatna funkcija, ki udeležencem omogoči dodatni čas.
@@ -1988,6 +1987,7 @@ assessment#:#unlock#:#Odkleni
 assessment#:#uploaded_material#:#Naložena gradiva
 assessment#:#use_previous_solution#:#Uporabi prejšnjo rešitev
 assessment#:#use_previous_solution_advice#:#Prikazano rešitev, ki ste jo oddali pred tem. Če želite rešitev prevzeti brez sprememb, morate prevzem te rešitve potrditi znotraj vprašanja.
+assessment#:#use_previous_solution_advice_file_upload#:#The shown files for the question are your previously uploaded ones. Select the files you want to reuse and click the button to confirm.###16 12 2025 new variable
 assessment#:#user_has_finished_a_test#:#Udeleženec je zaključil test.
 assessment#:#user_not_invited#:#Niste udeleženec tega izpita.
 assessment#:#user_wrong_clientip#:#Napačen IP odjemalca
@@ -2473,6 +2473,7 @@ blog#:#blog_whole_blog#:#Whole Blog###31 03 2023 new variable
 book#:#X_reservations_of#:#%s reservations of
 book#:#book_add#:#Ustvari skupino rezervacij
 book#:#book_add_object#:#Dodaj objekt
+book#:#book_add_participant#:#Add Participant###16 12 2025 new variable
 book#:#book_add_schedule#:#Dodaj časovni raster
 book#:#book_additional_info_file#:#Dodaten opis
 book#:#book_all#:#Prikaži vse
@@ -2491,7 +2492,6 @@ book#:#book_booking#:#Booking###30 04 2024 new variable
 book#:#book_booking_information#:#Informacija
 book#:#book_booking_objects#:#Booking Objects###31 03 2023 new variable
 book#:#book_booking_reminders#:#Rezervacije na čakanju
-book#:#book_bookings_per_user#:#Bookings per User###31 03 2023 new variable
 book#:#book_bulk_confirmation#:#Please check that all values are listed correctly.###30 04 2024 new variable
 book#:#book_bulk_creation#:#Bulk Creation###30 04 2024 new variable
 book#:#book_bulk_data#:#Item Data###30 04 2024 new variable
@@ -2620,6 +2620,7 @@ book#:#book_show_message#:#Show Message###30 04 2024 new variable
 book#:#book_title_description_nr#:#Title; Description; Number of Units###30 04 2024 new variable
 book#:#book_title_description_nr_info#:#Enter title, description and number of units separated by semicolon or TAB character (if importing from spreadsheet software). Use one line per item.###30 04 2024 new variable
 book#:#book_too_many_preferences#:#You selected too many preferences. The preferences have not been saved.
+book#:#book_total_individual_bookings_limit#:#Limit the number of bookings that can be carried out by/for individual participants in total, across all available items. Each bookable item can still only be booked once per participant.###16 12 2025 new variable
 book#:#book_type_warning#:#Trenutno ni na voljo nobenih objektov rezervacije. Če želite uporabiti skupino, morate najprej ustvariti objekte rezervacije.
 book#:#book_week#:#Week###30 04 2024 new variable
 book#:#book_your_bookings#:#Your Reservations
@@ -4831,6 +4832,7 @@ common#:#not_available#:#Ni na voljo
 common#:#not_implemented_yet#:#V razvoju
 common#:#not_installed#:#Ni nameščeno
 common#:#not_logged_in#:#Niste prijavljeni
+common#:#not_ok#:#Not OK###16 12 2025 new variable
 common#:#note#:#Opomba
 common#:#notes#:#Opombe
 common#:#notes_and_comments#:#Opombe in komentarji
@@ -5528,6 +5530,7 @@ common#:#select#:#Izberi
 common#:#select_all#:#Izberi vse
 common#:#select_at_least_one_object#:#Izberite vsaj en objekt.
 common#:#select_file#:#Izberi datoteko
+common#:#select_file_from_computer#:#Select File###16 12 2025 new variable
 common#:#select_files_from_computer#:#Izberi datoteke
 common#:#select_max_one_item#:#Izberite samo en objekt.
 common#:#select_object_to_link#:#Izberite objekt, ki ga želite povezati.
@@ -5832,6 +5835,7 @@ common#:#upload_settings#:#Nastavitve nalaganja
 common#:#upload_svg_rejection_message#:#An uploaded SVG file contains possibily malicious code and cannot be processed.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_base64#:#The file contains base64 encoded content.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_elements#:#The file contains elements or attributes which are not allowed or known.###30 04 2024 new variable
+common#:#upload_svg_rejection_message_foreign_object#:#The file contains foreign objects.###20 01 2026 new variable
 common#:#upload_svg_rejection_message_script#:#The file contains script-Elements.###30 04 2024 new variable
 common#:#uploaded_and_checked#:#Datoteka je bila naložena in preverjena, zdaj jo lahko uvozite.
 common#:#uploading#:#Nalaganje...
@@ -6052,6 +6056,7 @@ cont#:#cont_news_timeline_landing_page#:#Začetna stran
 cont#:#cont_news_timeline_landing_page_info#:#Časovnica kot začetna stran
 cont#:#cont_news_timeline_tab#:#Časovnica
 cont#:#cont_no_title#:#Empty Title###30 07 2024 new variable
+cont#:#cont_only_crs_grp_fold_download#:#Only courses, groups, folders or files can be downloaded.###20 01 2026 new variable
 cont#:#cont_page_type_cont#:#Repository Page (Cours, Group, ...)
 cont#:#cont_page_type_cstr#:#Course Start Page (Learning Objectives View)
 cont#:#cont_path#:#Pot
@@ -6134,10 +6139,8 @@ content#:#cont_Headline2#:#Naslov 2
 content#:#cont_Headline3#:#Naslov 3
 content#:#cont_Information#:#Informacija
 content#:#cont_Interaction#:#Interakcija
-content#:#cont_Link#:#Link###19 08 2022 new variable
 content#:#cont_List#:#Seznam
 content#:#cont_Literature#:#Literatura
-content#:#cont_Media#:#Mediji (privzeto)
 content#:#cont_Mnemonic#:#Opomba
 content#:#cont_Numbers#:#Numbers###19 08 2022 new variable
 content#:#cont_Poly#:#Poligon
@@ -6249,6 +6252,8 @@ content#:#cont_chapters_after_pages#:#Upoštevajte, da so znotraj ravni najprej 
 content#:#cont_chapters_and_pages#:#Poglavja in strani
 content#:#cont_chapters_only#:#Samo poglavja
 content#:#cont_char_format#:#Oblika znakov
+content#:#cont_char_link#:#Link###20 01 2026 new variable
+content#:#cont_char_media#:#Media (Standard)###20 01 2026 new variable
 content#:#cont_char_style_acc#:#Poudarjeno
 content#:#cont_char_style_code#:#Koda
 content#:#cont_char_style_com#:#Komentar
@@ -8690,6 +8695,7 @@ dcl#:#dcl_no_fields_yet#:#Za to tabelo še niso bila ustvarjena polja, zato ne m
 dcl#:#dcl_no_read_access_on_any_standard_view#:#Nimate bralnega dostopa do nobenega od privzetih pogledov tabele.
 dcl#:#dcl_no_search_results_found_for#:#Najden ni bil noben modul z:
 dcl#:#dcl_no_such_reference#:#Naslednja vrednost ni na voljo v referenčni tabeli:
+dcl#:#dcl_no_table_found#:#No visible table found!###16 12 2025 new variable
 dcl#:#dcl_no_tableview_found#:#No visible tableview found!###08 07 2025 new variable
 dcl#:#dcl_not_checked#:#Ni izbrano
 dcl#:#dcl_not_supported_in_import#:#Ta tip polja ni podprt za uvoz.
@@ -8698,7 +8704,6 @@ dcl#:#dcl_notification_activated#:#Obveščanje je aktivirano
 dcl#:#dcl_notification_deactivate_dcl#:#Onemogoči obveščanje
 dcl#:#dcl_notification_deactivated#:#Obveščanje je onemogočeno
 dcl#:#dcl_notification_info#:#Aktivira individualno funkcijo obveščanja za uporabnike.
-dcl#:#dcl_notimage_exception#:#Datoteka mora biti slika.
 dcl#:#dcl_noturl_exception#:#Vnesite povezavo (začenši s http:// ali www.) ali e-poštni naslov.
 dcl#:#dcl_number#:#Cela števila
 dcl#:#dcl_number_desc#:#Vnosno polje za cela števila (maksimalno 9 števk). Ulomki in decimalna števila niso dovoljeni.
@@ -8756,8 +8761,6 @@ dcl#:#dcl_std_field_not_importable#:# - Privzetih polj ni mogoče uvoziti.
 dcl#:#dcl_std_filter#:#Prednastavitev filtra
 dcl#:#dcl_supported_filetypes#:#Dovoljene končnice datotek
 dcl#:#dcl_supported_filetypes_desc#:#Tukaj lahko vnesete končnice datotek, ločene z vejicami. Na primer: pdf, docx
-dcl#:#dcl_switch_table#:#Switch Table###30 04 2024 new variable
-dcl#:#dcl_switch_view#:#Change View###30 04 2024 new variable
 dcl#:#dcl_table#:#Tabela
 dcl#:#dcl_table_id#:#ID tabele
 dcl#:#dcl_table_info#:#V nadaljevanju določite, kaj lahko v tej tabeli delajo uporabniki, ki imajo v zbirki podatkov pravico "Vnašanje".
@@ -8795,7 +8798,7 @@ dcl#:#dcl_text_email_title#:#Naslov
 dcl#:#dcl_text_email_title_info#:#Naslov za URL ali e-poštni naslov (izbirno).
 dcl#:#dcl_text_selection#:#Izbirni meni besedilo
 dcl#:#dcl_text_selection_desc#:#Zagotovitev izbirnih možnosti (besedilo)
-dcl#:#dcl_title_standardview#:#Privzeti pogled
+dcl#:#dcl_title_standard#:#Standard###20 01 2026 new variable
 dcl#:#dcl_unique#:#Prepreči enake vnose
 dcl#:#dcl_unique_desc#:#V tem polju je dovoljen samo en identičen vnos.
 dcl#:#dcl_unique_exception#:#Vneseno vrednost že uporablja drug vnos.
@@ -8818,6 +8821,8 @@ dcl#:#dcl_wrong_regex#:#Vneseno besedilo se ne ujema s specifikacijo tega polja 
 dcl#:#dcl_xls_async_export#:#as XLSX (asynchronous)###20 05 2025 new variable
 dcl#:#fieldtitle_allow_chars#:#Nedovoljeni znaki: %s
 dcl#:#fileupload_not_migrated#:#File has not yet been migration and cannot be displayed. Please contact your System-Administrator.###30 04 2024 new variable
+dcl#:#table_not_found#:#Table not found!###16 12 2025 new variable
+dcl#:#tableview_not_found#:#Tableview not found!###16 12 2025 new variable
 didactic#:#activate_exclusive_template#:#Privzeto sivo
 didactic#:#activate_exclusive_template_info#:#Privzeta predloga bo siva povsod, kjer je ta didaktična predloga aktivirana.
 didactic#:#activate_local_didactic_template#:#Področje veljave
@@ -9413,6 +9418,7 @@ exc#:#exc_passed_status_determination#:#Ocena kot „Opravljeno".
 exc#:#exc_passing_exc#:#Opravljena vaja
 exc#:#exc_past#:#Past###30 04 2024 new variable
 exc#:#exc_peer_deadline_mismatch#:#Ker je povratno informacijo mogoče oddati šele po roku za oddajo vadbene enote, rok za povratno informacijo ne sme biti pred datumom oddaje.
+exc#:#exc_peer_feedback_status#:#Feedback Status###20 01 2026 new variable
 exc#:#exc_peer_review#:#Povratne informacije kolegov
 exc#:#exc_peer_review_ass_setting_info#:#Potem ko sta potekla rok za oddajo in po potrebi naknadni rok, lahko udeleženci med sabo ocenjujejo svoje rezultate dela. Točne nastavitve povratnih informacij kolegov se izvedejo v zavihku z enakim imenom. Zavihek se prikaže, ko je ta možnost aktivirana in shranjena.
 exc#:#exc_peer_review_chars_invalid#:#Niste še dosegli zahtevane dolžine besedila, ki je %s znakov.
@@ -11048,6 +11054,8 @@ lti#:#highscore_top_table#:#Top Ranking
 lti#:#highscore_top_table_description#:#Participants are presented with a table containing the top rankings.
 lti#:#highscore_wtime#:#Duration
 lti#:#highscore_wtime_description#:#A column containing the duration will be included in the ranking.
+lti#:#launch_custom_params#:#Custom launch parameters###27 11 2025 new variable
+lti#:#launch_custom_params#:#Custom launch parameters###27 11 2025 new variable
 lti#:#launch_method#:#Options for Launch
 lti#:#launch_method_embedded#:#Embedded Content
 lti#:#launch_method_embedded_info#:#The content is opened within the ILIAS context. It is presented as embedded content within the content tab.
@@ -11710,6 +11718,7 @@ mep#:#mep_all_mobs#:#Vsi medijski objekti
 mep#:#mep_bulk_upload#:#Masovno nalaganje
 mep#:#mep_choose_from_folder#:#Izberi iz mape
 mep#:#mep_choose_from_mep#:#Izberi iz skupine
+mep#:#mep_clipboard_info#:#Here you can upload media files that you can then access from any page on which you have access to the page editor. The clipboard is also accessible in media pools. This storage is only for you and cannot be viewed by other users.###20 01 2026 new variable
 mep#:#mep_content#:#Medijski objekti
 mep#:#mep_content_snippet_in_use#:#Sestavni del vsebine '%s' je v uporabi in ga zato ni mogoče izbrisati.
 mep#:#mep_content_snippet_used_in_older_versions#:#Pozor: Ta sestavni del vsebine so v starejših različicah uporabljale nekatere strani. Če je taka različica strani obnovljena, bo v njej manjkal ta sestavni del vsebine.
@@ -12695,6 +12704,7 @@ news#:#news_news_item_visibility_info#:#Public news can be accessed without auth
 news#:#news_news_items#:#News Item(s)
 news#:#news_no_js_click_here#:#If news are not displayed, click here.
 news#:#news_no_news_items#:#No news available.
+news#:#news_not_available#:#Unavailable News###20 01 2026 new variable
 news#:#news_notifications#:#Notifications
 news#:#news_notifications_public#:#Public Notifications
 news#:#news_notifications_public_info#:#If this option is enabled, notifications can be obtained by personal RSS feeds outside of ILIAS. Please note that this makes notifications accessible without authentication.
@@ -15610,7 +15620,6 @@ skmg#:#skmg_usage_type_info_prof#:#Used in Skill Profiles
 skmg#:#skmg_usage_type_info_res#:#Repository Objects Assigned as Suggested Resource
 skmg#:#skmg_usage_type_info_user#:#Assigned to Users
 skmg#:#skmg_your_self_evaluation#:#Your Self-Evaluation
-style#:#Style#:#Style###19 08 2022 new variable
 style#:#adapt_icon#:#Adapt Icon
 style#:#adapt_icon_description#:#Adapt icon colors or change the icon itself.
 style#:#adapt_icons#:#Adapt Icon Colors
@@ -17183,6 +17192,7 @@ trac#:#trac_view_mode_all#:#Vsi objekti
 trac#:#trac_view_mode_collection#:#Samo objekti, ki določajo skupen status
 trac#:#trac_visits#:#Minimalno število obiskov
 trac#:#trac_visits_info#:#Obisk se šteje kot nov obisk šele po %s sekundah.
+trac#:#trac_visits_nr#:#Number of Visits###20 01 2026 new variable
 trac#:#user_total#:#Število uporabnikov
 trac#:#view_mode#:#Način prikaza
 tstv#:#tstv_create#:#Ustvari certifikat za test

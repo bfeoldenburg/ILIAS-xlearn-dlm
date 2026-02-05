@@ -262,7 +262,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
         $credentials->setPassword($soapPw);
         $credentials->tryAuthenticationOnLoginPage();
 
-        $frontend = new ilAuthFrontendCredentialsApache($this->httpRequest, $this->ctrl);
+        $frontend = new ilAuthFrontendCredentialsApache($this->http, $this->refinery, $this->ctrl);
         $frontend->tryAuthenticationOnLoginPage();
 
         $tpl = self::initStartUpTemplate('tpl.login.html');
@@ -648,6 +648,23 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
         );
         $frontend->authenticate();
 
+        setcookie(session_name(), session_id(), [
+            'expires' => 0,
+            'path' => rtrim(IL_COOKIE_PATH, '/'),
+            'domain' => IL_COOKIE_DOMAIN,
+            'secure' => true,
+            'httponly' => true,
+            'samesite' => 'None'
+        ]);
+
+        $lti_context_ids = ilSession::get("lti_context_ids");
+
+        if (is_array($lti_context_ids) && isset($lti_context_ids[0])) {
+            $ref_id = $lti_context_ids[0];
+            $obj_type = ilObject::_lookupType($ref_id, true);
+            ilSession::set('orig_request_target', "goto.php?target=" . $obj_type . "_" . $ref_id . "&lti_context_id=" . $ref_id);
+        }
+
         switch ($status->getStatus()) {
             case ilAuthStatus::STATUS_AUTHENTICATED:
                 ilLoggerFactory::getLogger('auth')->debug('Authentication successful; Redirecting to starting page.');
@@ -671,7 +688,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
     {
         $this->getLogger()->debug('Trying apache authentication');
 
-        $credentials = new ilAuthFrontendCredentialsApache($this->httpRequest, $this->ctrl);
+        $credentials = new ilAuthFrontendCredentialsApache($this->http, $this->refinery, $this->ctrl);
         $credentials->initFromRequest();
 
         $provider_factory = new ilAuthProviderFactory();
@@ -805,6 +822,16 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
         ILIAS\UI\Component\Input\Container\Form\Form $form = null
     ): string {
         global $tpl;
+
+        $shib_is_default_without_local_login = (
+            (int) $this->setting->get('auth_mode') === ilAuthUtils::AUTH_SHIBBOLETH &&
+            !$this->setting->get('shib_auth_allow_local', '0')
+        );
+        $cas_is_default = (int) $this->setting->get('auth_mode') === ilAuthUtils::AUTH_CAS;
+
+        if ($cas_is_default || $shib_is_default_without_local_login) {
+            return $page_editor_html;
+        }
 
         return $this->substituteLoginPageElements(
             $tpl,

@@ -510,6 +510,7 @@ assessment#:#ass_create_export_file_with_results#:#Създаване на ек�
 assessment#:#ass_create_export_test_archive#:#Създаване на архивен файл на теста
 assessment#:#ass_create_export_test_results#:# Експортиране на резултатите от тестовете
 assessment#:#ass_create_question#:#Създаване на въпрос
+assessment#:#ass_file_upload_reuse_btn#:#Reuse Selected Files###16 12 2025 new variable
 assessment#:#ass_imap_hint#:#Намек, който да се показва като подсказка
 assessment#:#ass_imap_map_file_not_readable#:#Картата на качените изображения не може да бъде прочетена.
 assessment#:#ass_imap_no_map_found#:#Не можах да намеря никаква форма в качената карта с изображения.
@@ -649,7 +650,6 @@ assessment#:#errFormulaQuestion#:#Въпрос за формула съдърж�
 assessment#:#errRecursionInResult#:#Формулата съдържа безкрайна рекурсия.
 assessment#:#err_category_in_use#:#Най-малко една категория не може да бъде изтрита. Една или повече единици от категорията вече се използват.
 assessment#:#err_divider_too_big#:# Делителят на една от променливите в този въпрос е твърде голям.###16 03 2022 new variable
-assessment#:#err_divider_too_big_specific#:#The divider of this variable is too big.###04 11 2025 new variable
 assessment#:#err_division#:#Тази стойност трябва да е по-малка от максималния диапазон.###16 03 2022 new variable
 assessment#:#err_duplicate_results#:#Използвали сте променлива за резултат повече от веднъж. Това не е разрешено в текста на въпроса.
 assessment#:#err_no_formula#:# Трябва да въведете формула
@@ -1662,7 +1662,6 @@ assessment#:#tst_postpone_on_desc#:#Въпросите, на които не е 
 assessment#:#tst_presentation_properties#:#Настройки на презентацията
 assessment#:#tst_presentation_settings_section#:#Представяне
 assessment#:#tst_previous_access_code_not_available#:#No previous code available!###30 04 2024 new variable
-assessment#:#tst_print#:#Поглед за печат на тестове и оценки
 assessment#:#tst_proceed#:#Продължете
 assessment#:#tst_processing_time#:#Макс. време за обработка
 assessment#:#tst_processing_time_desc#:#Максималното време за обработка започва от момента, в който потребителят започне теста, и приключва след изтичането на въведените часове, минути и секунди.
@@ -1990,6 +1989,7 @@ assessment#:#unlock#:#Отключване###22 06 2022 new variable
 assessment#:#uploaded_material#:#Зареден материал
 assessment#:#use_previous_solution#:#Използване на предишно решение
 assessment#:#use_previous_solution_advice#:#Показаното решение на въпроса е даденото от вас преди това. Трябва да потвърдите приемането на решението, ако искате да го използвате без промяна.
+assessment#:#use_previous_solution_advice_file_upload#:#The shown files for the question are your previously uploaded ones. Select the files you want to reuse and click the button to confirm.###16 12 2025 new variable
 assessment#:#user_has_finished_a_test#:#Участникът е завършил тест.
 assessment#:#user_not_invited#:#Не трябва да се явявате на този тест.
 assessment#:#user_wrong_clientip#:#Нямате правилния IP адрес, за да получите достъп до този тест.
@@ -2475,6 +2475,7 @@ blog#:#blog_whole_blog#:#Whole Blog###31 03 2023 new variable
 book#:#X_reservations_of#:#%s reservations of
 book#:#book_add#:#Прибавяне на резервационен басейн
 book#:#book_add_object#:#Добавяне на обект
+book#:#book_add_participant#:#Add Participant###16 12 2025 new variable
 book#:#book_add_schedule#:#Прибавяне на график
 book#:#book_additional_info_file#:#Допълнително описание
 book#:#book_all#:#Покажи всичко
@@ -2493,7 +2494,6 @@ book#:#book_booking#:#Booking###30 04 2024 new variable
 book#:#book_booking_information#:#Информация
 book#:#book_booking_objects#:#Booking Objects###31 03 2023 new variable
 book#:#book_booking_reminders#:#Предстоящи резервации
-book#:#book_bookings_per_user#:#Bookings per User###31 03 2023 new variable
 book#:#book_bulk_confirmation#:#Please check that all values are listed correctly.###30 04 2024 new variable
 book#:#book_bulk_creation#:#Bulk Creation###30 04 2024 new variable
 book#:#book_bulk_data#:#Item Data###30 04 2024 new variable
@@ -2622,6 +2622,7 @@ book#:#book_show_message#:#Show Message###30 04 2024 new variable
 book#:#book_title_description_nr#:#Title; Description; Number of Units###30 04 2024 new variable
 book#:#book_title_description_nr_info#:#Enter title, description and number of units separated by semicolon or TAB character (if importing from spreadsheet software). Use one line per item.###30 04 2024 new variable
 book#:#book_too_many_preferences#:#Избрали сте твърде много предпочитания. Предпочитанията не са запазени.
+book#:#book_total_individual_bookings_limit#:#Limit the number of bookings that can be carried out by/for individual participants in total, across all available items. Each bookable item can still only be booked once per participant.###16 12 2025 new variable
 book#:#book_type_warning#:#Понастоящем няма налични обекти за резервации. За да използвате пула за резервации, трябва да създадете обекти за резервации.
 book#:#book_week#:#Week###30 04 2024 new variable
 book#:#book_your_bookings#:#Вашите резервации
@@ -4833,6 +4834,7 @@ common#:#not_available#:#Не е налично
 common#:#not_implemented_yet#:#Не е реализирано все още
 common#:#not_installed#:#Не е инсталиран
 common#:#not_logged_in#:#Не сте регистрирани
+common#:#not_ok#:#Not OK###16 12 2025 new variable
 common#:#note#:#Note
 common#:#notes#:#Notes
 common#:#notes_and_comments#:#Нотки и коментари
@@ -5530,6 +5532,7 @@ common#:#select#:#Избор
 common#:#select_all#:#Избиране на всички
 common#:#select_at_least_one_object#:#Изберете поне един обект.
 common#:#select_file#:#Избор на файл
+common#:#select_file_from_computer#:#Select File###16 12 2025 new variable
 common#:#select_files_from_computer#:#Изберете файловете от вашия компютър
 common#:#select_max_one_item#:#Моля, изберете само един елемент
 common#:#select_object_to_link#:#Моля, изберете желания от вас обект за свързване с линк
@@ -5834,6 +5837,7 @@ common#:#upload_settings#:#Настройки за качване
 common#:#upload_svg_rejection_message#:#An uploaded SVG file contains possibily malicious code and cannot be processed.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_base64#:#The file contains base64 encoded content.###30 04 2024 new variable
 common#:#upload_svg_rejection_message_elements#:#The file contains elements or attributes which are not allowed or known.###30 04 2024 new variable
+common#:#upload_svg_rejection_message_foreign_object#:#The file contains foreign objects.###20 01 2026 new variable
 common#:#upload_svg_rejection_message_script#:#The file contains script-Elements.###30 04 2024 new variable
 common#:#uploaded_and_checked#:#Файлът беше актуализиран и проверен, вече можете да започнете да го импортирате.
 common#:#uploading#:#Зареждане...
@@ -6054,6 +6058,7 @@ cont#:#cont_news_timeline_landing_page#:#Страница за кацане
 cont#:#cont_news_timeline_landing_page_info#:#Страницата с графика ще бъде целевата страница.
 cont#:#cont_news_timeline_tab#:#Хронология
 cont#:#cont_no_title#:#Empty Title###30 07 2024 new variable
+cont#:#cont_only_crs_grp_fold_download#:#Only courses, groups, folders or files can be downloaded.###20 01 2026 new variable
 cont#:#cont_page_type_cont#:#Страница на хранилището (курсове, групи, ...)
 cont#:#cont_page_type_cstr#:# Начална страница на курса (изглед на целите на обучението)
 cont#:#cont_path#:#Path
@@ -6136,10 +6141,8 @@ content#:#cont_Headline2#:#Заглавен ред 2
 content#:#cont_Headline3#:#Заглавен ред 3
 content#:#cont_Information#:#Информация###22 06 2022 new variable
 content#:#cont_Interaction#:#Взаимодействие###22 06 2022 new variable
-content#:#cont_Link#:#Връзка###22 06 2022 new variable
 content#:#cont_List#:#Списък###22 06 2022 new variable
 content#:#cont_Literature#:#Литература###22 06 2022 new variable
-content#:#cont_Media#:#Media (Standard)
 content#:#cont_Mnemonic#:#Мнемоник###22 06 2022 new variable
 content#:#cont_Numbers#:#Числа###22 06 2022 new variable
 content#:#cont_Poly#:#Полигон###22 06 2022 new variable
@@ -6251,6 +6254,8 @@ content#:#cont_chapters_after_pages#:#Моля, имайте предвид, ч�
 content#:#cont_chapters_and_pages#:#Глави и страници
 content#:#cont_chapters_only#:#Само глави
 content#:#cont_char_format#:#Character
+content#:#cont_char_link#:#Link###20 01 2026 new variable
+content#:#cont_char_media#:#Media (Standard)###20 01 2026 new variable
 content#:#cont_char_style_acc#:#Accentuated
 content#:#cont_char_style_code#:#Код###22 06 2022 new variable
 content#:#cont_char_style_com#:#Коментар###22 06 2022 new variable
@@ -8692,6 +8697,7 @@ dcl#:#dcl_no_fields_yet#:#Няма дефинирани полета за таз
 dcl#:#dcl_no_read_access_on_any_standard_view#:#Нямате достъп за четене до нито един стандартен изглед на таблица.
 dcl#:#dcl_no_search_results_found_for#:#Няма намерени модули за
 dcl#:#dcl_no_such_reference#:#Следващата стойност не е налична в референтната таблица:
+dcl#:#dcl_no_table_found#:#No visible table found!###16 12 2025 new variable
 dcl#:#dcl_no_tableview_found#:#No visible tableview found!###08 07 2025 new variable
 dcl#:#dcl_not_checked#:#Не е проверено.
 dcl#:#dcl_not_supported_in_import#:#Този тип поле не се поддържа в импорта
@@ -8700,7 +8706,6 @@ dcl#:#dcl_notification_activated#:#Активирана нотификация
 dcl#:#dcl_notification_deactivate_dcl#:#Деактивиране на известие за събиране на данни
 dcl#:#dcl_notification_deactivated#:#Деактивиране на нотификацията
 dcl#:#dcl_notification_info#:#Всеки потребител решава за известието
-dcl#:#dcl_notimage_exception#:#Файлът трябва да е снимка.
 dcl#:#dcl_noturl_exception#:# Трябва да въведете връзка (започваща с http://)
 dcl#:#dcl_number#:#Integer
 dcl#:#dcl_number_desc#:#Поле за целочислени стойности (максимум 9 цифри). Не се използват десетични дроби и дробни числа.
@@ -8758,8 +8763,6 @@ dcl#:#dcl_std_field_not_importable#:# - Стандартните полета н
 dcl#:#dcl_std_filter#:#Standardfilter
 dcl#:#dcl_supported_filetypes#:#Допустими файлови разширения
 dcl#:#dcl_supported_filetypes_desc#:#Можете да зададете разрешените разширения, разделени със запетая. Например: pdf, docx
-dcl#:#dcl_switch_table#:#Switch Table###30 04 2024 new variable
-dcl#:#dcl_switch_view#:#Change View###30 04 2024 new variable
 dcl#:#dcl_table#:#Таблица
 dcl#:#dcl_table_id#:#Идентификатор на таблица
 dcl#:#dcl_table_info#:#Потребителите с разрешение "редактиране на настройки" (вж. раздела "Разрешение") винаги имат разрешение да добавят/редактират/изтриват записи. Потребителите с разрешение "редактиране на запис" (вж. раздела "Разрешения") имат само разрешения в съответствие с настройките, посочени във формуляра по-долу.
@@ -8797,7 +8800,7 @@ dcl#:#dcl_text_email_title#:#Заглавие
 dcl#:#dcl_text_email_title_info#:#Заглавие на посочения по-горе URL адрес или имейл адрес (по избор).
 dcl#:#dcl_text_selection#:#Избор на текст
 dcl#:#dcl_text_selection_desc#:#Предлага избор на текстови опции.
-dcl#:#dcl_title_standardview#:#Стандартни изгледи
+dcl#:#dcl_title_standard#:#Standard###20 01 2026 new variable
 dcl#:#dcl_unique#:#Unique
 dcl#:#dcl_unique_desc#:#In dieses Feld kann ein gleichlautender Eintrag nur einmal vorgenommen werden.
 dcl#:#dcl_unique_exception#:#Стойността, която сте въвели, вече е заета от друг запис.
@@ -8820,6 +8823,8 @@ dcl#:#dcl_wrong_regex#:#Въведеният от вас текст не съо�
 dcl#:#dcl_xls_async_export#:#as XLSX (asynchronous)###20 05 2025 new variable
 dcl#:#fieldtitle_allow_chars#:#Допустими знаци: %s
 dcl#:#fileupload_not_migrated#:#File has not yet been migration and cannot be displayed. Please contact your System-Administrator.###30 04 2024 new variable
+dcl#:#table_not_found#:#Table not found!###16 12 2025 new variable
+dcl#:#tableview_not_found#:#Tableview not found!###16 12 2025 new variable
 didactic#:#activate_exclusive_template#:#Grey Out Default
 didactic#:#activate_exclusive_template_info#:#Стандартният шаблон няма да бъде достъпен навсякъде, където този шаблон е активен.
 didactic#:#activate_local_didactic_template#:#Scope of Application
@@ -9415,6 +9420,7 @@ exc#:#exc_passed_status_determination#:#Определяне на състоян
 exc#:#exc_passing_exc#:#Преминаване на упражнението
 exc#:#exc_past#:#Past###30 04 2024 new variable
 exc#:#exc_peer_deadline_mismatch#:#Като обратна връзка се дава след изтичане на крайния срок, крайният срок за обратна връзка не трябва да е по-ранен от крайния срок за изпълнение на задачата.
+exc#:#exc_peer_feedback_status#:#Feedback Status###20 01 2026 new variable
 exc#:#exc_peer_review#:#Отзиви от колеги
 exc#:#exc_peer_review_ass_setting_info#:#Ако е разрешено, потребителите могат да оценяват своите колеги след крайния срок.
 exc#:#exc_peer_review_chars_invalid#:#Най-малко един от вашите отзиви няма необходимата минимална дължина от %s символа.
@@ -11050,6 +11056,7 @@ lti#:#highscore_top_table#:#Висша класация
 lti#:#highscore_top_table_description#:#На участниците се представя таблица с най-добрите класации.###22 06 2022 new variable
 lti#:#highscore_wtime#:#Duration
 lti#:#highscore_wtime_description#:#Колона, съдържаща продължителността, ще бъде включена в класирането.
+lti#:#launch_custom_params#:#Custom launch parameters###27 11 2025 new variable
 lti#:#launch_method#:#Опции за стартиране
 lti#:#launch_method_embedded#:#Embedded Content
 lti#:#launch_method_embedded_info#:#Съдържанието се отваря в контекста на ILIAS. То се представя като вградено съдържание в раздела със съдържание.
@@ -11712,6 +11719,7 @@ mep#:#mep_all_mobs#:#Всички медийни обекти
 mep#:#mep_bulk_upload#:#Bulk Upload
 mep#:#mep_choose_from_folder#:#Избор от папка
 mep#:#mep_choose_from_mep#:#Изберете от басейна
+mep#:#mep_clipboard_info#:#Here you can upload media files that you can then access from any page on which you have access to the page editor. The clipboard is also accessible in media pools. This storage is only for you and cannot be viewed by other users.###20 01 2026 new variable
 mep#:#mep_content#:#Съдържание
 mep#:#mep_content_snippet_in_use#:#Съдържателен фрагмент '%s' се използва и не може да бъде изтрит.
 mep#:#mep_content_snippet_used_in_older_versions#:#Моля, обърнете внимание: Този фрагмент се използва в по-стари версии на някои страници. Ако тези страници бъдат върнати към версия, която включва този фрагмент, фрагментът ще липсва в страницата.
@@ -12697,6 +12705,7 @@ news#:#news_news_item_visibility_info#:#Публичните новини мог
 news#:#news_news_items#:#Новина(и)###22 06 2022 new variable
 news#:#news_no_js_click_here#:#Ако новините не се показват, кликнете тук.
 news#:#news_no_news_items#:#Няма налични новини.
+news#:#news_not_available#:#Unavailable News###20 01 2026 new variable
 news#:#news_notifications#:#Съобщения###22 06 2022 new variable
 news#:#news_notifications_public#:#Публични известия
 news#:#news_notifications_public_info#:#Ако тази опция е активирана, известията могат да се получават чрез лични RSS емисии извън ILIAS. Имайте предвид, че това прави известията достъпни без удостоверяване.
@@ -15612,7 +15621,6 @@ skmg#:#skmg_usage_type_info_prof#:#Използва се в профилите �
 skmg#:#skmg_usage_type_info_res#:#Обекти на хранилището, назначени като предложен ресурс
 skmg#:#skmg_usage_type_info_user#:#Присвоено на потребители
 skmg#:#skmg_your_self_evaluation#:#Вашата самооценка
-style#:#Style#:#Стил###22 06 2022 new variable
 style#:#adapt_icon#:#Adapt Icon
 style#:#adapt_icon_description#:#Адаптирайте цветовете на иконата или променете самата икона.
 style#:#adapt_icons#:#Цветове на адаптираните икони
@@ -17185,6 +17193,7 @@ trac#:#trac_view_mode_all#:#Всички обекти
 trac#:#trac_view_mode_collection#:#Само обекти, които определят общото състояние
 trac#:#trac_visits#:#Брой посещения
 trac#:#trac_visits_info#:#Всяко посещение на страница се брои за едно посещение.
+trac#:#trac_visits_nr#:#Number of Visits###20 01 2026 new variable
 trac#:#user_total#:#Общ брой потребители
 trac#:#view_mode#:#Режим на преглед
 tstv#:#tstv_create#:#Създаване на тестова проверка
